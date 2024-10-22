@@ -1,5 +1,5 @@
 from rdflib import Graph
-import morph_kgc, subprocess, os, requests, json
+import morph_kgc, subprocess, os, requests, json, csv
 
 ## --------------------OPENREFINE API--------------------
 csrf_token = ""
@@ -106,27 +106,92 @@ def turtle_serialization(graph):
     # Turtle format printing
     graph.serialize(destination="rdf/knowledge-graph.ttl")
 
+def stations_csv2json(csv_file, json_file):
+    print(f"------------Converting {csv_file} to json------------")
+    # Leer el archivo CSV
+    with open(csv_file, 'r', encoding='utf-8') as file:
+        lector_csv = csv.DictReader(file)
+        
+        # Crear una lista para almacenar los datos
+        lista_datos = []
+        
+        # Recorrer cada fila del archivo CSV y agregarlo a la lista
+        for fila in lector_csv:
+            # Convertir las columnas numéricas a enteros
+            
+            measures = []
+            if fila['NO2'] == "true":
+                measures.append('NO')
+                measures.append('NOx')
+                measures.append('NO2')
+            if fila['SO2'] == "true":
+                measures.append('SO2')
+            if fila['CO'] == "true":
+                measures.append('CO')
+            if fila['PM10'] == "true":
+                measures.append('PM10')
+            if fila['PM2_5'] == "true":
+                measures.append('PM2_5')
+            if fila['O3'] == "true":
+                measures.append('O3')
+            if fila['BTX'] == "true":
+                measures.append('BTX')
 
-def main():
+            station = {
+              'CODIGO': fila['CODIGO'],
+              'ESTACION': fila["ESTACION"],
+              'ALTITUD': fila["ALTITUD"],
+              'MEDIDAS': measures,
+              'COD_VIA': fila['COD_VIA'],
+              'LONGITUD': fila['LONGITUD'],
+              'LATITUD': fila['LATITUD']
+            }
+            lista_datos.append(station)
+
+    # Escribir el archivo JSON con la lista de datos
+    with open(json_file, 'w', encoding='utf-8') as file:
+        json.dump(lista_datos, file, ensure_ascii=False, indent=2)
+    
+
+
+def treatment_measures():
     source_file1 = "csv/datos_diarios_2023.csv"
     source_file2 = "csv/datos_diarios_2024.csv"
     intermediate_file1 = "csv/datos_2023-updated.csv"
     intermediate_file2 = "csv/datos_2024-updated.csv"
     joined_path = "csv/datos_dirty.csv"
     output_path = "csv/datos_diarios-updated.csv"
-
+    
     cambios_json_path = "openrefine/cambios_datos_diarios.json"
-    limpieza_fechas_json = "openrefine/limpieza_dias_invalidos.json"
+    limpieza_fechas_json_path = "openrefine/limpieza_dias_invalidos.json"
     
     get_csrf_token()
+    # Air quality measures
     apply_changes_csv(source_file1, "measures_2023", cambios_json_path, intermediate_file1)
     apply_changes_csv(source_file2, "measures_2024", cambios_json_path, intermediate_file2)
-    
+
+
     if(os.path.exists(intermediate_file1) and os.path.exists(intermediate_file2)):
         join_files(intermediate_file1,intermediate_file2,joined_path)
 
-    apply_changes_csv(joined_path, "clean_strange_dates", limpieza_fechas_json, output_path)
+    apply_changes_csv(joined_path, "clean_strange_dates", limpieza_fechas_json_path, output_path)
     os.remove(joined_path)
+
+def treatment_stations(): 
+    source_file = "csv/informacion_estaciones_red_calidad_aire.csv"
+    output_path = "csv/informacion_estaciones_red_calidad_aire-updated.csv"
+    json_ouput_path = "csv/informacion_estaciones_red_calidad_aire-updated.json"
+    cambios_estaciones_json_path = "openrefine/informacion_estaciones_red_calidad_aire 1.json"
+
+    apply_changes_csv(source_file, "stations", cambios_estaciones_json_path, output_path)
+    # Generate json version
+    stations_csv2json(output_path,json_ouput_path)
+
+
+def main():
+
+    treatment_measures()
+    treatment_stations()
     
     g = generate_rdf()
     turtle_serialization(g)
