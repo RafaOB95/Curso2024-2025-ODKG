@@ -1,16 +1,6 @@
 [
   {
     "op": "core/column-removal",
-    "columnName": "LATITUD",
-    "description": "Remove column LATITUD"
-  },
-  {
-    "op": "core/column-removal",
-    "columnName": "LONGITUD",
-    "description": "Remove column LONGITUD"
-  },
-  {
-    "op": "core/column-removal",
     "columnName": "COORDENADA_Y_ETRS89",
     "description": "Remove column COORDENADA_Y_ETRS89"
   },

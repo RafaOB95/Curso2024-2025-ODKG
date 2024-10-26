@@ -1,5 +1,5 @@
 from rdflib import Graph
-import morph_kgc, subprocess, os, requests, json, csv
+import morph_kgc, subprocess, os, requests, json, csv, time
 
 ## --------------------OPENREFINE API--------------------
 csrf_token = ""
@@ -66,7 +66,19 @@ def delete_project(project_id):
         raise Exception("Deleting project error")
 
 
+# -----------------------------------------------
 
+def wait_for_reconciliation(project_id):
+    reconciliation_done = False
+    url = 'http://127.0.0.1:3333/command/core/get-processes'
+    while(not reconciliation_done):
+        response = requests.get(f'{url}?project={project_id}&csrf_token={csrf_token}')
+        if(response.json()['processes'] == []):
+            reconciliation_done = True
+            print("Reconcillied")
+        else:
+            print("Waiting for reconciliation")
+            time.sleep(1)
 
 def apply_changes_csv(path_csv, project_name, changes_json_path, export_file_path):
     string = f'------------Applying changes to {path_csv} with {changes_json_path}------------'
@@ -75,8 +87,11 @@ def apply_changes_csv(path_csv, project_name, changes_json_path, export_file_pat
     project_id = create_project(path_csv, project_name)
     
     apply_operations(project_id,changes_json_path)
-    export_project_to_csv(project_id, export_file_path)
     
+    wait_for_reconciliation(project_id)
+
+    export_project_to_csv(project_id, export_file_path)
+   
     delete_project(project_id)
 
 def apply_changes_2_csv(path_csv1, path_csv2, project_name, changes_json_path, export_file_path):
@@ -86,6 +101,9 @@ def apply_changes_2_csv(path_csv1, path_csv2, project_name, changes_json_path, e
     project_id = create_project_2_files(path_csv1, path_csv2, project_name)
     
     apply_operations(project_id,changes_json_path)
+    
+    wait_for_reconciliation(project_id)
+
     export_project_to_csv(project_id, export_file_path)
     
     delete_project(project_id)
@@ -106,11 +124,11 @@ def join_files(path_csv1, path_csv2, output_path):
         raise Exception("Error al juntar los archivos")
 '''
 
-def generate_rdf():
+def generate_rdf(with_links):
     print("------------Generating RDF data with Morph-KGC------------")
 
     # Generates the RDF knowledge graph
-    config = """
+    config_no_links = """
     [CONFIGURATION]
     [DEFAULT]
     main_dir: ./
@@ -123,15 +141,36 @@ def generate_rdf():
 
     [SOURCE]
     mappings=mappings/mapping_rules.yml
-         """
+    """
+
+    config_with_links = """
+    [CONFIGURATION]
+    [DEFAULT]
+    main_dir: ./
+
+    # INPUT
+    na_values=,#N/A,N/A,#N/A N/A,n/a,NA,<NA>,#NA,NULL,null,NaN,nan,None
+
+    # MULTIPROCESSING
+    number_of_processes=2
+
+    [SOURCE]
+    mappings=mappings/mapping_rules-with-links.yml
+    """
+    config = config_with_links if with_links else config_no_links
+
+    print(config)
     return morph_kgc.materialize(config)
 
-def turtle_serialization(graph):
+def turtle_serialization(graph,with_links):
     print("------------Serializing RDF data into a file------------")
     # Turtle format printing
-    graph.serialize(destination="rdf/knowledge-graph.ttl")
+    destination = "rdf/knowledge-graph-with-links.ttl" if (with_links) else "rdf/knowledge-graph.ttl"
+    graph.serialize(destination=destination)
 
-def stations_csv2json(csv_file, json_file):
+# -------------------------------------------------
+
+def stations_csv2json(csv_file, json_file, with_links):
     print(f"------------Converting {csv_file} to json------------")
     # Leer el archivo CSV
     with open(csv_file, 'r', encoding='utf-8') as file:
@@ -161,8 +200,9 @@ def stations_csv2json(csv_file, json_file):
                 measures.append('O3')
             if fila['BTX'] == "true":
                 measures.append('BTX')
+            
 
-            station = {
+            station_no_links = {
               'CODIGO': fila['CODIGO'],
               'ESTACION': fila["ESTACION"],
               'ALTITUD': fila["ALTITUD"],
@@ -171,42 +211,69 @@ def stations_csv2json(csv_file, json_file):
               'LONGITUD': fila['LONGITUD'],
               'LATITUD': fila['LATITUD']
             }
+
+            station_with_links = {
+              'CODIGO': fila['CODIGO'],
+              'same_as_wikidata_streets': fila['same_as_wikidata_streets'],
+              'ESTACION': fila["ESTACION"],
+              'ALTITUD': fila["ALTITUD"],
+              'MEDIDAS': measures,
+              'COD_VIA': fila['COD_VIA'],
+              'LONGITUD': fila['LONGITUD'],
+              'LATITUD': fila['LATITUD']
+            }
+            station = station_with_links if with_links else station_no_links
             lista_datos.append(station)
 
     # Escribir el archivo JSON con la lista de datos
     with open(json_file, 'w', encoding='utf-8') as file:
         json.dump(lista_datos, file, ensure_ascii=False, indent=2)
-    
 
-
-def treatment_measures():
+def treatment_measures(with_links):
     source_file1 = "csv/datos_diarios_2023.csv"
     source_file2 = "csv/datos_diarios_2024.csv"
-    output_path = "csv/datos_diarios-updated.csv"
-    
-    cambios_json_path = "openrefine/cambios_datos_diarios.json"
-    
-    get_csrf_token()
+    if(with_links):
+        output_path = "csv/datos_diarios-updated-with-links.csv"
+        cambios_json_path = "openrefine/cambios_datos_diarios-with-links.json"
+    else:
+        output_path = "csv/datos_diarios-updated.csv"
+        cambios_json_path = "openrefine/cambios_datos_diarios.json"
+
     # Air quality measures
     apply_changes_2_csv(source_file1, source_file2, "measures", cambios_json_path, output_path)
 
-def treatment_stations(): 
+def treatment_stations(with_links): 
     source_file = "csv/informacion_estaciones_red_calidad_aire.csv"
-    output_path = "csv/informacion_estaciones_red_calidad_aire-updated.csv"
-    json_ouput_path = "csv/informacion_estaciones_red_calidad_aire-updated.json"
-    cambios_json_path = "openrefine/informacion_estaciones_red_calidad_aire 1.json"
+    if(with_links):
+        output_path = "csv/informacion_estaciones_red_calidad_aire-updated-with-links.csv"
+        cambios_json_path = "openrefine/informacion_estaciones_red_calidad_aire-with-links.json"
+        json_ouput_path = "csv/informacion_estaciones_red_calidad_aire-updated-with-links.json"
+    else:
+        output_path = "csv/informacion_estaciones_red_calidad_aire-updated.csv"
+        cambios_json_path = "openrefine/informacion_estaciones_red_calidad_aire 1.json"
+        json_ouput_path = "csv/informacion_estaciones_red_calidad_aire-updated.json"
 
     apply_changes_csv(source_file, "stations", cambios_json_path, output_path)
     # Generate json version
-    stations_csv2json(output_path,json_ouput_path)
+    stations_csv2json(output_path,json_ouput_path,with_links)
 
 
 def main():
-    treatment_measures()
-    treatment_stations()
+    # --- NO LINKS ---
+    #get_csrf_token()
+    #treatment_measures(False)
+    #treatment_stations(False)
     
-    g = generate_rdf()
-    turtle_serialization(g)
+    #g = generate_rdf(False)
+    #turtle_serialization(g,False)
+
+    # --- WITH LINKS ---
+    get_csrf_token()
+    treatment_measures(True)
+    treatment_stations(True)
+
+    g = generate_rdf(True)
+    turtle_serialization(g,True)
 
 if __name__ == "__main__":
     main()
