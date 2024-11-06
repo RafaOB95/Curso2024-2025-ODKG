@@ -1,0 +1,13 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ns:ChargingStation_06VP" -> "ns:Place_06VP" [ label = "ns:isLocated" ];
+	"ns:ChargingStation_06VP" -> "ns:Dates_06VP" [ label = "ns:hasDates" ];
+	"ns:Place_04VP" -> "ns:Neighborhood_Palos_de_Moguer" [ label = "sc:containedInPlace" ];
+	"ns:Neighborhood_Adelfas" -> "ns:District_Retiro" [ label = "sc:containedInPlace" ];
+	"ns:Place_06VP" -> "ns:Neighborhood_Adelfas" [ label = "sc:containedInPlace" ];
+	"ns:Neighborhood_Palos_de_Moguer" -> "ns:District_Arganzuela" [ label = "sc:containedInPlace" ];
+	"ns:ChargingStation_04VP" -> "ns:Place_04VP" [ label = "ns:isLocated" ];
+	"ns:ChargingStation_04VP" -> "ns:Dates_04VP" [ label = "ns:hasDates" ];
+
+}

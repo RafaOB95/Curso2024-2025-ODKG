@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"base:JohnSmith" -> "base:PeterSmith" [ label = "base:sibling" ];
+	"base:Jack" -> "base:JohnSmith" [ label = "base:parent" ];
+	"base:Harry" -> "base:Thomas" [ label = "base:sibling" ];
+	"base:Thomas" -> "base:Harry" [ label = "base:sibling" ];
+	"base:Tim" -> "base:SaraSmith" [ label = "base:parent" ];
+	"base:SaraSmith" -> "base:JohnSmith" [ label = "base:sibling" ];
+	"owl:Thing" -> "xsd:string" [ label = "http://www.w3.org/2001/vcard-rdf/3.0/FN" ];
+	"base:Person" -> "base:Person" [ label = "base:hasUncleOrAunt" ];
+	"owl:Thing" -> "xsd:string" [ label = "http://www.w3.org/2001/vcard-rdf/3.0/Given" ];
+	"base:Person" -> "base:Person" [ label = "base:sibling" ];
+	"base:Person" -> "base:Person" [ label = "base:parent" ];
+	"owl:Thing" -> "xsd:string" [ label = "http://www.w3.org/2001/vcard-rdf/3.0/Family" ];
+
+}

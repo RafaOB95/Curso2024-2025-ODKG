@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="http://MadridAirQuality.org/ontology/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMagnitude -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMagnitude"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMagnitudeCode -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMagnitudeCode"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMagnitudeName -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMagnitudeName"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMeasurementDay -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMeasurementDay"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMeasurementMonth -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMeasurementMonth"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMeasurementValue -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMeasurementValue"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMeasurementYear -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMeasurementYear"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMunicipality -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMunicipality"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMunicipalityLocationID -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMunicipalityLocationID"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMunicipalityName -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasMunicipalityName"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasProvince -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasProvince"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasProvinceLocationID -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasProvinceLocationID"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasProvinceName -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasProvinceName"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasStationLocationID -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasStationLocationID"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasStreet -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasStreet"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasStreetLocationID -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasStreetLocationID"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasStreetName -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/hasStreetName"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/isMeasurementValid -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/isMeasurementValid"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/recordedFrom -->
+
+
+    <AnnotationProperty rdf:about="http://MadridAirQuality.org/ontology/recordedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Magnitude -->
+
+
+    <Class rdf:about="http://MadridAirQuality.org/ontology/Magnitude"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Measurement -->
+
+
+    <Class rdf:about="http://MadridAirQuality.org/ontology/Measurement"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Municipality -->
+
+
+    <Class rdf:about="http://MadridAirQuality.org/ontology/Municipality"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Province -->
+
+
+    <Class rdf:about="http://MadridAirQuality.org/ontology/Province"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Station -->
+
+
+    <Class rdf:about="http://MadridAirQuality.org/ontology/Station"/>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Street -->
+
+
+    <Class rdf:about="http://MadridAirQuality.org/ontology/Street"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://MadridAirQuality.org/magnitude/8 -->
+
+
+    <NamedIndividual rdf:about="http://MadridAirQuality.org/magnitude/8">
+        <rdf:type rdf:resource="http://MadridAirQuality.org/ontology/Magnitude"/>
+        <ontology:hasMagnitudeCode rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ontology:hasMagnitudeCode>
+        <ontology:hasMagnitudeMeasurementUnit>µg/m³</ontology:hasMagnitudeMeasurementUnit>
+        <ontology:hasMagnitudeName>Nitrogen Dioxide (NO2)</ontology:hasMagnitudeName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://MadridAirQuality.org/measurement/2024-10-18-Station-4-magnitude-8 -->
+
+
+    <NamedIndividual rdf:about="http://MadridAirQuality.org/measurement/2024-10-18-Station-4-magnitude-8">
+        <rdf:type rdf:resource="http://MadridAirQuality.org/ontology/Measurement"/>
+        <ontology:hasMagnitude rdf:resource="http://MadridAirQuality.org/magnitude/8"/>
+        <ontology:hasMeasurementDay rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</ontology:hasMeasurementDay>
+        <ontology:hasMeasurementMonth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ontology:hasMeasurementMonth>
+        <ontology:hasMeasurementValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.7</ontology:hasMeasurementValue>
+        <ontology:hasMeasurementYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2024</ontology:hasMeasurementYear>
+        <ontology:isMeasurementValid rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontology:isMeasurementValid>
+        <ontology:recordedFrom rdf:resource="http://MadridAirQuality.org/station/4"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://MadridAirQuality.org/municipality/79 -->
+
+
+    <NamedIndividual rdf:about="http://MadridAirQuality.org/municipality/79">
+        <rdf:type rdf:resource="http://MadridAirQuality.org/ontology/Municipality"/>
+        <ontology:hasMunicipalityLocationID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</ontology:hasMunicipalityLocationID>
+        <ontology:hasMunicipalityName>Madrid</ontology:hasMunicipalityName>
+        <ontology:hasProvince rdf:resource="http://MadridAirQuality.org/province/28"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://MadridAirQuality.org/province/28 -->
+
+
+    <NamedIndividual rdf:about="http://MadridAirQuality.org/province/28">
+        <rdf:type rdf:resource="http://MadridAirQuality.org/ontology/Province"/>
+        <ontology:hasProvinceLocationID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</ontology:hasProvinceLocationID>
+        <ontology:hasProvinceName>Comunidad de  Madrid</ontology:hasProvinceName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://MadridAirQuality.org/station/4 -->
+
+
+    <NamedIndividual rdf:about="http://MadridAirQuality.org/station/4">
+        <rdf:type rdf:resource="http://MadridAirQuality.org/ontology/Station"/>
+        <ontology:hasStationLocationID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ontology:hasStationLocationID>
+        <ontology:hasStreet rdf:resource="http://MadridAirQuality.org/street/4"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://MadridAirQuality.org/street/4 -->
+
+
+    <NamedIndividual rdf:about="http://MadridAirQuality.org/street/4">
+        <rdf:type rdf:resource="http://MadridAirQuality.org/ontology/Street"/>
+        <ontology:hasMunicipality rdf:resource="http://MadridAirQuality.org/municipality/79"/>
+        <ontology:hasStreetLocationID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ontology:hasStreetLocationID>
+        <ontology:hasStreetName>Plaza España</ontology:hasStreetName>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

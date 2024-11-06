@@ -1,0 +1,13 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "ns:AirQualityMetric" "ns:Location" "ns:Station" ; /*classes style*/
+	"mAIR:" -> "https://mAIRdrid.org/ontology#" [ label = "vann:preferredNamespaceUri" ];
+	"mAIR:" -> "https://mAIRdrid.org/1.0.2" [ label = "owl:versionIRI" ];
+	"mAIR:" -> "https://chowlk.linkeddata.es/" [ label = "mod:createdWith" ];
+	"mAIR:" -> "https://creativecommons.org/licenses/by/4.0/" [ label = "dc:license" ];
+	"ns:Location" -> "wd:Q111415237" [ label = "ns:inPublicSpace" ];
+	"ns:AirQualityMetric" -> "wd:Q2144359" [ label = "ns:relevantToMeasure" ];
+	"ns:Station" -> "xsd:integer" [ label = "ns:nationalStationID" ];
+
+}

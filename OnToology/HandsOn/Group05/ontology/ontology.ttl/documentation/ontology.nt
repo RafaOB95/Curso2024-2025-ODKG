@@ -1,0 +1,197 @@
+<http://www.w3.org/2001/XMLSchema#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/2001/XMLSchema#> <http://purl.org/dc/elements/1.1/creator> "Dakota Mellish" .
+<http://www.w3.org/2001/XMLSchema#> <http://purl.org/dc/elements/1.1/title> "RiversidePollutionStudyOntology" .
+<http://www.w3.org/2001/XMLSchema#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<http://www.w3.org/2001/XMLSchema#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://schema.org/containedInPlace
+<https://schema.org/containedInPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/containedInPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/AdministrativeArea> .
+<https://schema.org/containedInPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/City> .
+<https://schema.org/containedInPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<https://schema.org/containedInPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/State> .
+<https://schema.org/containedInPlace> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/AdministrativeArea> .
+<https://schema.org/containedInPlace> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/City> .
+<https://schema.org/containedInPlace> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Country> .
+<https://schema.org/containedInPlace> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/State> .
+<https://schema.org/containedInPlace> <http://www.w3.org/2000/01/rdf-schema#label> "contained in place" .
+# 
+# https://schema.org/hasPart
+<https://schema.org/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/hasPart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Dataset> .
+<https://schema.org/hasPart> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Article> .
+<https://schema.org/hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "has part" .
+# 
+# https://schema.org/isPartOf
+<https://schema.org/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Observation> .
+<https://schema.org/isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Dataset> .
+<https://schema.org/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of" .
+# 
+# https://schema.org/observationAbout
+<https://schema.org/observationAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/observationAbout> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
+<https://schema.org/observationAbout> <http://www.w3.org/2000/01/rdf-schema#label> "observation about" .
+# 
+# https://www.w3.org/TR/prov-o/wasDerivedFrom
+<https://www.w3.org/TR/prov-o/wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3.org/TR/prov-o/wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Dataset> .
+<https://www.w3.org/TR/prov-o/wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/ScholarlyArticle> .
+<https://www.w3.org/TR/prov-o/wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "was derived from" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://schema.org/about
+<https://schema.org/about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/about> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Article> .
+<https://schema.org/about> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Dataset> .
+<https://schema.org/about> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/about> <http://www.w3.org/2000/01/rdf-schema#label> "about" .
+# 
+# https://schema.org/author
+<https://schema.org/author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/author> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/ScholarlyArticle> .
+<https://schema.org/author> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/author> <http://www.w3.org/2000/01/rdf-schema#label> "author" .
+# 
+# https://schema.org/datePublished
+<https://schema.org/datePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/ScholarlyArticle> .
+<https://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://schema.org/datePublished> <http://www.w3.org/2000/01/rdf-schema#label> "date published" .
+# 
+# https://schema.org/latitude
+<https://schema.org/latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#label> "latitude" .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/AdministrativeArea> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Article> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/City> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Country> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Dataset> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/ScholarlyArticle> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/State> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# https://schema.org/observationDateTime
+<https://schema.org/observationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/observationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Observation> .
+<https://schema.org/observationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://schema.org/observationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "observation date time" .
+# 
+# https://schema.org/unitText
+<https://schema.org/unitText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/unitText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Observation> .
+<https://schema.org/unitText> <http://www.w3.org/2000/01/rdf-schema#label> "unit text" .
+# 
+# https://schema.org/value
+<https://schema.org/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/value> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Observation> .
+<https://schema.org/value> <http://www.w3.org/2000/01/rdf-schema#label> "value" .
+# 
+# https://schema.org/variableMeasured
+<https://schema.org/variableMeasured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/variableMeasured> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Observation> .
+<https://schema.org/variableMeasured> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/variableMeasured> <http://www.w3.org/2000/01/rdf-schema#label> "variable measured" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://schema.org/AdministrativeArea
+<https://schema.org/AdministrativeArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/AdministrativeArea> <http://www.w3.org/2000/01/rdf-schema#label> "Administrative Area" .
+# 
+# https://schema.org/Article
+<https://schema.org/Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Article> <http://www.w3.org/2000/01/rdf-schema#label> "Article" .
+# 
+# https://schema.org/City
+<https://schema.org/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# https://schema.org/Country
+<https://schema.org/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# https://schema.org/Dataset
+<https://schema.org/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset" .
+# 
+# https://schema.org/Observation
+<https://schema.org/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation" .
+# 
+# https://schema.org/Place
+<https://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
+# 
+# https://schema.org/ScholarlyArticle
+<https://schema.org/ScholarlyArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/ScholarlyArticle> <http://www.w3.org/2000/01/rdf-schema#label> "Scholarly Article" .
+# 
+# https://schema.org/State
+<https://schema.org/State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/State> <http://www.w3.org/2000/01/rdf-schema#label> "State" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

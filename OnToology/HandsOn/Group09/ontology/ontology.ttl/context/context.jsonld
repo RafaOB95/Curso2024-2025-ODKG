@@ -1,0 +1,73 @@
+{
+  "@context" : {
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/elements/1.1/created"
+    },
+    "Q111415237" : {
+      "@id" : "http://www.wikidata.org/entity/Q111415237"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/elements/1.1/license"
+    },
+    "nationalStationID" : {
+      "@id" : "http://mAIRdrid.org/ontology/nationalStationID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Location" : {
+      "@id" : "http://mAIRdrid.org/ontology/Location"
+    },
+    "AirQualityMetric" : {
+      "@id" : "http://mAIRdrid.org/ontology/AirQualityMetric"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "relevantToMeasure" : {
+      "@id" : "http://mAIRdrid.org/ontology/relevantToMeasure",
+      "@type" : "@id"
+    },
+    "inPublicSpace" : {
+      "@id" : "http://mAIRdrid.org/ontology/inPublicSpace",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Station" : {
+      "@id" : "http://mAIRdrid.org/ontology/Station"
+    },
+    "ObservableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+    },
+    "System" : {
+      "@id" : "http://www.w3.org/ns/ssn/System"
+    },
+    "Q2144359" : {
+      "@id" : "http://www.wikidata.org/entity/Q2144359"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}

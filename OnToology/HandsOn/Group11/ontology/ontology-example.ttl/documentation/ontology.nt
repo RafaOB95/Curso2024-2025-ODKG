@@ -1,0 +1,186 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#additionalInfo
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#additionalInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#characteristicsDevices
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#characteristicsDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtCode
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtName
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#editionDate
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#editionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#hasDates
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#hasDates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#idPoint
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#idPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#isLocated
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#isLocated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#management
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#management> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodCode
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodName
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#numberOfDevices
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#numberOfDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#openingDate
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#openingDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#operator
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#placement
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#placement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#registerDate
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#registerDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#schedule
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#state
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/address
+<https://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/containedInPlace
+<https://schema.org/containedInPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/Place
+<https://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#additionalInfo> "-" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#characteristicsDevices> "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#hasDates> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_04VP> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#idPoint> "04VP" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#isLocated> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_04VP> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#management> "Convenio vía pública" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#numberOfDevices> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#operator> "GIC" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#placement> "Vía pública" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#schedule> "24" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#state> "Ejecutado" .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#additionalInfo> "-" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#characteristicsDevices> "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#hasDates> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_06VP> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#idPoint> "06VP" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#isLocated> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_06VP> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#management> "Convenio vía pública" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#numberOfDevices> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#operator> "GIC" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#placement> "Vía pública" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#schedule> "24" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#state> "Ejecutado" .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_04VP
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_04VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_04VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#editionDate> "2022-04-27T10:43:52Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#openingDate> "2019-05-09T22:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_04VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#registerDate> "2022-02-03T15:21:24Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_06VP
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_06VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_06VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#editionDate> "2022-04-27T10:43:52Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#openingDate> "2020-12-27T23:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_06VP> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#registerDate> "2022-02-03T15:21:24Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Arganzuela
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Arganzuela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Arganzuela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Arganzuela> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtCode> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Arganzuela> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtName> "Arganzuela" .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Retiro
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Retiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Retiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Retiro> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtCode> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Retiro> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtName> "Retiro" .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Adelfas
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Adelfas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Adelfas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Adelfas> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodCode> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Adelfas> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodName> "Adelfas" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Adelfas> <https://schema.org/containedInPlace> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Retiro> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Palos_de_Moguer
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Palos_de_Moguer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Palos_de_Moguer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Palos_de_Moguer> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodCode> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Palos_de_Moguer> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodName> "Palos de Moguer" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Palos_de_Moguer> <https://schema.org/containedInPlace> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Arganzuela> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_04VP
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_04VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_04VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Place> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_04VP> <https://schema.org/address> "Ronda de Valencia 1" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_04VP> <https://schema.org/containedInPlace> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Palos_de_Moguer> .
+# 
+# https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_06VP
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_06VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_06VP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Place> .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_06VP> <https://schema.org/address> "Calle Cerro de la Plata 4" .
+<https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_06VP> <https://schema.org/containedInPlace> <https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Adelfas> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

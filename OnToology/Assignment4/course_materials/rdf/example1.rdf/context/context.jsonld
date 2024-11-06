@@ -1,0 +1,16 @@
+{
+  "@context" : {
+    "Family" : {
+      "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#Family"
+    },
+    "email" : {
+      "@id" : "http://xmlns.com/foaf/0.1/email"
+    },
+    "Given" : {
+      "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#Given"
+    },
+    "FN" : {
+      "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#FN"
+    }
+  }
+}

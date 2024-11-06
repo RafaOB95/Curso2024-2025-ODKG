@@ -1,0 +1,415 @@
+@prefix : <http://madrid.eventos.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://madrid.eventos.com/> .
+
+<http://madrid.eventos.com/> rdf:type owl:Ontology ;
+                              <http://purl.org/dc/elements/1.1/title> "MadridEvents Ontology" ;
+                              owl:versionInfo "0.0.1" ;
+                              <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://madrid.eventos.com/Equipment
+:Equipment rdf:type owl:ObjectProperty ;
+           rdfs:range xsd:text .
+
+
+###  http://madrid.eventos.com/OpeningHours
+:OpeningHours rdf:type owl:ObjectProperty ;
+              rdfs:range xsd:text .
+
+
+###  http://madrid.eventos.com/accessibilityLevel
+:accessibilityLevel rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://schema.org/Place> ;
+                    rdfs:range xsd:String .
+
+
+###  http://madrid.eventos.com/c
+:c rdf:type owl:ObjectProperty ;
+   rdfs:domain <https://schema.org/Event> ,
+               <https://schema.org/Place> ;
+   rdfs:range :ContactDetails ,
+              <https://schema.org/Place> ;
+   rdfs:label "c" .
+
+
+###  http://madrid.eventos.com/description
+:description rdf:type owl:ObjectProperty ;
+             rdfs:range xsd:text .
+
+
+###  http://madrid.eventos.com/district
+:district rdf:type owl:ObjectProperty ;
+          rdfs:domain <https://schema.org/GeoCoordinates> ;
+          rdfs:range xsd:String .
+
+
+###  http://madrid.eventos.com/excludedDays
+:excludedDays rdf:type owl:ObjectProperty ;
+              rdfs:range xsd:text .
+
+
+###  http://madrid.eventos.com/longDuration
+:longDuration rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://schema.org/Event> ;
+              rdfs:range xsd:Boolean .
+
+
+###  http://madrid.eventos.com/neighborhood
+:neighborhood rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://schema.org/GeoCoordinates> ;
+              rdfs:range xsd:String .
+
+
+###  http://madrid.eventos.com/transportation
+:transportation rdf:type owl:ObjectProperty ;
+                rdfs:domain :ContactDetails ;
+                rdfs:range xsd:text .
+
+
+###  http://madrid.eventos.com/type
+:type rdf:type owl:ObjectProperty ;
+      rdfs:domain <https://schema.org/Event> ;
+      rdfs:range xsd:String .
+
+
+###  http://madrid.eventos.com/weekDays
+:weekDays rdf:type owl:ObjectProperty ;
+          rdfs:range xsd:String .
+
+
+###  http://www.w3.org/XML/1998/namespaceid
+xml:id rdf:type owl:ObjectProperty ;
+       rdfs:domain <https://schema.org/Event> ;
+       rdfs:range xsd:String .
+
+
+###  https://schema.org/about
+<https://schema.org/about> rdf:type owl:ObjectProperty ;
+                           rdfs:domain <https://schema.org/Event> ;
+                           rdfs:range xsd:text .
+
+
+###  https://schema.org/address
+<https://schema.org/address> rdf:type owl:ObjectProperty ;
+                             rdfs:domain <https://schema.org/Place> ;
+                             rdfs:range xsd:String .
+
+
+###  https://schema.org/audience
+<https://schema.org/audience> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <https://schema.org/Event> ;
+                              rdfs:range xsd:String .
+
+
+###  https://schema.org/geo
+<https://schema.org/geo> rdf:type owl:ObjectProperty ;
+                         rdfs:domain <https://schema.org/Place> ;
+                         rdfs:range <https://schema.org/GeoCoordinates> ;
+                         rdfs:label "geo" .
+
+
+###  https://schema.org/isAccessibleForFree
+<https://schema.org/isAccessibleForFree> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://schema.org/Event> ;
+                                         rdfs:range xsd:Boolean .
+
+
+###  https://schema.org/latitude
+<https://schema.org/latitude> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <https://schema.org/GeoCoordinates> ;
+                              rdfs:range xsd:Float .
+
+
+###  https://schema.org/longitude
+<https://schema.org/longitude> rdf:type owl:ObjectProperty ;
+                               rdfs:domain <https://schema.org/GeoCoordinates> ;
+                               rdfs:range xsd:Float .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:ObjectProperty ;
+                          rdfs:domain <https://schema.org/Event> ,
+                                      <https://schema.org/Place> ;
+                          rdfs:range xsd:String .
+
+
+###  https://schema.org/postalCode
+<https://schema.org/postalCode> rdf:type owl:ObjectProperty ;
+                                rdfs:domain <https://schema.org/GeoCoordinates> ;
+                                rdfs:range xsd:Integer .
+
+
+###  https://schema.org/url
+<https://schema.org/url> rdf:type owl:ObjectProperty ;
+                         rdfs:domain <https://schema.org/Event> ,
+                                     <https://schema.org/Place> ;
+                         rdfs:range xsd:String .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://madrid.eventos.com/Equipment
+:Equipment rdf:type owl:DatatypeProperty .
+
+
+###  http://madrid.eventos.com/OpeningHours
+:OpeningHours rdf:type owl:DatatypeProperty .
+
+
+###  http://madrid.eventos.com/accessibilityLevel
+:accessibilityLevel rdf:type owl:DatatypeProperty .
+
+
+###  http://madrid.eventos.com/description
+:description rdf:type owl:DatatypeProperty .
+
+
+###  http://madrid.eventos.com/district
+:district rdf:type owl:DatatypeProperty .
+
+
+###  http://madrid.eventos.com/excludedDays
+:excludedDays rdf:type owl:DatatypeProperty .
+
+
+###  http://madrid.eventos.com/longDuration
+:longDuration rdf:type owl:DatatypeProperty .
+
+
+###  http://madrid.eventos.com/neighborhood
+:neighborhood rdf:type owl:DatatypeProperty .
+
+
+###  http://madrid.eventos.com/transportation
+:transportation rdf:type owl:DatatypeProperty .
+
+
+###  http://madrid.eventos.com/type
+:type rdf:type owl:DatatypeProperty .
+
+
+###  http://madrid.eventos.com/weekDays
+:weekDays rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/XML/1998/namespaceid
+xml:id rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/about
+<https://schema.org/about> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/address
+<https://schema.org/address> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/audience
+<https://schema.org/audience> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/doorTime
+<https://schema.org/doorTime> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <https://schema.org/Event> ;
+                              rdfs:range xsd:time ;
+                              rdfs:label "door time" .
+
+
+###  https://schema.org/email
+<https://schema.org/email> rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :ContactDetails ;
+                           rdfs:range xsd:string ;
+                           rdfs:label "email" .
+
+
+###  https://schema.org/endDate
+<https://schema.org/endDate> rdf:type owl:DatatypeProperty ;
+                             rdfs:domain <https://schema.org/Event> ;
+                             rdfs:range xsd:dateTime ;
+                             rdfs:label "end date" .
+
+
+###  https://schema.org/isAccessibleForFree
+<https://schema.org/isAccessibleForFree> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/latitude
+<https://schema.org/latitude> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/longitude
+<https://schema.org/longitude> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/postalCode
+<https://schema.org/postalCode> rdf:type owl:DatatypeProperty .
+
+
+###  https://schema.org/startDate
+<https://schema.org/startDate> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain <https://schema.org/Event> ;
+                               rdfs:range xsd:dateTime ;
+                               rdfs:label "start date" .
+
+
+###  https://schema.org/telephone
+<https://schema.org/telephone> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :ContactDetails ;
+                               rdfs:range xsd:string ;
+                               rdfs:label "telephone" .
+
+
+###  https://schema.org/url
+<https://schema.org/url> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://madrid.eventos.com/ContactDetails
+:ContactDetails rdf:type owl:Class ;
+                rdfs:label "Contact Details" .
+
+
+###  http://www.w3.org/2001/XMLSchema#Boolean
+xsd:Boolean rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#Float
+xsd:Float rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#Integer
+xsd:Integer rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#String
+xsd:String rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#text
+xsd:text rdf:type owl:Class .
+
+
+###  https://schema.org/Event
+<https://schema.org/Event> rdf:type owl:Class ;
+                           rdfs:label "Event" .
+
+
+###  https://schema.org/GeoCoordinates
+<https://schema.org/GeoCoordinates> rdf:type owl:Class ;
+                                    rdfs:label "Geo Coordinates" .
+
+
+###  https://schema.org/Place
+<https://schema.org/Place> rdf:type owl:Class ;
+                           rdfs:label "Place" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Equipment rdfs:label "equipment" .
+
+
+:OpeningHours rdfs:label "opening hours" .
+
+
+:accessibilityLevel rdfs:label "accessibility level" .
+
+
+:description rdfs:label "description" .
+
+
+:district rdfs:label "district" .
+
+
+:excludedDays rdfs:label "excluded days" .
+
+
+:longDuration rdfs:label "long duration" .
+
+
+:neighborhood rdfs:label "neighborhood" .
+
+
+:transportation rdfs:label "transportation" .
+
+
+:type rdfs:label "type" .
+
+
+:weekDays rdfs:label "week days" .
+
+
+xml:id rdfs:label "id" .
+
+
+<https://schema.org/about> rdfs:label "about" .
+
+
+<https://schema.org/address> rdfs:label "address" .
+
+
+<https://schema.org/audience> rdfs:label "audience" .
+
+
+<https://schema.org/isAccessibleForFree> rdfs:label "is accessible for free" .
+
+
+<https://schema.org/latitude> rdfs:label "latitude" .
+
+
+<https://schema.org/longitude> rdfs:label "longitude" .
+
+
+<https://schema.org/name> rdfs:label "name" .
+
+
+<https://schema.org/postalCode> rdfs:label "postal code" .
+
+
+<https://schema.org/url> rdfs:label "url" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

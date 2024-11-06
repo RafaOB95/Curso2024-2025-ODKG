@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2001/XMLSchema#"
+     xml:base="http://www.w3.org/2001/XMLSchema"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.w3.org/2001/XMLSchema#">
+        <dc:creator>Dakota Mellish</dc:creator>
+        <dc:title>RiversidePollutionStudyOntology</dc:title>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://schema.org/containedInPlace -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/containedInPlace">
+        <rdfs:domain rdf:resource="https://schema.org/AdministrativeArea"/>
+        <rdfs:domain rdf:resource="https://schema.org/City"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:domain rdf:resource="https://schema.org/State"/>
+        <rdfs:range rdf:resource="https://schema.org/AdministrativeArea"/>
+        <rdfs:range rdf:resource="https://schema.org/City"/>
+        <rdfs:range rdf:resource="https://schema.org/Country"/>
+        <rdfs:range rdf:resource="https://schema.org/State"/>
+        <rdfs:label>contained in place</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/hasPart">
+        <rdfs:domain rdf:resource="https://schema.org/Dataset"/>
+        <rdfs:range rdf:resource="https://schema.org/Article"/>
+        <rdfs:label>has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/isPartOf">
+        <rdfs:domain rdf:resource="https://schema.org/Observation"/>
+        <rdfs:range rdf:resource="https://schema.org/Dataset"/>
+        <rdfs:label>is part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/observationAbout -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/observationAbout">
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+        <rdfs:label>observation about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3.org/TR/prov-o/wasDerivedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.w3.org/TR/prov-o/wasDerivedFrom">
+        <rdfs:domain rdf:resource="https://schema.org/Dataset"/>
+        <rdfs:range rdf:resource="https://schema.org/ScholarlyArticle"/>
+        <rdfs:label>was derived from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://schema.org/about -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/about">
+        <rdfs:domain rdf:resource="https://schema.org/Article"/>
+        <rdfs:domain rdf:resource="https://schema.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>about</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/author -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/author">
+        <rdfs:domain rdf:resource="https://schema.org/ScholarlyArticle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>author</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/datePublished -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/datePublished">
+        <rdfs:domain rdf:resource="https://schema.org/ScholarlyArticle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>date published</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/latitude -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/latitude">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>latitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/name">
+        <rdfs:domain rdf:resource="https://schema.org/AdministrativeArea"/>
+        <rdfs:domain rdf:resource="https://schema.org/Article"/>
+        <rdfs:domain rdf:resource="https://schema.org/City"/>
+        <rdfs:domain rdf:resource="https://schema.org/Country"/>
+        <rdfs:domain rdf:resource="https://schema.org/Dataset"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:domain rdf:resource="https://schema.org/ScholarlyArticle"/>
+        <rdfs:domain rdf:resource="https://schema.org/State"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/observationDateTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/observationDateTime">
+        <rdfs:domain rdf:resource="https://schema.org/Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>observation date time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/unitText -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/unitText">
+        <rdfs:domain rdf:resource="https://schema.org/Observation"/>
+        <rdfs:label>unit text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/value -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/value">
+        <rdfs:domain rdf:resource="https://schema.org/Observation"/>
+        <rdfs:label>value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/variableMeasured -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/variableMeasured">
+        <rdfs:domain rdf:resource="https://schema.org/Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>variable measured</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://schema.org/AdministrativeArea -->
+
+
+    <owl:Class rdf:about="https://schema.org/AdministrativeArea">
+        <rdfs:label>Administrative Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Article -->
+
+
+    <owl:Class rdf:about="https://schema.org/Article">
+        <rdfs:label>Article</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/City -->
+
+
+    <owl:Class rdf:about="https://schema.org/City">
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Country -->
+
+
+    <owl:Class rdf:about="https://schema.org/Country">
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Dataset -->
+
+
+    <owl:Class rdf:about="https://schema.org/Dataset">
+        <rdfs:label>Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Observation -->
+
+
+    <owl:Class rdf:about="https://schema.org/Observation">
+        <rdfs:label>Observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Place -->
+
+
+    <owl:Class rdf:about="https://schema.org/Place">
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/ScholarlyArticle -->
+
+
+    <owl:Class rdf:about="https://schema.org/ScholarlyArticle">
+        <rdfs:label>Scholarly Article</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/State -->
+
+
+    <owl:Class rdf:about="https://schema.org/State">
+        <rdfs:label>State</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

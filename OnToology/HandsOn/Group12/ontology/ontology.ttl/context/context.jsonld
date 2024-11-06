@@ -1,0 +1,142 @@
+{
+  "@context" : {
+    "Localizacion" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Localizacion"
+    },
+    "AtropelloPersona" : {
+      "@id" : "http://www.owl-ontologies.com/ns#AtropelloPersona"
+    },
+    "num_expediente" : {
+      "@id" : "http://www.owl-ontologies.com/ns#num_expediente",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "tieneLocalizacion" : {
+      "@id" : "http://www.owl-ontologies.com/ns#tieneLocalizacion",
+      "@type" : "@id"
+    },
+    "positiva_droga" : {
+      "@id" : "http://www.owl-ontologies.com/ns#positiva_droga",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "sexo" : {
+      "@id" : "http://www.owl-ontologies.com/ns#sexo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "distrito" : {
+      "@id" : "http://www.owl-ontologies.com/ns#distrito",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Alcance" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Alcance"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Otras" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Otras"
+    },
+    "Vuelco" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Vuelco"
+    },
+    "ColisionDoble" : {
+      "@id" : "http://www.owl-ontologies.com/ns#ColisionDoble"
+    },
+    "Participante" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Participante"
+    },
+    "Lesividad" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Lesividad"
+    },
+    "fecha" : {
+      "@id" : "http://www.owl-ontologies.com/ns#fecha",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hora" : {
+      "@id" : "http://www.owl-ontologies.com/ns#hora",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "ColisionMultiple" : {
+      "@id" : "http://www.owl-ontologies.com/ns#ColisionMultiple"
+    },
+    "localizacion" : {
+      "@id" : "http://www.owl-ontologies.com/ns#localizacion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Caida" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Caida"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "estado_meteorologico" : {
+      "@id" : "http://www.owl-ontologies.com/ns#estado_meteorologico",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "coordenada_y_utm" : {
+      "@id" : "http://www.owl-ontologies.com/ns#coordenada_y_utm",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Accidente" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Accidente"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "cod_lesividad" : {
+      "@id" : "http://www.owl-ontologies.com/ns#cod_lesividad",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Distrito" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Distrito"
+    },
+    "tipo_vehiculo" : {
+      "@id" : "http://www.owl-ontologies.com/ns#tipo_vehiculo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "coordenada_x_utm" : {
+      "@id" : "http://www.owl-ontologies.com/ns#coordenada_x_utm",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "tipo_persona" : {
+      "@id" : "http://www.owl-ontologies.com/ns#tipo_persona",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "lesividad" : {
+      "@id" : "http://www.owl-ontologies.com/ns#lesividad",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "positiva_alcohol" : {
+      "@id" : "http://www.owl-ontologies.com/ns#positiva_alcohol",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ChoqueObstaculo" : {
+      "@id" : "http://www.owl-ontologies.com/ns#ChoqueObstaculo"
+    },
+    "tieneDistrito" : {
+      "@id" : "http://www.owl-ontologies.com/ns#tieneDistrito",
+      "@type" : "@id"
+    },
+    "tieneParticipante" : {
+      "@id" : "http://www.owl-ontologies.com/ns#tieneParticipante",
+      "@type" : "@id"
+    },
+    "code_distrito" : {
+      "@id" : "http://www.owl-ontologies.com/ns#code_distrito",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "tipo_accidente" : {
+      "@id" : "http://www.owl-ontologies.com/ns#tipo_accidente",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "rango_edad" : {
+      "@id" : "http://www.owl-ontologies.com/ns#rango_edad",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

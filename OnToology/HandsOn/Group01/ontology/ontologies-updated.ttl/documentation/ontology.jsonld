@@ -1,0 +1,88 @@
+[ {
+  "@id" : "http://www.bikeradar.es/ontology/ont#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#Barrio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Barrio"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#BicycleParkingSpot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bicycle Parking Spot"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#Distrito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Distrito"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#direccion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dirección"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#hasFechaInstalacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has fecha instalacion"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "id"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#isInBarrio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bikeradar.es/ontology/ont#BicycleParkingSpot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is in barrio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bikeradar.es/ontology/ont#Barrio"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#isInDistrito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.bikeradar.es/ontology/ont#BicycleParkingSpot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is in distrito"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.bikeradar.es/ontology/ont#Distrito"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#latitud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "latitud"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#longitud",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "longitud"
+  } ]
+}, {
+  "@id" : "http://www.bikeradar.es/ontology/ont#modelo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "modelo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

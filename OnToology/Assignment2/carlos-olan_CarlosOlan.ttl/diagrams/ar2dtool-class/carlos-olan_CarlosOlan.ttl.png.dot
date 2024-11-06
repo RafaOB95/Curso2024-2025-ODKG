@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ex:class01" -> "ex:computer229" [ label = "ex:includes" ];
+	"ex:class01" -> "ex:Sensor029" [ label = "ex:includes" ];
+	"ex:computer229" -> "ex:User10A" [ label = "ex:hasOwner" ];
+	"ex:Sensor029" -> "ex:Measurement8401" [ label = "ex:includes" ];
+
+}

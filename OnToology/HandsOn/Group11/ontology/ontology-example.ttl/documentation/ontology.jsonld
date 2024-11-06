@@ -1,0 +1,277 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_04VP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#additionalInfo" : [ {
+    "@value" : "-"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#characteristicsDevices" : [ {
+    "@value" : "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#hasDates" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_04VP"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#idPoint" : [ {
+    "@value" : "04VP"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#isLocated" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_04VP"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#management" : [ {
+    "@value" : "Convenio vía pública"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#numberOfDevices" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#operator" : [ {
+    "@value" : "GIC"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#placement" : [ {
+    "@value" : "Vía pública"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#schedule" : [ {
+    "@value" : "24"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#state" : [ {
+    "@value" : "Ejecutado"
+  } ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation_06VP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#additionalInfo" : [ {
+    "@value" : "-"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#characteristicsDevices" : [ {
+    "@value" : "50 kW 2 conectores CC (CCS/Chademo) y 1 conector AC modo 2 Mennekes"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#hasDates" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_06VP"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#idPoint" : [ {
+    "@value" : "06VP"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#isLocated" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_06VP"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#management" : [ {
+    "@value" : "Convenio vía pública"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#numberOfDevices" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#operator" : [ {
+    "@value" : "GIC"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#placement" : [ {
+    "@value" : "Vía pública"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#schedule" : [ {
+    "@value" : "24"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#state" : [ {
+    "@value" : "Ejecutado"
+  } ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_04VP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#editionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-04-27T10:43:52Z"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#openingDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2019-05-09T22:00:00Z"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#registerDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-02-03T15:21:24Z"
+  } ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates_06VP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#editionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-04-27T10:43:52Z"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#openingDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-12-27T23:00:00Z"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#registerDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2022-02-03T15:21:24Z"
+  } ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Arganzuela",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtName" : [ {
+    "@value" : "Arganzuela"
+  } ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Retiro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtName" : [ {
+    "@value" : "Retiro"
+  } ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Adelfas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodName" : [ {
+    "@value" : "Adelfas"
+  } ],
+  "https://schema.org/containedInPlace" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Retiro"
+  } ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Palos_de_Moguer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "6"
+  } ],
+  "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodName" : [ {
+    "@value" : "Palos de Moguer"
+  } ],
+  "https://schema.org/containedInPlace" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District_Arganzuela"
+  } ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_04VP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Place"
+  } ],
+  "https://schema.org/address" : [ {
+    "@value" : "Ronda de Valencia 1"
+  } ],
+  "https://schema.org/containedInPlace" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Palos_de_Moguer"
+  } ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Place_06VP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Place"
+  } ],
+  "https://schema.org/address" : [ {
+    "@value" : "Calle Cerro de la Plata 4"
+  } ],
+  "https://schema.org/containedInPlace" : [ {
+    "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood_Adelfas"
+  } ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#additionalInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#characteristicsDevices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#editionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#hasDates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#idPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#isLocated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#management",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#numberOfDevices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#openingDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#placement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#registerDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#schedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#state",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/containedInPlace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
