@@ -1,0 +1,39 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"bicimap:startAt" -> "dctypes:Dataset" [ label = "rdf:type" ];
+	"bicimap:startAt" -> "http://bicimap.com/publisher#" [ label = "dct:publisher" ];
+	"bicimap:startAt" -> "schema:Place" [ label = "rdfs:range" ];
+	"bicimap:startAt" -> "bicimap:BikeTrip" [ label = "rdfs:domain" ];
+	"bicimap:lockDock" -> "dctypes:Dataset" [ label = "rdf:type" ];
+	"bicimap:lockDock" -> "http://bicimap.com/publisher#" [ label = "dct:publisher" ];
+	"bicimap:lockDock" -> "bicimap:BikeTrip" [ label = "rdfs:domain" ];
+	"bicimap:bikeId" -> "dctypes:Dataset" [ label = "rdf:type" ];
+	"bicimap:bikeId" -> "http://bicimap.com/publisher#" [ label = "dct:publisher" ];
+	"bicimap:bikeId" -> "xsd:integer" [ label = "rdfs:range" ];
+	"bicimap:bikeId" -> "bicimap:BikeTrip" [ label = "rdfs:domain" ];
+	"bicimap:BikeStation" -> "dctypes:Dataset" [ label = "rdf:type" ];
+	"bicimap:BikeStation" -> "http://bicimap.com/publisher#" [ label = "dct:publisher" ];
+	"bicimap:BikeStation" -> "schema:Place" [ label = "rdfs:subClassOf" ];
+	"bicimap:" -> "dctypes:Dataset" [ label = "rdf:type" ];
+	"bicimap:" -> "http://bicimap.com/publisher#" [ label = "dct:publisher" ];
+	"bicimap:" -> "https://chowlk.linkeddata.es/" [ label = "mod:createdWith" ];
+	"bicimap:BikeTrip" -> "dctypes:Dataset" [ label = "rdf:type" ];
+	"bicimap:BikeTrip" -> "http://bicimap.com/publisher#" [ label = "dct:publisher" ];
+	"bicimap:unlockDate" -> "dctypes:Dataset" [ label = "rdf:type" ];
+	"bicimap:unlockDate" -> "http://bicimap.com/publisher#" [ label = "dct:publisher" ];
+	"bicimap:unlockDate" -> "xsd:dateTime" [ label = "rdfs:range" ];
+	"bicimap:unlockDate" -> "bicimap:BikeTrip" [ label = "rdfs:domain" ];
+	"bicimap:unlockDock" -> "dctypes:Dataset" [ label = "rdf:type" ];
+	"bicimap:unlockDock" -> "http://bicimap.com/publisher#" [ label = "dct:publisher" ];
+	"bicimap:unlockDock" -> "bicimap:BikeTrip" [ label = "rdfs:domain" ];
+	"bicimap:endAt" -> "dctypes:Dataset" [ label = "rdf:type" ];
+	"bicimap:endAt" -> "http://bicimap.com/publisher#" [ label = "dct:publisher" ];
+	"bicimap:endAt" -> "schema:Place" [ label = "rdfs:range" ];
+	"bicimap:endAt" -> "bicimap:BikeTrip" [ label = "rdfs:domain" ];
+	"bicimap:lockDate" -> "dctypes:Dataset" [ label = "rdf:type" ];
+	"bicimap:lockDate" -> "http://bicimap.com/publisher#" [ label = "dct:publisher" ];
+	"bicimap:lockDate" -> "xsd:dateTime" [ label = "rdfs:range" ];
+	"bicimap:lockDate" -> "bicimap:BikeTrip" [ label = "rdfs:domain" ];
+
+}

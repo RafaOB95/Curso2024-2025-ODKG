@@ -1,0 +1,43 @@
+{
+  "@context" : {
+    "hasAvailability" : {
+      "@id" : "http://dublinbikesharing.org/hasAvailability"
+    },
+    "BikeStation" : {
+      "@id" : "http://dublinbikesharing.org/BikeStation"
+    },
+    "hasID" : {
+      "@id" : "http://dublinbikesharing.org/hasID"
+    },
+    "hasAddress" : {
+      "@id" : "http://dublinbikesharing.org/hasAddress"
+    },
+    "Location" : {
+      "@id" : "http://dublinbikesharing.org/Location"
+    },
+    "hasLatitude" : {
+      "@id" : "http://dublinbikesharing.org/hasLatitude"
+    },
+    "numCapacity" : {
+      "@id" : "http://dublinbikesharing.org/numCapacity"
+    },
+    "hasLongitude" : {
+      "@id" : "http://dublinbikesharing.org/hasLongitude"
+    },
+    "numBikeAvailability" : {
+      "@id" : "http://dublinbikesharing.org/numBikeAvailability"
+    },
+    "numDockAvailability" : {
+      "@id" : "http://dublinbikesharing.org/numDockAvailability"
+    },
+    "lastReported" : {
+      "@id" : "http://dublinbikesharing.org/lastReported"
+    },
+    "Availability" : {
+      "@id" : "http://dublinbikesharing.org/Availability"
+    },
+    "hasLocation" : {
+      "@id" : "http://dublinbikesharing.org/hasLocation"
+    }
+  }
+}

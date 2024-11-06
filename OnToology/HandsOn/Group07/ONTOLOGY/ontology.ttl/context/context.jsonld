@@ -1,0 +1,134 @@
+{
+  "@context" : {
+    "transportation" : {
+      "@id" : "http://madrid.eventos.com/transportation"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "url" : {
+      "@id" : "https://schema.org/url"
+    },
+    "longDuration" : {
+      "@id" : "http://madrid.eventos.com/longDuration"
+    },
+    "startDate" : {
+      "@id" : "https://schema.org/startDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Equipment" : {
+      "@id" : "http://madrid.eventos.com/Equipment"
+    },
+    "excludedDays" : {
+      "@id" : "http://madrid.eventos.com/excludedDays"
+    },
+    "GeoCoordinates" : {
+      "@id" : "https://schema.org/GeoCoordinates"
+    },
+    "namespaceid" : {
+      "@id" : "http://www.w3.org/XML/1998/namespaceid"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "accessibilityLevel" : {
+      "@id" : "http://madrid.eventos.com/accessibilityLevel"
+    },
+    "longitude" : {
+      "@id" : "https://schema.org/longitude"
+    },
+    "about" : {
+      "@id" : "https://schema.org/about"
+    },
+    "OpeningHours" : {
+      "@id" : "http://madrid.eventos.com/OpeningHours"
+    },
+    "email" : {
+      "@id" : "https://schema.org/email",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Event" : {
+      "@id" : "https://schema.org/Event"
+    },
+    "doorTime" : {
+      "@id" : "https://schema.org/doorTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#time"
+    },
+    "district" : {
+      "@id" : "http://madrid.eventos.com/district"
+    },
+    "latitude" : {
+      "@id" : "https://schema.org/latitude"
+    },
+    "ContactDetails" : {
+      "@id" : "http://madrid.eventos.com/ContactDetails"
+    },
+    "name" : {
+      "@id" : "https://schema.org/name"
+    },
+    "postalCode" : {
+      "@id" : "https://schema.org/postalCode"
+    },
+    "geo" : {
+      "@id" : "https://schema.org/geo",
+      "@type" : "@id"
+    },
+    "address" : {
+      "@id" : "https://schema.org/address"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "text" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#text"
+    },
+    "telephone" : {
+      "@id" : "https://schema.org/telephone",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Place" : {
+      "@id" : "https://schema.org/Place"
+    },
+    "Integer" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#Integer"
+    },
+    "String" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#String"
+    },
+    "weekDays" : {
+      "@id" : "http://madrid.eventos.com/weekDays"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "type" : {
+      "@id" : "http://madrid.eventos.com/type"
+    },
+    "neighborhood" : {
+      "@id" : "http://madrid.eventos.com/neighborhood"
+    },
+    "audience" : {
+      "@id" : "https://schema.org/audience"
+    },
+    "endDate" : {
+      "@id" : "https://schema.org/endDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Float" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#Float"
+    },
+    "isAccessibleForFree" : {
+      "@id" : "https://schema.org/isAccessibleForFree"
+    },
+    "c" : {
+      "@id" : "http://madrid.eventos.com/c",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://madrid.eventos.com/description"
+    },
+    "Boolean" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#Boolean"
+    }
+  }
+}

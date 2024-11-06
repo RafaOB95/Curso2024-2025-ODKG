@@ -1,0 +1,36 @@
+{
+  "@context" : {
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hasLocation" : {
+      "@id" : "http://www.example.com/videocameras/hasLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasType" : {
+      "@id" : "http://www.example.com/videocameras/hasType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasResolution" : {
+      "@id" : "http://www.example.com/videocameras/hasResolution",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasYearOfAcquisition" : {
+      "@id" : "http://www.example.com/videocameras/hasYearOfAcquisition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasZoom" : {
+      "@id" : "http://www.example.com/videocameras/hasZoom",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Camera" : {
+      "@id" : "http://www.example.com/videocameras/Camera"
+    }
+  }
+}

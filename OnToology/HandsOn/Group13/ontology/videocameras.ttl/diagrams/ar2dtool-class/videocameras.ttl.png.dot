@@ -1,0 +1,15 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"base:hasYearOfAcquisition" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:hasLocation" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:hasZoom" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:hasResolution" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:hasType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:hasResolution" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:hasType" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:hasZoom" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:hasLocation" ];
+	"owl:Thing" -> "xsd:integer" [ label = "base:hasYearOfAcquisition" ];
+
+}

@@ -1,0 +1,153 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/Availability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/BikeStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/Station_001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dublinbikesharing.org/hasAvailability" : [ {
+    "@id" : "http://dublinbikesharing.org/Station_001_Availability"
+  } ],
+  "http://dublinbikesharing.org/hasID" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://dublinbikesharing.org/hasLocation" : [ {
+    "@id" : "http://dublinbikesharing.org/Station_001_Location"
+  } ],
+  "http://dublinbikesharing.org/lastReported" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-10-07T12:00:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dublinbikesharing.org/BikeStation"
+  } ]
+}, {
+  "@id" : "http://dublinbikesharing.org/Station_001_Availability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dublinbikesharing.org/numBikeAvailability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ],
+  "http://dublinbikesharing.org/numCapacity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "40"
+  } ],
+  "http://dublinbikesharing.org/numDockAvailability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "25"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dublinbikesharing.org/Availability"
+  } ]
+}, {
+  "@id" : "http://dublinbikesharing.org/Station_001_Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dublinbikesharing.org/hasAddress" : [ {
+    "@value" : "O'Connell Street, Dublin"
+  } ],
+  "http://dublinbikesharing.org/hasLatitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "53.349805"
+  } ],
+  "http://dublinbikesharing.org/hasLongitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "-6.26031"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dublinbikesharing.org/Location"
+  } ]
+}, {
+  "@id" : "http://dublinbikesharing.org/Station_002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dublinbikesharing.org/hasAvailability" : [ {
+    "@id" : "http://dublinbikesharing.org/Station_002_Availability"
+  } ],
+  "http://dublinbikesharing.org/hasID" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://dublinbikesharing.org/hasLocation" : [ {
+    "@id" : "http://dublinbikesharing.org/Station_002_Location"
+  } ],
+  "http://dublinbikesharing.org/lastReported" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-10-07T12:15:00"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dublinbikesharing.org/BikeStation"
+  } ]
+}, {
+  "@id" : "http://dublinbikesharing.org/Station_002_Availability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dublinbikesharing.org/numBikeAvailability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "8"
+  } ],
+  "http://dublinbikesharing.org/numCapacity" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "40"
+  } ],
+  "http://dublinbikesharing.org/numDockAvailability" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "32"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dublinbikesharing.org/Availability"
+  } ]
+}, {
+  "@id" : "http://dublinbikesharing.org/Station_002_Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dublinbikesharing.org/hasAddress" : [ {
+    "@value" : "St. Stephen's Green, Dublin"
+  } ],
+  "http://dublinbikesharing.org/hasLatitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "53.338199"
+  } ],
+  "http://dublinbikesharing.org/hasLongitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "-6.259256"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://dublinbikesharing.org/Location"
+  } ]
+}, {
+  "@id" : "http://dublinbikesharing.org/hasAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/hasAvailability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/hasID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/hasLatitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/hasLongitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/lastReported",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/numBikeAvailability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/numCapacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://dublinbikesharing.org/numDockAvailability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

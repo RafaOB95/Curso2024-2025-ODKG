@@ -1,0 +1,28 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "ns:Participante" "ns:Lesividad" "ns:Accidente" "ns:Localizacion" "ns:Distrito" ; /*classes style*/
+	"base:" -> "https://chowlk.linkeddata.es/" [ label = "mod:createdWith" ];
+	"ns:Lesividad" -> "ns:Lesividad" [ label = "ns:lesividad" ];
+	"ns:Participante" -> "xsd:string" [ label = "ns:positiva_droga" ];
+	"ns:Participante" -> "xsd:string" [ label = "ns:rango_edad" ];
+	"ns:Localizacion" -> "ns:Distrito" [ label = "ns:tieneDistrito" ];
+	"ns:Distrito" -> "xsd:integer" [ label = "ns:code_distrito" ];
+	"ns:Localizacion" -> "xsd:float" [ label = "ns:coordenada_y_utm" ];
+	"ns:Distrito" -> "xsd:string" [ label = "ns:localizacion" ];
+	"ns:Accidente" -> "xsd:string" [ label = "ns:estado_meteorologico" ];
+	"ns:Participante" -> "xsd:string" [ label = "ns:sexo" ];
+	"ns:Participante" -> "xsd:string" [ label = "ns:tipo_persona" ];
+	"ns:Accidente" -> "ns:Localizacion" [ label = "ns:tieneLocalizacion" ];
+	"ns:Accidente" -> "xsd:time" [ label = "ns:hora" ];
+	"ns:Accidente" -> "ns:Participante" [ label = "ns:tieneParticipante" ];
+	"ns:Lesividad" -> "xsd:integer" [ label = "ns:cod_lesividad" ];
+	"ns:Participante" -> "xsd:string" [ label = "ns:tipo_vehiculo" ];
+	"ns:Accidente" -> "xsd:string" [ label = "ns:tipo_accidente" ];
+	"ns:Localizacion" -> "xsd:float" [ label = "ns:coordenada_x_utm" ];
+	"ns:Accidente" -> "xsd:date" [ label = "ns:fecha" ];
+	"ns:Participante" -> "xsd:string" [ label = "ns:positiva_alcohol" ];
+	"ns:Distrito" -> "xsd:string" [ label = "ns:distrito" ];
+	"ns:Accidente" -> "xsd:string" [ label = "ns:num_expediente" ];
+
+}

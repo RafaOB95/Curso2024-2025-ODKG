@@ -1,0 +1,112 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://dublinbikesharing.org/hasAddress
+<http://dublinbikesharing.org/hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://dublinbikesharing.org/hasAvailability
+<http://dublinbikesharing.org/hasAvailability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://dublinbikesharing.org/hasID
+<http://dublinbikesharing.org/hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://dublinbikesharing.org/hasLatitude
+<http://dublinbikesharing.org/hasLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://dublinbikesharing.org/hasLocation
+<http://dublinbikesharing.org/hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://dublinbikesharing.org/hasLongitude
+<http://dublinbikesharing.org/hasLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://dublinbikesharing.org/lastReported
+<http://dublinbikesharing.org/lastReported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://dublinbikesharing.org/numBikeAvailability
+<http://dublinbikesharing.org/numBikeAvailability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://dublinbikesharing.org/numCapacity
+<http://dublinbikesharing.org/numCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://dublinbikesharing.org/numDockAvailability
+<http://dublinbikesharing.org/numDockAvailability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dublinbikesharing.org/Availability
+<http://dublinbikesharing.org/Availability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://dublinbikesharing.org/BikeStation
+<http://dublinbikesharing.org/BikeStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://dublinbikesharing.org/Location
+<http://dublinbikesharing.org/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://dublinbikesharing.org/Station_001
+<http://dublinbikesharing.org/Station_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dublinbikesharing.org/Station_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dublinbikesharing.org/BikeStation> .
+<http://dublinbikesharing.org/Station_001> <http://dublinbikesharing.org/hasAvailability> <http://dublinbikesharing.org/Station_001_Availability> .
+<http://dublinbikesharing.org/Station_001> <http://dublinbikesharing.org/hasID> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dublinbikesharing.org/Station_001> <http://dublinbikesharing.org/hasLocation> <http://dublinbikesharing.org/Station_001_Location> .
+<http://dublinbikesharing.org/Station_001> <http://dublinbikesharing.org/lastReported> "2024-10-07T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://dublinbikesharing.org/Station_001_Availability
+<http://dublinbikesharing.org/Station_001_Availability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dublinbikesharing.org/Station_001_Availability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dublinbikesharing.org/Availability> .
+<http://dublinbikesharing.org/Station_001_Availability> <http://dublinbikesharing.org/numBikeAvailability> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dublinbikesharing.org/Station_001_Availability> <http://dublinbikesharing.org/numCapacity> "40"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dublinbikesharing.org/Station_001_Availability> <http://dublinbikesharing.org/numDockAvailability> "25"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://dublinbikesharing.org/Station_001_Location
+<http://dublinbikesharing.org/Station_001_Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dublinbikesharing.org/Station_001_Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dublinbikesharing.org/Location> .
+<http://dublinbikesharing.org/Station_001_Location> <http://dublinbikesharing.org/hasAddress> "O'Connell Street, Dublin" .
+<http://dublinbikesharing.org/Station_001_Location> <http://dublinbikesharing.org/hasLatitude> "53.349805"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dublinbikesharing.org/Station_001_Location> <http://dublinbikesharing.org/hasLongitude> "-6.26031"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://dublinbikesharing.org/Station_002
+<http://dublinbikesharing.org/Station_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dublinbikesharing.org/Station_002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dublinbikesharing.org/BikeStation> .
+<http://dublinbikesharing.org/Station_002> <http://dublinbikesharing.org/hasAvailability> <http://dublinbikesharing.org/Station_002_Availability> .
+<http://dublinbikesharing.org/Station_002> <http://dublinbikesharing.org/hasID> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dublinbikesharing.org/Station_002> <http://dublinbikesharing.org/hasLocation> <http://dublinbikesharing.org/Station_002_Location> .
+<http://dublinbikesharing.org/Station_002> <http://dublinbikesharing.org/lastReported> "2024-10-07T12:15:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://dublinbikesharing.org/Station_002_Availability
+<http://dublinbikesharing.org/Station_002_Availability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dublinbikesharing.org/Station_002_Availability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dublinbikesharing.org/Availability> .
+<http://dublinbikesharing.org/Station_002_Availability> <http://dublinbikesharing.org/numBikeAvailability> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dublinbikesharing.org/Station_002_Availability> <http://dublinbikesharing.org/numCapacity> "40"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dublinbikesharing.org/Station_002_Availability> <http://dublinbikesharing.org/numDockAvailability> "32"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://dublinbikesharing.org/Station_002_Location
+<http://dublinbikesharing.org/Station_002_Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dublinbikesharing.org/Station_002_Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dublinbikesharing.org/Location> .
+<http://dublinbikesharing.org/Station_002_Location> <http://dublinbikesharing.org/hasAddress> "St. Stephen's Green, Dublin" .
+<http://dublinbikesharing.org/Station_002_Location> <http://dublinbikesharing.org/hasLatitude> "53.338199"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://dublinbikesharing.org/Station_002_Location> <http://dublinbikesharing.org/hasLongitude> "-6.259256"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

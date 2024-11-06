@@ -1,0 +1,119 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0#FN
+<http://www.w3.org/2001/vcard-rdf/3.0#FN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0#Family
+<http://www.w3.org/2001/vcard-rdf/3.0#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0#Given
+<http://www.w3.org/2001/vcard-rdf/3.0#Given> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/FN
+<http://www.w3.org/2001/vcard-rdf/3.0/FN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/Given
+<http://www.w3.org/2001/vcard-rdf/3.0/Given> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/FN
+<http://www.w3.org/2001/vcard-rdf/3.0/FN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2001/vcard-rdf/3.0/FN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/Family
+<http://www.w3.org/2001/vcard-rdf/3.0/Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2001/vcard-rdf/3.0/Family> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/Given
+<http://www.w3.org/2001/vcard-rdf/3.0/Given> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2001/vcard-rdf/3.0/Given> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://data.four.org#Person
+<http://data.four.org#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Property
+<http://www.w3.org/2000/01/rdf-schema#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://data.four.org#0001
+<http://data.four.org#0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.four.org#0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.four.org#Person> .
+<http://data.four.org#0001> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "Sara Jones" .
+<http://data.four.org#0001> <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Jones" .
+<http://data.four.org#0001> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Sara" .
+# 
+# http://data.four.org#0002
+<http://data.four.org#0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.four.org#0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.four.org#Person> .
+<http://data.four.org#0002> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "John Smith" .
+<http://data.four.org#0002> <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Smith" .
+<http://data.four.org#0002> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Jonathan" .
+# 
+# http://data.four.org#0003
+<http://data.four.org#0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.four.org#0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.four.org#Person> .
+<http://data.four.org#0003> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "Harry Potter" .
+<http://data.four.org#0003> <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Potter" .
+<http://data.four.org#0003> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Harry" .
+# 
+# http://data.four.org#0004
+<http://data.four.org#0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.four.org#0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.four.org#Person> .
+<http://data.four.org#0004> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "Tim Berners Lee" .
+<http://data.four.org#0004> <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Berners Lee" .
+<http://data.four.org#0004> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Tim" .
+# 
+# http://data.four.org#0005
+<http://data.four.org#0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.four.org#0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.four.org#Person> .
+<http://data.four.org#0005> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "John Doe" .
+<http://data.four.org#0005> <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Doe" .
+<http://data.four.org#0005> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "John" .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/Family
+<http://www.w3.org/2001/vcard-rdf/3.0/Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/2001/vcard-rdf/3.0/Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

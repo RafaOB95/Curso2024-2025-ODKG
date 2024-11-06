@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ns:Station_002" -> "ns:Station_002_Location" [ label = "ns:hasLocation" ];
+	"ns:Station_002" -> "ns:Station_002_Availability" [ label = "ns:hasAvailability" ];
+	"ns:Station_001" -> "ns:Station_001_Location" [ label = "ns:hasLocation" ];
+	"ns:Station_001" -> "ns:Station_001_Availability" [ label = "ns:hasAvailability" ];
+
+}
