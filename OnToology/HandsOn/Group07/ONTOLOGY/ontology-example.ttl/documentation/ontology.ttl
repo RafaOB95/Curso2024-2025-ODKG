@@ -1,0 +1,125 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://dublinbikesharing.org/hasAddress
+<http://dublinbikesharing.org/hasAddress> rdf:type owl:AnnotationProperty .
+
+
+###  http://dublinbikesharing.org/hasAvailability
+<http://dublinbikesharing.org/hasAvailability> rdf:type owl:AnnotationProperty .
+
+
+###  http://dublinbikesharing.org/hasID
+<http://dublinbikesharing.org/hasID> rdf:type owl:AnnotationProperty .
+
+
+###  http://dublinbikesharing.org/hasLatitude
+<http://dublinbikesharing.org/hasLatitude> rdf:type owl:AnnotationProperty .
+
+
+###  http://dublinbikesharing.org/hasLocation
+<http://dublinbikesharing.org/hasLocation> rdf:type owl:AnnotationProperty .
+
+
+###  http://dublinbikesharing.org/hasLongitude
+<http://dublinbikesharing.org/hasLongitude> rdf:type owl:AnnotationProperty .
+
+
+###  http://dublinbikesharing.org/lastReported
+<http://dublinbikesharing.org/lastReported> rdf:type owl:AnnotationProperty .
+
+
+###  http://dublinbikesharing.org/numBikeAvailability
+<http://dublinbikesharing.org/numBikeAvailability> rdf:type owl:AnnotationProperty .
+
+
+###  http://dublinbikesharing.org/numCapacity
+<http://dublinbikesharing.org/numCapacity> rdf:type owl:AnnotationProperty .
+
+
+###  http://dublinbikesharing.org/numDockAvailability
+<http://dublinbikesharing.org/numDockAvailability> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dublinbikesharing.org/Availability
+<http://dublinbikesharing.org/Availability> rdf:type owl:Class .
+
+
+###  http://dublinbikesharing.org/BikeStation
+<http://dublinbikesharing.org/BikeStation> rdf:type owl:Class .
+
+
+###  http://dublinbikesharing.org/Location
+<http://dublinbikesharing.org/Location> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://dublinbikesharing.org/Station_001
+<http://dublinbikesharing.org/Station_001> rdf:type owl:NamedIndividual ,
+                                                    <http://dublinbikesharing.org/BikeStation> ;
+                                           <http://dublinbikesharing.org/hasAvailability> <http://dublinbikesharing.org/Station_001_Availability> ;
+                                           <http://dublinbikesharing.org/hasID> 1 ;
+                                           <http://dublinbikesharing.org/hasLocation> <http://dublinbikesharing.org/Station_001_Location> ;
+                                           <http://dublinbikesharing.org/lastReported> "2024-10-07T12:00:00"^^xsd:dateTime .
+
+
+###  http://dublinbikesharing.org/Station_001_Availability
+<http://dublinbikesharing.org/Station_001_Availability> rdf:type owl:NamedIndividual ,
+                                                                 <http://dublinbikesharing.org/Availability> ;
+                                                        <http://dublinbikesharing.org/numBikeAvailability> 15 ;
+                                                        <http://dublinbikesharing.org/numCapacity> 40 ;
+                                                        <http://dublinbikesharing.org/numDockAvailability> 25 .
+
+
+###  http://dublinbikesharing.org/Station_001_Location
+<http://dublinbikesharing.org/Station_001_Location> rdf:type owl:NamedIndividual ,
+                                                             <http://dublinbikesharing.org/Location> ;
+                                                    <http://dublinbikesharing.org/hasAddress> "O'Connell Street, Dublin" ;
+                                                    <http://dublinbikesharing.org/hasLatitude> 53.349805 ;
+                                                    <http://dublinbikesharing.org/hasLongitude> -6.26031 .
+
+
+###  http://dublinbikesharing.org/Station_002
+<http://dublinbikesharing.org/Station_002> rdf:type owl:NamedIndividual ,
+                                                    <http://dublinbikesharing.org/BikeStation> ;
+                                           <http://dublinbikesharing.org/hasAvailability> <http://dublinbikesharing.org/Station_002_Availability> ;
+                                           <http://dublinbikesharing.org/hasID> 2 ;
+                                           <http://dublinbikesharing.org/hasLocation> <http://dublinbikesharing.org/Station_002_Location> ;
+                                           <http://dublinbikesharing.org/lastReported> "2024-10-07T12:15:00"^^xsd:dateTime .
+
+
+###  http://dublinbikesharing.org/Station_002_Availability
+<http://dublinbikesharing.org/Station_002_Availability> rdf:type owl:NamedIndividual ,
+                                                                 <http://dublinbikesharing.org/Availability> ;
+                                                        <http://dublinbikesharing.org/numBikeAvailability> 8 ;
+                                                        <http://dublinbikesharing.org/numCapacity> 40 ;
+                                                        <http://dublinbikesharing.org/numDockAvailability> 32 .
+
+
+###  http://dublinbikesharing.org/Station_002_Location
+<http://dublinbikesharing.org/Station_002_Location> rdf:type owl:NamedIndividual ,
+                                                             <http://dublinbikesharing.org/Location> ;
+                                                    <http://dublinbikesharing.org/hasAddress> "St. Stephen's Green, Dublin" ;
+                                                    <http://dublinbikesharing.org/hasLatitude> 53.338199 ;
+                                                    <http://dublinbikesharing.org/hasLongitude> -6.259256 .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

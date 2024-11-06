@@ -1,0 +1,234 @@
+[ {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Charge Point"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "District"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Neighborhood"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Operator"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parking"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Street"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#accessibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "accessibility"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsConnectors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ccs connectors"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsKw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ccs kw"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoConnectors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "chademo connectors"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoKw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "chademo kw"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#dischargeDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "discharge date"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is part of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInNeighborhood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "located in neighborhood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInStreet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  }, {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "located in street"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "location"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#managedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "managed by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Operator"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesConnectors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mennekes connectors"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesKw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mennekes kw"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfEquipments",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "number of equipments"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfTotalPlaces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "number of total places"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#openingHours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  }, {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "opening hours"
+  } ]
+}, {
+  "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#postalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "postal code"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+  }, {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District"
+  }, {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood"
+  }, {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Operator"
+  }, {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking"
+  }, {
+    "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "label"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

@@ -1,0 +1,100 @@
+{
+  "@context" : {
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Dataset" : {
+      "@id" : "https://schema.org/Dataset"
+    },
+    "Country" : {
+      "@id" : "https://schema.org/Country"
+    },
+    "variableMeasured" : {
+      "@id" : "https://schema.org/variableMeasured",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ScholarlyArticle" : {
+      "@id" : "https://schema.org/ScholarlyArticle"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "author" : {
+      "@id" : "https://schema.org/author",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isPartOf" : {
+      "@id" : "https://schema.org/isPartOf",
+      "@type" : "@id"
+    },
+    "hasPart" : {
+      "@id" : "https://schema.org/hasPart",
+      "@type" : "@id"
+    },
+    "about" : {
+      "@id" : "https://schema.org/about",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "unitText" : {
+      "@id" : "https://schema.org/unitText"
+    },
+    "latitude" : {
+      "@id" : "https://schema.org/latitude",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "name" : {
+      "@id" : "https://schema.org/name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Article" : {
+      "@id" : "https://schema.org/Article"
+    },
+    "value" : {
+      "@id" : "https://schema.org/value"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "https://www.w3.org/TR/prov-o/wasDerivedFrom",
+      "@type" : "@id"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "observationDateTime" : {
+      "@id" : "https://schema.org/observationDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Place" : {
+      "@id" : "https://schema.org/Place"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "datePublished" : {
+      "@id" : "https://schema.org/datePublished",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "containedInPlace" : {
+      "@id" : "https://schema.org/containedInPlace",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "https://schema.org/City"
+    },
+    "State" : {
+      "@id" : "https://schema.org/State"
+    },
+    "observationAbout" : {
+      "@id" : "https://schema.org/observationAbout",
+      "@type" : "@id"
+    },
+    "AdministrativeArea" : {
+      "@id" : "https://schema.org/AdministrativeArea"
+    },
+    "Observation" : {
+      "@id" : "https://schema.org/Observation"
+    }
+  }
+}

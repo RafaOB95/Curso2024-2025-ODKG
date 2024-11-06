@@ -1,0 +1,141 @@
+<http://mAIRdrid.org/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://mAIRdrid.org/ontology#> <http://www.w3.org/2002/07/owl#versionIRI> <https://mAIRdrid.org/1.0.2> .
+<http://mAIRdrid.org/ontology#> <http://purl.org/dc/elements/1.1/created> "2024-10-06"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://mAIRdrid.org/ontology#> <http://purl.org/dc/elements/1.1/creator> "Carlos de la Cruz Ayala Vargas" .
+<http://mAIRdrid.org/ontology#> <http://purl.org/dc/elements/1.1/creator> "Elias Herrero Lázaro" .
+<http://mAIRdrid.org/ontology#> <http://purl.org/dc/elements/1.1/creator> "Pedro Pedregal Pérez" .
+<http://mAIRdrid.org/ontology#> <http://purl.org/dc/elements/1.1/creator> "Rafael Orihuela Brindis" .
+<http://mAIRdrid.org/ontology#> <http://purl.org/dc/elements/1.1/description> "Ontology for the development of services about air quality. Born with Madrid in mind, but designed to be usable in any town in Spain and even internationally."@en .
+<http://mAIRdrid.org/ontology#> <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://mAIRdrid.org/ontology#> <http://purl.org/dc/elements/1.1/title> "mAIRdrid"@en .
+<http://mAIRdrid.org/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "mAIR" .
+<http://mAIRdrid.org/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://mAIRdrid.org/ontology#> .
+<http://mAIRdrid.org/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<http://mAIRdrid.org/ontology#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://mAIRdrid.org/ontology/inPublicSpace
+<http://mAIRdrid.org/ontology/inPublicSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mAIRdrid.org/ontology/inPublicSpace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://mAIRdrid.org/ontology/Location> .
+<http://mAIRdrid.org/ontology/inPublicSpace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.wikidata.org/entity/Q111415237> .
+<http://www.wikidata.org/entity/Q111415237> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mAIRdrid.org/ontology/inPublicSpace> <http://www.w3.org/2000/01/rdf-schema#label> "in public space" .
+# 
+# http://mAIRdrid.org/ontology/relevantToMeasure
+<http://mAIRdrid.org/ontology/relevantToMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://mAIRdrid.org/ontology/relevantToMeasure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://mAIRdrid.org/ontology/AirQualityMetric> .
+<http://mAIRdrid.org/ontology/relevantToMeasure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.wikidata.org/entity/Q2144359> .
+<http://www.wikidata.org/entity/Q2144359> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mAIRdrid.org/ontology/relevantToMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "relevant to measure" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://mAIRdrid.org/ontology/nationalStationID
+<http://mAIRdrid.org/ontology/nationalStationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://mAIRdrid.org/ontology/nationalStationID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://mAIRdrid.org/ontology/Station> .
+<http://mAIRdrid.org/ontology/nationalStationID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://mAIRdrid.org/ontology/nationalStationID> <http://www.w3.org/2000/01/rdf-schema#label> "national station ID" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://mAIRdrid.org/ontology/AirQualityMetric
+<http://mAIRdrid.org/ontology/AirQualityMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mAIRdrid.org/ontology/AirQualityMetric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mAIRdrid.org/ontology/AirQualityMetric> <http://www.w3.org/2000/01/rdf-schema#label> "Air Quality Metric" .
+# 
+# http://mAIRdrid.org/ontology/Location
+<http://mAIRdrid.org/ontology/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mAIRdrid.org/ontology/Location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/FeatureOfInterest> .
+<http://www.w3.org/ns/sosa/FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mAIRdrid.org/ontology/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+# 
+# http://mAIRdrid.org/ontology/Station
+<http://mAIRdrid.org/ontology/Station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mAIRdrid.org/ontology/Station> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/System> .
+<http://www.w3.org/ns/ssn/System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://mAIRdrid.org/ontology/Station> <http://www.w3.org/2000/01/rdf-schema#label> "Station" .
+# 
+# http://www.w3.org/ns/sosa/FeatureOfInterest
+# 
+# http://www.w3.org/ns/sosa/ObservableProperty
+# 
+# http://www.w3.org/ns/ssn/System
+# 
+# http://www.wikidata.org/entity/Q111415237
+# 
+# http://www.wikidata.org/entity/Q2144359
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

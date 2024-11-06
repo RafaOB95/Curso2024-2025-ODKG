@@ -1,0 +1,107 @@
+{
+  "@context" : {
+    "hasMunicipalityName" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMunicipalityName",
+      "@type" : "@id"
+    },
+    "hasProvinceLocationID" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasProvinceLocationID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasMunicipalityLocationID" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMunicipalityLocationID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasMagnitudeCode" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMagnitudeCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasStationLocationID" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasStationLocationID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Measurement" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Measurement"
+    },
+    "hasMeasurementMonth" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementMonth",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Location" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Location"
+    },
+    "Province" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Province"
+    },
+    "hasStationName" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasStationName",
+      "@type" : "@id"
+    },
+    "hasMeasurementYear" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasMeasurementDay" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementDay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMagnitudeMeasurementUnit" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Magnitude" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Magnitude"
+    },
+    "hasProvince" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasProvince",
+      "@type" : "@id"
+    },
+    "hasMagnitudeName" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMagnitudeName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMagnitude" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMagnitude",
+      "@type" : "@id"
+    },
+    "hasMeasurementValue" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "String" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#String"
+    },
+    "Municipality" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Municipality"
+    },
+    "hasMunicipality" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMunicipality",
+      "@type" : "@id"
+    },
+    "Station" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Station"
+    },
+    "hasMeasurement" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMeasurement",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasProvinceName" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasProvinceName",
+      "@type" : "@id"
+    },
+    "isMeasurementValid" : {
+      "@id" : "http://MadridAirQuality.org/ontology/isMeasurementValid",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasStation" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasStation",
+      "@type" : "@id"
+    }
+  }
+}

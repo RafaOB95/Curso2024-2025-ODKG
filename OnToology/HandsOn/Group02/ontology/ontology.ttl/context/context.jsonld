@@ -1,0 +1,69 @@
+{
+  "@context" : {
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "ontologyprecioGasolina95E5" : {
+      "@id" : "http://fuelpricespain.org/ontologyprecioGasolina95E5",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "ontologyGasolinera" : {
+      "@id" : "http://fuelpricespain.org/ontologyGasolinera"
+    },
+    "ontologyprecioGasoleoA" : {
+      "@id" : "http://fuelpricespain.org/ontologyprecioGasoleoA",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ontologyUbicacion" : {
+      "@id" : "http://fuelpricespain.org/ontologyUbicacion"
+    },
+    "ontologyrotulo" : {
+      "@id" : "http://fuelpricespain.org/ontologyrotulo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ontologycodigoPostal" : {
+      "@id" : "http://fuelpricespain.org/ontologycodigoPostal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ontologyprovincia" : {
+      "@id" : "http://fuelpricespain.org/ontologyprovincia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "ontologylongitud" : {
+      "@id" : "http://fuelpricespain.org/ontologylongitud",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ontologymunicipio" : {
+      "@id" : "http://fuelpricespain.org/ontologymunicipio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ontologylatitud" : {
+      "@id" : "http://fuelpricespain.org/ontologylatitud",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "ontologytieneUbicacion" : {
+      "@id" : "http://fuelpricespain.org/ontologytieneUbicacion",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "ontologyhorario" : {
+      "@id" : "http://fuelpricespain.org/ontologyhorario",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ontologydireccion" : {
+      "@id" : "http://fuelpricespain.org/ontologydireccion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

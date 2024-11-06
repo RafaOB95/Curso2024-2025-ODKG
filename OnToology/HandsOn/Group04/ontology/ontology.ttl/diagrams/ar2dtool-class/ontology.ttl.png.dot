@@ -1,0 +1,25 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "ns:ChargePoint" "ns:Parking" "ns:Street" "ns:Neighborhood" "ns:District" "ns:Operator" ; /*classes style*/
+	"base:" -> "https://chowlk.linkeddata.es/" [ label = "mod:createdWith" ];
+	"ns:Parking" -> "owl:Thing" [ label = "ns:accessibility" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "ns:chademoConnectors" ];
+	"ns:Street" -> "ns:Neighborhood" [ label = "ns:locatedInNeighborhood" ];
+	"ns:Parking" -> "owl:Thing" [ label = "ns:numberOfTotalPlaces" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "ns:ccsConnectors" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "ns:mennekesConnectors" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "ns:location" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "ns:mennekesKw" ];
+	"ns:District" -> "owl:Thing" [ label = "ns:postalCode" ];
+	"ns:ChargePoint" -> "ns:Operator" [ label = "ns:managedBy" ];
+	"ns:ChargePoint" -> "ns:Street" [ label = "ns:locatedInStreet" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "ns:chademoKw" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "ns:openingHours" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "ns:ccsKw" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "ns:dischargeDate" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "ns:numberOfEquipments" ];
+	"ns:ChargePoint" -> "owl:Thing" [ label = "rdf:label" ];
+	"ns:Neighborhood" -> "ns:District" [ label = "ns:isPartOf" ];
+
+}

@@ -1,0 +1,79 @@
+{
+  "@context" : {
+    "editionDate" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#editionDate"
+    },
+    "idPoint" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#idPoint"
+    },
+    "Neighborhood" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Neighborhood"
+    },
+    "numberOfDevices" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#numberOfDevices"
+    },
+    "District" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#District"
+    },
+    "operator" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#operator"
+    },
+    "hasDates" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#hasDates"
+    },
+    "placement" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#placement"
+    },
+    "Dates" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#Dates"
+    },
+    "management" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#management"
+    },
+    "schedule" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#schedule"
+    },
+    "address" : {
+      "@id" : "https://schema.org/address"
+    },
+    "ChargingStation" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#ChargingStation"
+    },
+    "registerDate" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#registerDate"
+    },
+    "openingDate" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#openingDate"
+    },
+    "districtCode" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtCode"
+    },
+    "districtName" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#districtName"
+    },
+    "Place" : {
+      "@id" : "https://schema.org/Place"
+    },
+    "state" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#state"
+    },
+    "neighborhoodCode" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodCode"
+    },
+    "containedInPlace" : {
+      "@id" : "https://schema.org/containedInPlace"
+    },
+    "additionalInfo" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#additionalInfo"
+    },
+    "characteristicsDevices" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#characteristicsDevices"
+    },
+    "neighborhoodName" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#neighborhoodName"
+    },
+    "isLocated" : {
+      "@id" : "https://datos.madrid/estaciones_carga_vehiculos_electricos/ontology#isLocated"
+    }
+  }
+}

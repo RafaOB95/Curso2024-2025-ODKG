@@ -1,0 +1,82 @@
+{
+  "@context" : {
+    "hasStreetName" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasStreetName"
+    },
+    "hasMunicipalityName" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMunicipalityName"
+    },
+    "hasProvinceLocationID" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasProvinceLocationID"
+    },
+    "hasMunicipalityLocationID" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMunicipalityLocationID"
+    },
+    "hasMagnitudeCode" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMagnitudeCode"
+    },
+    "hasStreet" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasStreet"
+    },
+    "hasStationLocationID" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasStationLocationID"
+    },
+    "Measurement" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Measurement"
+    },
+    "hasMeasurementMonth" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementMonth"
+    },
+    "hasStreetLocationID" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasStreetLocationID"
+    },
+    "Province" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Province"
+    },
+    "Street" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Street"
+    },
+    "hasMeasurementYear" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementYear"
+    },
+    "hasMeasurementDay" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementDay"
+    },
+    "hasMagnitudeMeasurementUnit" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit"
+    },
+    "Magnitude" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Magnitude"
+    },
+    "hasProvince" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasProvince"
+    },
+    "hasMagnitudeName" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMagnitudeName"
+    },
+    "hasMagnitude" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMagnitude"
+    },
+    "recordedFrom" : {
+      "@id" : "http://MadridAirQuality.org/ontology/recordedFrom"
+    },
+    "hasMeasurementValue" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementValue"
+    },
+    "Municipality" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Municipality"
+    },
+    "hasMunicipality" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasMunicipality"
+    },
+    "Station" : {
+      "@id" : "http://MadridAirQuality.org/ontology/Station"
+    },
+    "hasProvinceName" : {
+      "@id" : "http://MadridAirQuality.org/ontology/hasProvinceName"
+    },
+    "isMeasurementValid" : {
+      "@id" : "http://MadridAirQuality.org/ontology/isMeasurementValid"
+    }
+  }
+}

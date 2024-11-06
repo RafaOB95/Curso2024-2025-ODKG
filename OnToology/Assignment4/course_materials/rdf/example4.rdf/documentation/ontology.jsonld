@@ -1,0 +1,82 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://somewhere#JaneSmith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://somewhere#Person"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0/FN" : [ {
+    "@value" : "Jane Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0/Family" : [ {
+    "@value" : "Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0/Given" : [ {
+    "@value" : "Jane"
+  } ],
+  "http://xmlns.com/foaf/0.1/email" : [ {
+    "@value" : "jSmith@somewhere.com"
+  } ]
+}, {
+  "@id" : "http://somewhere#JohnSmith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://somewhere#Person"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0/FN" : [ {
+    "@value" : "John Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0/Family" : [ {
+    "@value" : "Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0/Given" : [ {
+    "@value" : "John"
+  } ]
+}, {
+  "@id" : "http://somewhere#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://somewhere#Researcher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://somewhere#Person"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0/FN",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0/Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0/Given",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/email",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/knows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Property"
+  } ]
+} ]

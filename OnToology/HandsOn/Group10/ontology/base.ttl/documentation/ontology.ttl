@@ -1,0 +1,202 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://purl.org/dc/terms/alternative
+<https://purl.org/dc/terms/alternative> rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/dc/terms/description
+<https://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/dc/terms/publisher
+<https://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  https://purl.org/dc/terms/title
+<https://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/1999/02/22-rdf-syntax-ns#type
+<https://www.w3.org/1999/02/22-rdf-syntax-ns#type> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/2000/01/rdf-schema#domain
+<https://www.w3.org/2000/01/rdf-schema#domain> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/2000/01/rdf-schema#label
+<https://www.w3.org/2000/01/rdf-schema#label> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/2000/01/rdf-schema#range
+<https://www.w3.org/2000/01/rdf-schema#range> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/2000/01/rdf-schema#subClassOf
+<https://www.w3.org/2000/01/rdf-schema#subClassOf> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.w3.org/2002/07/owl#Class
+<https://www.w3.org/2002/07/owl#Class> rdf:type owl:Class .
+
+
+###  https://www.w3.org/2002/07/owl#DatatypeProperty
+<https://www.w3.org/2002/07/owl#DatatypeProperty> rdf:type owl:Class .
+
+
+###  https://www.w3.org/2002/07/owl#ObjectProperty
+<https://www.w3.org/2002/07/owl#ObjectProperty> rdf:type owl:Class .
+
+
+###  https://www.w3.org/2002/07/owl#Ontology
+<https://www.w3.org/2002/07/owl#Ontology> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://bicimap.com/ontology#
+<https://bicimap.com/ontology#> rdf:type owl:NamedIndividual ,
+                                         <https://www.w3.org/2002/07/owl#Ontology> ;
+                                <https://purl.org/dc/terms/alternative> "Un dataset que contiene datos de viajes de BiciMad"@es ;
+                                <https://purl.org/dc/terms/description> "A dataset containing bike trip information for Bicimap."@en ;
+                                <https://purl.org/dc/terms/publisher> <http://bicimap.com/publisher#> ;
+                                <https://purl.org/dc/terms/title> "Bicimap Dataset"@en ;
+                                <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> ;
+                                <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/dc/dcmitype/Dataset> .
+
+
+###  https://bicimap.com/ontology#BikeStation
+<https://bicimap.com/ontology#BikeStation> rdf:type owl:NamedIndividual ,
+                                                    <https://www.w3.org/2002/07/owl#Class> ;
+                                           <https://purl.org/dc/terms/alternative> "Estaci�n de bicicletas."@es ;
+                                           <https://purl.org/dc/terms/description> "Bike station with coordinates and an address."@en ;
+                                           <https://purl.org/dc/terms/publisher> <http://bicimap.com/publisher#> ;
+                                           <https://purl.org/dc/terms/title> "Bike station"@en ;
+                                           <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/dc/dcmitype/Dataset> ;
+                                           <https://www.w3.org/2000/01/rdf-schema#label> "Bike Station" ;
+                                           <https://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Place> .
+
+
+###  https://bicimap.com/ontology#BikeTrip
+<https://bicimap.com/ontology#BikeTrip> rdf:type owl:NamedIndividual ,
+                                                 <https://www.w3.org/2002/07/owl#Class> ;
+                                        <https://purl.org/dc/terms/alternative> "Viaje en bicicleta."@es ;
+                                        <https://purl.org/dc/terms/description> "Trip using an ebike between two schema:Place's."@en ;
+                                        <https://purl.org/dc/terms/publisher> <http://bicimap.com/publisher#> ;
+                                        <https://purl.org/dc/terms/title> "Trip taken by bike"@en ;
+                                        <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/dc/dcmitype/Dataset> ;
+                                        <https://www.w3.org/2000/01/rdf-schema#label> "Bike Trip" .
+
+
+###  https://bicimap.com/ontology#bikeId
+<https://bicimap.com/ontology#bikeId> rdf:type owl:NamedIndividual ,
+                                               <https://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                                      <https://purl.org/dc/terms/alternative> "ID de la bicicleta."@es ;
+                                      <https://purl.org/dc/terms/description> "ID that represents each bike involved in a trip."@en ;
+                                      <https://purl.org/dc/terms/publisher> <http://bicimap.com/publisher#> ;
+                                      <https://purl.org/dc/terms/title> "Id of the bike"@en ;
+                                      <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/dc/dcmitype/Dataset> ;
+                                      <https://www.w3.org/2000/01/rdf-schema#domain> <https://bicimap.com/ontology#BikeTrip> ;
+                                      <https://www.w3.org/2000/01/rdf-schema#label> "bike id" ;
+                                      <https://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2001/XMLSchema#integer> .
+
+
+###  https://bicimap.com/ontology#endAt
+<https://bicimap.com/ontology#endAt> rdf:type owl:NamedIndividual ,
+                                              <https://www.w3.org/2002/07/owl#ObjectProperty> ;
+                                     <https://purl.org/dc/terms/alternative> "Localizaci�n de la bicicleta al inicio del viaje."@es ;
+                                     <https://purl.org/dc/terms/description> "schema:Place where the bike was at the start of the trip. Typically a BikeStation class."@en ;
+                                     <https://purl.org/dc/terms/publisher> <http://bicimap.com/publisher#> ;
+                                     <https://purl.org/dc/terms/title> "Bike location at the start of the trip"@en ;
+                                     <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/dc/dcmitype/Dataset> ;
+                                     <https://www.w3.org/2000/01/rdf-schema#domain> <https://bicimap.com/ontology#BikeTrip> ;
+                                     <https://www.w3.org/2000/01/rdf-schema#label> "end at" ;
+                                     <https://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
+
+
+###  https://bicimap.com/ontology#lockDate
+<https://bicimap.com/ontology#lockDate> rdf:type owl:NamedIndividual ,
+                                                 <https://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                                        <https://purl.org/dc/terms/alternative> "Fecha y hora del bloqueo de la bicicleta."@es ;
+                                        <https://purl.org/dc/terms/description> "Date and time the bike was locked to end the trip."@en ;
+                                        <https://purl.org/dc/terms/publisher> <http://bicimap.com/publisher#> ;
+                                        <https://purl.org/dc/terms/title> "Date time of the locking of the bike"@en ;
+                                        <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/dc/dcmitype/Dataset> ;
+                                        <https://www.w3.org/2000/01/rdf-schema#domain> <https://bicimap.com/ontology#BikeTrip> ;
+                                        <https://www.w3.org/2000/01/rdf-schema#label> "lock date" ;
+                                        <https://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2001/XMLSchema#dateTime> .
+
+
+###  https://bicimap.com/ontology#lockDock
+<https://bicimap.com/ontology#lockDock> rdf:type owl:NamedIndividual ,
+                                                 <https://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                                        <https://purl.org/dc/terms/alternative> "Muelle de bloqueo en la estaci�n de bicicletas."@es ;
+                                        <https://purl.org/dc/terms/description> "The charging dock in the bike station this bike was taken to."@en ;
+                                        <https://purl.org/dc/terms/publisher> <http://bicimap.com/publisher#> ;
+                                        <https://purl.org/dc/terms/title> "Locking dock of a bike station"@en ;
+                                        <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/dc/dcmitype/Dataset> ;
+                                        <https://www.w3.org/2000/01/rdf-schema#domain> <https://bicimap.com/ontology#BikeTrip> ;
+                                        <https://www.w3.org/2000/01/rdf-schema#label> "lock dock" .
+
+
+###  https://bicimap.com/ontology#startAt
+<https://bicimap.com/ontology#startAt> rdf:type owl:NamedIndividual ,
+                                                <https://www.w3.org/2002/07/owl#ObjectProperty> ;
+                                       <https://purl.org/dc/terms/alternative> "Localizaci�n de la bicicleta al final del viaje."@es ;
+                                       <https://purl.org/dc/terms/description> "schema:Place where the bike was at the end of the trip. Typically a BikeStation class."@en ;
+                                       <https://purl.org/dc/terms/publisher> <http://bicimap.com/publisher#> ;
+                                       <https://purl.org/dc/terms/title> "Bike location at the end of the trip"@en ;
+                                       <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/dc/dcmitype/Dataset> ;
+                                       <https://www.w3.org/2000/01/rdf-schema#domain> <https://bicimap.com/ontology#BikeTrip> ;
+                                       <https://www.w3.org/2000/01/rdf-schema#label> "start at" ;
+                                       <https://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
+
+
+###  https://bicimap.com/ontology#unlockDate
+<https://bicimap.com/ontology#unlockDate> rdf:type owl:NamedIndividual ,
+                                                   <https://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                                          <https://purl.org/dc/terms/alternative> "Fecha y hora del desbloqueo de la bicicleta."@es ;
+                                          <https://purl.org/dc/terms/description> "Date and time the bike was unlocked to start the trip."@en ;
+                                          <https://purl.org/dc/terms/publisher> <http://bicimap.com/publisher#> ;
+                                          <https://purl.org/dc/terms/title> "Date time of the unlocking of the bike"@en ;
+                                          <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/dc/dcmitype/Dataset> ;
+                                          <https://www.w3.org/2000/01/rdf-schema#domain> <https://bicimap.com/ontology#BikeTrip> ;
+                                          <https://www.w3.org/2000/01/rdf-schema#label> "unlock date" ;
+                                          <https://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2001/XMLSchema#dateTime> .
+
+
+###  https://bicimap.com/ontology#unlockDock
+<https://bicimap.com/ontology#unlockDock> rdf:type owl:NamedIndividual ,
+                                                   <https://www.w3.org/2002/07/owl#DatatypeProperty> ;
+                                          <https://purl.org/dc/terms/alternative> "Muelle de desbloqueo en la estaci�n de bicicletas."@es ;
+                                          <https://purl.org/dc/terms/description> "The charging dock in the bike station this bike was taken from."@en ;
+                                          <https://purl.org/dc/terms/publisher> <http://bicimap.com/publisher#> ;
+                                          <https://purl.org/dc/terms/title> "Unlocking dock of a bike station"@en ;
+                                          <https://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/dc/dcmitype/Dataset> ;
+                                          <https://www.w3.org/2000/01/rdf-schema#domain> <https://bicimap.com/ontology#BikeTrip> ;
+                                          <https://www.w3.org/2000/01/rdf-schema#label> "unlock dock" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
