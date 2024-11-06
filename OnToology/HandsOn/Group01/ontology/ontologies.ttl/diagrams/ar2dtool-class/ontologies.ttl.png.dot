@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "ns:Via" "ns:Estado" "ns:Distrito" "ns:BicycleParkingSpot" "ns:Barrio" ; /*classes style*/
+	"ns:" -> "https://chowlk.linkeddata.es/" [ label = "mod:createdWith" ];
+	"ns:BicycleParkingSpot" -> "ns:Estado" [ label = "ns:hasEstado" ];
+	"ns:BicycleParkingSpot" -> "ns:Barrio" [ label = "ns:isInBarrio" ];
+	"ns:BicycleParkingSpot" -> "ns:Via" [ label = "ns:hasTipoVia" ];
+	"ns:BicycleParkingSpot" -> "ns:Distrito" [ label = "ns:isInDistrito" ];
+
+}

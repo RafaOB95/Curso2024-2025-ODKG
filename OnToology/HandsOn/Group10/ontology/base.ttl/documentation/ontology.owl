@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="https://purl.org/dc/terms/"
+     xmlns:rdf-schema="https://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf-syntax-ns="https://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/dc/terms/alternative -->
+
+
+    <AnnotationProperty rdf:about="https://purl.org/dc/terms/alternative"/>
+    
+
+
+    <!-- https://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="https://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- https://purl.org/dc/terms/publisher -->
+
+
+    <AnnotationProperty rdf:about="https://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- https://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="https://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- https://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- https://www.w3.org/2000/01/rdf-schema#domain -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2000/01/rdf-schema#domain"/>
+    
+
+
+    <!-- https://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- https://www.w3.org/2000/01/rdf-schema#range -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2000/01/rdf-schema#range"/>
+    
+
+
+    <!-- https://www.w3.org/2000/01/rdf-schema#subClassOf -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.w3.org/2002/07/owl#Class -->
+
+
+    <Class rdf:about="https://www.w3.org/2002/07/owl#Class"/>
+    
+
+
+    <!-- https://www.w3.org/2002/07/owl#DatatypeProperty -->
+
+
+    <Class rdf:about="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    
+
+
+    <!-- https://www.w3.org/2002/07/owl#ObjectProperty -->
+
+
+    <Class rdf:about="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+    
+
+
+    <!-- https://www.w3.org/2002/07/owl#Ontology -->
+
+
+    <Class rdf:about="https://www.w3.org/2002/07/owl#Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://bicimap.com/ontology# -->
+
+
+    <NamedIndividual rdf:about="https://bicimap.com/ontology#">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Ontology"/>
+        <terms:alternative xml:lang="es">Un dataset que contiene datos de viajes de BiciMad</terms:alternative>
+        <terms:description xml:lang="en">A dataset containing bike trip information for Bicimap.</terms:description>
+        <terms:publisher rdf:resource="http://bicimap.com/publisher#"/>
+        <terms:title xml:lang="en">Bicimap Dataset</terms:title>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+        <rdf-syntax-ns:type rdf:resource="https://purl.org/dc/dcmitype/Dataset"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://bicimap.com/ontology#BikeStation -->
+
+
+    <NamedIndividual rdf:about="https://bicimap.com/ontology#BikeStation">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Class"/>
+        <terms:alternative xml:lang="es">Estaci�n de bicicletas.</terms:alternative>
+        <terms:description xml:lang="en">Bike station with coordinates and an address.</terms:description>
+        <terms:publisher rdf:resource="http://bicimap.com/publisher#"/>
+        <terms:title xml:lang="en">Bike station</terms:title>
+        <rdf-syntax-ns:type rdf:resource="https://purl.org/dc/dcmitype/Dataset"/>
+        <rdf-schema:label>Bike Station</rdf-schema:label>
+        <rdf-schema:subClassOf rdf:resource="https://schema.org/Place"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://bicimap.com/ontology#BikeTrip -->
+
+
+    <NamedIndividual rdf:about="https://bicimap.com/ontology#BikeTrip">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#Class"/>
+        <terms:alternative xml:lang="es">Viaje en bicicleta.</terms:alternative>
+        <terms:description xml:lang="en">Trip using an ebike between two schema:Place&apos;s.</terms:description>
+        <terms:publisher rdf:resource="http://bicimap.com/publisher#"/>
+        <terms:title xml:lang="en">Trip taken by bike</terms:title>
+        <rdf-syntax-ns:type rdf:resource="https://purl.org/dc/dcmitype/Dataset"/>
+        <rdf-schema:label>Bike Trip</rdf-schema:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://bicimap.com/ontology#bikeId -->
+
+
+    <NamedIndividual rdf:about="https://bicimap.com/ontology#bikeId">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <terms:alternative xml:lang="es">ID de la bicicleta.</terms:alternative>
+        <terms:description xml:lang="en">ID that represents each bike involved in a trip.</terms:description>
+        <terms:publisher rdf:resource="http://bicimap.com/publisher#"/>
+        <terms:title xml:lang="en">Id of the bike</terms:title>
+        <rdf-syntax-ns:type rdf:resource="https://purl.org/dc/dcmitype/Dataset"/>
+        <rdf-schema:domain rdf:resource="https://bicimap.com/ontology#BikeTrip"/>
+        <rdf-schema:label>bike id</rdf-schema:label>
+        <rdf-schema:range rdf:resource="https://www.w3.org/2001/XMLSchema#integer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://bicimap.com/ontology#endAt -->
+
+
+    <NamedIndividual rdf:about="https://bicimap.com/ontology#endAt">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <terms:alternative xml:lang="es">Localizaci�n de la bicicleta al inicio del viaje.</terms:alternative>
+        <terms:description xml:lang="en">schema:Place where the bike was at the start of the trip. Typically a BikeStation class.</terms:description>
+        <terms:publisher rdf:resource="http://bicimap.com/publisher#"/>
+        <terms:title xml:lang="en">Bike location at the start of the trip</terms:title>
+        <rdf-syntax-ns:type rdf:resource="https://purl.org/dc/dcmitype/Dataset"/>
+        <rdf-schema:domain rdf:resource="https://bicimap.com/ontology#BikeTrip"/>
+        <rdf-schema:label>end at</rdf-schema:label>
+        <rdf-schema:range rdf:resource="https://schema.org/Place"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://bicimap.com/ontology#lockDate -->
+
+
+    <NamedIndividual rdf:about="https://bicimap.com/ontology#lockDate">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <terms:alternative xml:lang="es">Fecha y hora del bloqueo de la bicicleta.</terms:alternative>
+        <terms:description xml:lang="en">Date and time the bike was locked to end the trip.</terms:description>
+        <terms:publisher rdf:resource="http://bicimap.com/publisher#"/>
+        <terms:title xml:lang="en">Date time of the locking of the bike</terms:title>
+        <rdf-syntax-ns:type rdf:resource="https://purl.org/dc/dcmitype/Dataset"/>
+        <rdf-schema:domain rdf:resource="https://bicimap.com/ontology#BikeTrip"/>
+        <rdf-schema:label>lock date</rdf-schema:label>
+        <rdf-schema:range rdf:resource="https://www.w3.org/2001/XMLSchema#dateTime"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://bicimap.com/ontology#lockDock -->
+
+
+    <NamedIndividual rdf:about="https://bicimap.com/ontology#lockDock">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <terms:alternative xml:lang="es">Muelle de bloqueo en la estaci�n de bicicletas.</terms:alternative>
+        <terms:description xml:lang="en">The charging dock in the bike station this bike was taken to.</terms:description>
+        <terms:publisher rdf:resource="http://bicimap.com/publisher#"/>
+        <terms:title xml:lang="en">Locking dock of a bike station</terms:title>
+        <rdf-syntax-ns:type rdf:resource="https://purl.org/dc/dcmitype/Dataset"/>
+        <rdf-schema:domain rdf:resource="https://bicimap.com/ontology#BikeTrip"/>
+        <rdf-schema:label>lock dock</rdf-schema:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://bicimap.com/ontology#startAt -->
+
+
+    <NamedIndividual rdf:about="https://bicimap.com/ontology#startAt">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <terms:alternative xml:lang="es">Localizaci�n de la bicicleta al final del viaje.</terms:alternative>
+        <terms:description xml:lang="en">schema:Place where the bike was at the end of the trip. Typically a BikeStation class.</terms:description>
+        <terms:publisher rdf:resource="http://bicimap.com/publisher#"/>
+        <terms:title xml:lang="en">Bike location at the end of the trip</terms:title>
+        <rdf-syntax-ns:type rdf:resource="https://purl.org/dc/dcmitype/Dataset"/>
+        <rdf-schema:domain rdf:resource="https://bicimap.com/ontology#BikeTrip"/>
+        <rdf-schema:label>start at</rdf-schema:label>
+        <rdf-schema:range rdf:resource="https://schema.org/Place"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://bicimap.com/ontology#unlockDate -->
+
+
+    <NamedIndividual rdf:about="https://bicimap.com/ontology#unlockDate">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <terms:alternative xml:lang="es">Fecha y hora del desbloqueo de la bicicleta.</terms:alternative>
+        <terms:description xml:lang="en">Date and time the bike was unlocked to start the trip.</terms:description>
+        <terms:publisher rdf:resource="http://bicimap.com/publisher#"/>
+        <terms:title xml:lang="en">Date time of the unlocking of the bike</terms:title>
+        <rdf-syntax-ns:type rdf:resource="https://purl.org/dc/dcmitype/Dataset"/>
+        <rdf-schema:domain rdf:resource="https://bicimap.com/ontology#BikeTrip"/>
+        <rdf-schema:label>unlock date</rdf-schema:label>
+        <rdf-schema:range rdf:resource="https://www.w3.org/2001/XMLSchema#dateTime"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://bicimap.com/ontology#unlockDock -->
+
+
+    <NamedIndividual rdf:about="https://bicimap.com/ontology#unlockDock">
+        <rdf:type rdf:resource="https://www.w3.org/2002/07/owl#DatatypeProperty"/>
+        <terms:alternative xml:lang="es">Muelle de desbloqueo en la estaci�n de bicicletas.</terms:alternative>
+        <terms:description xml:lang="en">The charging dock in the bike station this bike was taken from.</terms:description>
+        <terms:publisher rdf:resource="http://bicimap.com/publisher#"/>
+        <terms:title xml:lang="en">Unlocking dock of a bike station</terms:title>
+        <rdf-syntax-ns:type rdf:resource="https://purl.org/dc/dcmitype/Dataset"/>
+        <rdf-schema:domain rdf:resource="https://bicimap.com/ontology#BikeTrip"/>
+        <rdf-schema:label>unlock dock</rdf-schema:label>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,31 @@
+{
+  "@context" : {
+    "hasFechaInstalacion" : {
+      "@id" : "http://www.bikeradar.es/ontology/ont#hasFechaInstalacion"
+    },
+    "id" : {
+      "@id" : "http://www.bikeradar.es/ontology/ont#id"
+    },
+    "direccion" : {
+      "@id" : "http://www.bikeradar.es/ontology/ont#direccion"
+    },
+    "isInBarrio" : {
+      "@id" : "http://www.bikeradar.es/ontology/ont#isInBarrio"
+    },
+    "modelo" : {
+      "@id" : "http://www.bikeradar.es/ontology/ont#modelo"
+    },
+    "latitud" : {
+      "@id" : "http://www.bikeradar.es/ontology/ont#latitud"
+    },
+    "longitud" : {
+      "@id" : "http://www.bikeradar.es/ontology/ont#longitud"
+    },
+    "isInDistrito" : {
+      "@id" : "http://www.bikeradar.es/ontology/ont#isInDistrito"
+    },
+    "BicycleParkingSpot" : {
+      "@id" : "http://www.bikeradar.es/ontology/ont#BicycleParkingSpot"
+    }
+  }
+}

@@ -1,0 +1,355 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://bicimap.com/ontology#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2002/07/owl#Ontology"
+  } ],
+  "https://purl.org/dc/terms/alternative" : [ {
+    "@language" : "es",
+    "@value" : "Un dataset que contiene datos de viajes de BiciMad"
+  } ],
+  "https://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "A dataset containing bike trip information for Bicimap."
+  } ],
+  "https://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://bicimap.com/publisher#"
+  } ],
+  "https://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Bicimap Dataset"
+  } ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/dc/dcmitype/Dataset"
+  } ]
+}, {
+  "@id" : "https://bicimap.com/ontology#BikeStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2002/07/owl#Class"
+  } ],
+  "https://purl.org/dc/terms/alternative" : [ {
+    "@language" : "es",
+    "@value" : "Estaci�n de bicicletas."
+  } ],
+  "https://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Bike station with coordinates and an address."
+  } ],
+  "https://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://bicimap.com/publisher#"
+  } ],
+  "https://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Bike station"
+  } ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/dc/dcmitype/Dataset"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bike Station"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://schema.org/Place"
+  } ]
+}, {
+  "@id" : "https://bicimap.com/ontology#BikeTrip",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2002/07/owl#Class"
+  } ],
+  "https://purl.org/dc/terms/alternative" : [ {
+    "@language" : "es",
+    "@value" : "Viaje en bicicleta."
+  } ],
+  "https://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Trip using an ebike between two schema:Place's."
+  } ],
+  "https://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://bicimap.com/publisher#"
+  } ],
+  "https://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Trip taken by bike"
+  } ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/dc/dcmitype/Dataset"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bike Trip"
+  } ]
+}, {
+  "@id" : "https://bicimap.com/ontology#bikeId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2002/07/owl#DatatypeProperty"
+  } ],
+  "https://purl.org/dc/terms/alternative" : [ {
+    "@language" : "es",
+    "@value" : "ID de la bicicleta."
+  } ],
+  "https://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "ID that represents each bike involved in a trip."
+  } ],
+  "https://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://bicimap.com/publisher#"
+  } ],
+  "https://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Id of the bike"
+  } ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/dc/dcmitype/Dataset"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://bicimap.com/ontology#BikeTrip"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "bike id"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://bicimap.com/ontology#endAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "https://purl.org/dc/terms/alternative" : [ {
+    "@language" : "es",
+    "@value" : "Localizaci�n de la bicicleta al inicio del viaje."
+  } ],
+  "https://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "schema:Place where the bike was at the start of the trip. Typically a BikeStation class."
+  } ],
+  "https://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://bicimap.com/publisher#"
+  } ],
+  "https://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Bike location at the start of the trip"
+  } ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/dc/dcmitype/Dataset"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://bicimap.com/ontology#BikeTrip"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "end at"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Place"
+  } ]
+}, {
+  "@id" : "https://bicimap.com/ontology#lockDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2002/07/owl#DatatypeProperty"
+  } ],
+  "https://purl.org/dc/terms/alternative" : [ {
+    "@language" : "es",
+    "@value" : "Fecha y hora del bloqueo de la bicicleta."
+  } ],
+  "https://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Date and time the bike was locked to end the trip."
+  } ],
+  "https://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://bicimap.com/publisher#"
+  } ],
+  "https://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Date time of the locking of the bike"
+  } ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/dc/dcmitype/Dataset"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://bicimap.com/ontology#BikeTrip"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lock date"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://bicimap.com/ontology#lockDock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2002/07/owl#DatatypeProperty"
+  } ],
+  "https://purl.org/dc/terms/alternative" : [ {
+    "@language" : "es",
+    "@value" : "Muelle de bloqueo en la estaci�n de bicicletas."
+  } ],
+  "https://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The charging dock in the bike station this bike was taken to."
+  } ],
+  "https://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://bicimap.com/publisher#"
+  } ],
+  "https://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Locking dock of a bike station"
+  } ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/dc/dcmitype/Dataset"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://bicimap.com/ontology#BikeTrip"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "lock dock"
+  } ]
+}, {
+  "@id" : "https://bicimap.com/ontology#startAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2002/07/owl#ObjectProperty"
+  } ],
+  "https://purl.org/dc/terms/alternative" : [ {
+    "@language" : "es",
+    "@value" : "Localizaci�n de la bicicleta al final del viaje."
+  } ],
+  "https://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "schema:Place where the bike was at the end of the trip. Typically a BikeStation class."
+  } ],
+  "https://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://bicimap.com/publisher#"
+  } ],
+  "https://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Bike location at the end of the trip"
+  } ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/dc/dcmitype/Dataset"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://bicimap.com/ontology#BikeTrip"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "start at"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Place"
+  } ]
+}, {
+  "@id" : "https://bicimap.com/ontology#unlockDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2002/07/owl#DatatypeProperty"
+  } ],
+  "https://purl.org/dc/terms/alternative" : [ {
+    "@language" : "es",
+    "@value" : "Fecha y hora del desbloqueo de la bicicleta."
+  } ],
+  "https://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Date and time the bike was unlocked to start the trip."
+  } ],
+  "https://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://bicimap.com/publisher#"
+  } ],
+  "https://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Date time of the unlocking of the bike"
+  } ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/dc/dcmitype/Dataset"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://bicimap.com/ontology#BikeTrip"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unlock date"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://bicimap.com/ontology#unlockDock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2002/07/owl#DatatypeProperty"
+  } ],
+  "https://purl.org/dc/terms/alternative" : [ {
+    "@language" : "es",
+    "@value" : "Muelle de desbloqueo en la estaci�n de bicicletas."
+  } ],
+  "https://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The charging dock in the bike station this bike was taken from."
+  } ],
+  "https://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://bicimap.com/publisher#"
+  } ],
+  "https://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Unlocking dock of a bike station"
+  } ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/dc/dcmitype/Dataset"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://bicimap.com/ontology#BikeTrip"
+  } ],
+  "https://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unlock dock"
+  } ]
+}, {
+  "@id" : "https://purl.org/dc/terms/alternative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/2000/01/rdf-schema#domain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/2000/01/rdf-schema#range",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/2000/01/rdf-schema#subClassOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/2002/07/owl#Class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/2002/07/owl#DatatypeProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/2002/07/owl#ObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/2002/07/owl#Ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

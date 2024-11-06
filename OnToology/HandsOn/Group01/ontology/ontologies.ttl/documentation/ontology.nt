@@ -1,0 +1,130 @@
+<http://www.owl-ontologies.com/ns#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.owl-ontologies.com/ns#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/ns#hasEstado
+<http://www.owl-ontologies.com/ns#hasEstado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ns#hasEstado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#BicycleParkingSpot> .
+<http://www.owl-ontologies.com/ns#hasEstado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Estado> .
+<http://www.owl-ontologies.com/ns#hasEstado> <http://www.w3.org/2000/01/rdf-schema#label> "has estado" .
+# 
+# http://www.owl-ontologies.com/ns#hasTipoVia
+<http://www.owl-ontologies.com/ns#hasTipoVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ns#hasTipoVia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#BicycleParkingSpot> .
+<http://www.owl-ontologies.com/ns#hasTipoVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Via> .
+<http://www.owl-ontologies.com/ns#hasTipoVia> <http://www.w3.org/2000/01/rdf-schema#label> "has tipo via" .
+# 
+# http://www.owl-ontologies.com/ns#isInBarrio
+<http://www.owl-ontologies.com/ns#isInBarrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ns#isInBarrio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#BicycleParkingSpot> .
+<http://www.owl-ontologies.com/ns#isInBarrio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Barrio> .
+<http://www.owl-ontologies.com/ns#isInBarrio> <http://www.w3.org/2000/01/rdf-schema#label> "is in barrio" .
+# 
+# http://www.owl-ontologies.com/ns#isInDistrito
+<http://www.owl-ontologies.com/ns#isInDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/ns#isInDistrito> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/ns#BicycleParkingSpot> .
+<http://www.owl-ontologies.com/ns#isInDistrito> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/ns#Distrito> .
+<http://www.owl-ontologies.com/ns#isInDistrito> <http://www.w3.org/2000/01/rdf-schema#label> "is in distrito" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/ns#codigoPostal
+<http://www.owl-ontologies.com/ns#codigoPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#codigoPostal> <http://www.w3.org/2000/01/rdf-schema#label> "codigo postal" .
+# 
+# http://www.owl-ontologies.com/ns#coordenadaX
+<http://www.owl-ontologies.com/ns#coordenadaX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#coordenadaX> <http://www.w3.org/2000/01/rdf-schema#label> "coordenada x" .
+# 
+# http://www.owl-ontologies.com/ns#coordenadaY
+<http://www.owl-ontologies.com/ns#coordenadaY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#coordenadaY> <http://www.w3.org/2000/01/rdf-schema#label> "coordenada y" .
+# 
+# http://www.owl-ontologies.com/ns#estado
+<http://www.owl-ontologies.com/ns#estado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#estado> <http://www.w3.org/2000/01/rdf-schema#label> "estado" .
+# 
+# http://www.owl-ontologies.com/ns#hasFechaInstalacion
+<http://www.owl-ontologies.com/ns#hasFechaInstalacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#hasFechaInstalacion> <http://www.w3.org/2000/01/rdf-schema#label> "has fecha instalacion" .
+# 
+# http://www.owl-ontologies.com/ns#id
+<http://www.owl-ontologies.com/ns#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#id> <http://www.w3.org/2000/01/rdf-schema#label> "id" .
+# 
+# http://www.owl-ontologies.com/ns#latitud
+<http://www.owl-ontologies.com/ns#latitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#latitud> <http://www.w3.org/2000/01/rdf-schema#label> "latitud" .
+# 
+# http://www.owl-ontologies.com/ns#longitud
+<http://www.owl-ontologies.com/ns#longitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#longitud> <http://www.w3.org/2000/01/rdf-schema#label> "longitud" .
+# 
+# http://www.owl-ontologies.com/ns#nombre
+<http://www.owl-ontologies.com/ns#nombre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#nombre> <http://www.w3.org/2000/01/rdf-schema#label> "nombre" .
+# 
+# http://www.owl-ontologies.com/ns#poblacion
+<http://www.owl-ontologies.com/ns#poblacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#poblacion> <http://www.w3.org/2000/01/rdf-schema#label> "poblacion" .
+# 
+# http://www.owl-ontologies.com/ns#tipo
+<http://www.owl-ontologies.com/ns#tipo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/ns#tipo> <http://www.w3.org/2000/01/rdf-schema#label> "tipo" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/ns#Barrio
+<http://www.owl-ontologies.com/ns#Barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ns#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Barrio" .
+# 
+# http://www.owl-ontologies.com/ns#BicycleParkingSpot
+<http://www.owl-ontologies.com/ns#BicycleParkingSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ns#BicycleParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycle Parking Spot" .
+# 
+# http://www.owl-ontologies.com/ns#Distrito
+<http://www.owl-ontologies.com/ns#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ns#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito" .
+# 
+# http://www.owl-ontologies.com/ns#Estado
+<http://www.owl-ontologies.com/ns#Estado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ns#Estado> <http://www.w3.org/2000/01/rdf-schema#label> "Estado" .
+# 
+# http://www.owl-ontologies.com/ns#Via
+<http://www.owl-ontologies.com/ns#Via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/ns#Via> <http://www.w3.org/2000/01/rdf-schema#label> "Via" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

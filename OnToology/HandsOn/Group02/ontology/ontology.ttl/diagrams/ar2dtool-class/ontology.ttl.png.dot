@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:ontologyUbicacion" "base:ontologyGasolinera" ; /*classes style*/
+	"base:ontologyUbicacion" -> "xsd:string" [ label = "base:ontologycodigoPostal" ];
+	"base:ontologyUbicacion" -> "xsd:float" [ label = "base:ontologylongitud" ];
+	"base:ontologyGasolinera" -> "xsd:float" [ label = "base:ontologyprecioGasolina95E5" ];
+	"base:ontologyGasolinera" -> "xsd:float" [ label = "base:ontologyprecioGasoleoA" ];
+	"base:ontologyUbicacion" -> "xsd:float" [ label = "base:ontologylatitud" ];
+	"base:ontologyGasolinera" -> "xsd:string" [ label = "base:ontologyhorario" ];
+	"base:ontologyUbicacion" -> "xsd:string" [ label = "base:ontologyprovincia" ];
+	"base:ontologyUbicacion" -> "xsd:string" [ label = "base:ontologymunicipio" ];
+	"base:ontologyUbicacion" -> "xsd:string" [ label = "base:ontologydireccion" ];
+	"base:ontologyGasolinera" -> "xsd:string" [ label = "base:ontologyrotulo" ];
+	"base:ontologyGasolinera" -> "base:ontologyUbicacion" [ label = "base:ontologytieneUbicacion" ];
+
+}

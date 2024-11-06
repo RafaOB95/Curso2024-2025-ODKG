@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"owl:Thing" -> "xsd:string" [ label = "vcard-rdf:EMAIL" ];
+	"owl:Thing" -> "xsd:string" [ label = "vcard-rdf:Family" ];
+	"owl:Thing" -> "xsd:string" [ label = "vcard-rdf:Given" ];
+
+}

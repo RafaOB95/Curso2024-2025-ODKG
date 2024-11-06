@@ -1,0 +1,174 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0#FN
+<http://www.w3.org/2001/vcard-rdf/3.0#FN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0#Family
+<http://www.w3.org/2001/vcard-rdf/3.0#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0#Given
+<http://www.w3.org/2001/vcard-rdf/3.0#Given> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/FN
+<http://www.w3.org/2001/vcard-rdf/3.0/FN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/Given
+<http://www.w3.org/2001/vcard-rdf/3.0/Given> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://data.five.org#hasUncleOrAunt
+<http://data.five.org#hasUncleOrAunt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.five.org#hasUncleOrAunt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.five.org#Person> .
+<http://data.five.org#hasUncleOrAunt> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.five.org#Person> .
+# 
+# http://data.five.org#parent
+<http://data.five.org#parent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.five.org#parent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.five.org#Person> .
+<http://data.five.org#parent> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.five.org#Person> .
+# 
+# http://data.five.org#sibling
+<http://data.five.org#sibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.five.org#sibling> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.five.org#Person> .
+<http://data.five.org#sibling> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.five.org#Person> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/FN
+<http://www.w3.org/2001/vcard-rdf/3.0/FN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2001/vcard-rdf/3.0/FN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/Family
+<http://www.w3.org/2001/vcard-rdf/3.0/Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2001/vcard-rdf/3.0/Family> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/Given
+<http://www.w3.org/2001/vcard-rdf/3.0/Given> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2001/vcard-rdf/3.0/Given> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://data.five.org#Person
+<http://data.five.org#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Poperty
+<http://www.w3.org/2000/01/rdf-schema#Poperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#Property
+<http://www.w3.org/2000/01/rdf-schema#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://data.five.org#Harry
+<http://data.five.org#Harry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.five.org#Harry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.five.org#Person> .
+<http://data.five.org#Harry> <http://data.five.org#sibling> <http://data.five.org#Thomas> .
+<http://data.five.org#Thomas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.five.org#Harry> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Harry" .
+# 
+# http://data.five.org#Jack
+<http://data.five.org#Jack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.five.org#Jack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.five.org#Person> .
+<http://data.five.org#Jack> <http://data.five.org#parent> <http://data.five.org#JohnSmith> .
+<http://data.five.org#JohnSmith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.five.org#Jack> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "Jack Smith" .
+<http://data.five.org#Jack> <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Smith" .
+<http://data.five.org#Jack> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Jack" .
+# 
+# http://data.five.org#JohnSmith
+<http://data.five.org#JohnSmith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.five.org#Person> .
+<http://data.five.org#JohnSmith> <http://data.five.org#sibling> <http://data.five.org#PeterSmith> .
+<http://data.five.org#PeterSmith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.five.org#JohnSmith> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "John Smith" .
+<http://data.five.org#JohnSmith> <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Smith" .
+<http://data.five.org#JohnSmith> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "John" .
+# 
+# http://data.five.org#PeterSmith
+<http://data.five.org#PeterSmith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.five.org#Person> .
+<http://data.five.org#PeterSmith> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "Peter Smith" .
+<http://data.five.org#PeterSmith> <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Smith" .
+<http://data.five.org#PeterSmith> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Peter" .
+# 
+# http://data.five.org#SaraSmith
+<http://data.five.org#SaraSmith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.five.org#SaraSmith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.five.org#Person> .
+<http://data.five.org#SaraSmith> <http://data.five.org#sibling> <http://data.five.org#JohnSmith> .
+<http://data.five.org#SaraSmith> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "Sara Smith" .
+<http://data.five.org#SaraSmith> <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Smith" .
+<http://data.five.org#SaraSmith> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Sara" .
+# 
+# http://data.five.org#Thomas
+<http://data.five.org#Thomas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.five.org#Person> .
+<http://data.five.org#Thomas> <http://data.five.org#sibling> <http://data.five.org#Harry> .
+<http://data.five.org#Thomas> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Thomas" .
+# 
+# http://data.five.org#Tim
+<http://data.five.org#Tim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.five.org#Tim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://data.five.org#Person> .
+<http://data.five.org#Tim> <http://data.five.org#parent> <http://data.five.org#SaraSmith> .
+<http://data.five.org#Tim> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "Tim Smith" .
+<http://data.five.org#Tim> <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Smith" .
+<http://data.five.org#Tim> <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Tim" .
+# 
+# http://data.five.org#hasUncleOrAunt
+<http://data.five.org#hasUncleOrAunt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.five.org#hasUncleOrAunt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Poperty> .
+# 
+# http://data.five.org#parent
+<http://data.five.org#parent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.five.org#parent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Poperty> .
+# 
+# http://data.five.org#sibling
+<http://data.five.org#sibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://data.five.org#sibling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Poperty> .
+# 
+# http://www.w3.org/2001/vcard-rdf/3.0/Family
+<http://www.w3.org/2001/vcard-rdf/3.0/Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/2001/vcard-rdf/3.0/Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Property> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,37 @@
+{
+  "@context" : {
+    "Family" : {
+      "@id" : "http://www.w3.org/2001/vcard-rdf/3.0/Family",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Given" : {
+      "@id" : "http://www.w3.org/2001/vcard-rdf/3.0/Given",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FN" : {
+      "@id" : "http://www.w3.org/2001/vcard-rdf/3.0/FN",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "parent" : {
+      "@id" : "http://data.five.org#parent",
+      "@type" : "@id"
+    },
+    "hasUncleOrAunt" : {
+      "@id" : "http://data.five.org#hasUncleOrAunt",
+      "@type" : "@id"
+    },
+    "sibling" : {
+      "@id" : "http://data.five.org#sibling",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://data.five.org#Person"
+    },
+    "Poperty" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Poperty"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Property"
+    }
+  }
+}

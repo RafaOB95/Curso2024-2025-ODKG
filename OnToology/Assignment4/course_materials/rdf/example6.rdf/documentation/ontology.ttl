@@ -1,0 +1,183 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2001/vcard-rdf/3.0/FN
+<http://www.w3.org/2001/vcard-rdf/3.0/FN> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/vcard-rdf/3.0/Family
+<http://www.w3.org/2001/vcard-rdf/3.0/Family> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/vcard-rdf/3.0/Given
+<http://www.w3.org/2001/vcard-rdf/3.0/Given> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/age
+<http://xmlns.com/foaf/0.1/age> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/knows
+<http://xmlns.com/foaf/0.1/knows> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/FN
+<http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/FN> rdf:type rdfs:Datatype .
+
+
+###  http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Given
+<http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Given> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/FN
+<http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/FN> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:range xsd:string .
+
+
+###  http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Family
+<http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Family> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:range xsd:string .
+
+
+###  http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Given
+<http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Given> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://somewhere#Animal
+<http://somewhere#Animal> rdf:type owl:Class ;
+                          rdfs:subClassOf <http://somewhere#LivingThing> .
+
+
+###  http://somewhere#LivingThing
+<http://somewhere#LivingThing> rdf:type owl:Class .
+
+
+###  http://somewhere#Person
+<http://somewhere#Person> rdf:type owl:Class ;
+                          rdfs:subClassOf <http://somewhere#LivingThing> .
+
+
+###  http://somewhere#PhDstudent
+<http://somewhere#PhDstudent> rdf:type owl:Class ;
+                              rdfs:subClassOf <http://somewhere#Researcher> .
+
+
+###  http://somewhere#Professor
+<http://somewhere#Professor> rdf:type owl:Class ;
+                             rdfs:subClassOf <http://somewhere#Person> .
+
+
+###  http://somewhere#Researcher
+<http://somewhere#Researcher> rdf:type owl:Class ;
+                              rdfs:subClassOf <http://somewhere#Person> .
+
+
+###  http://somewhere#University
+<http://somewhere#University> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Property
+rdfs:Property rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://somewhere#Bugs
+<http://somewhere#Bugs> rdf:type owl:NamedIndividual ,
+                                 <http://somewhere#Animal> ;
+                        <http://www.w3.org/2001/vcard-rdf/3.0/Given> "Bugs" ;
+                        <http://xmlns.com/foaf/0.1/age> 2 ;
+                        <http://xmlns.com/foaf/0.1/knows> <http://somewhere#JaneSmith> ,
+                                                          <http://somewhere#RockySmith> ,
+                                                          <http://somewhere#SaraJones> .
+
+
+###  http://somewhere#JaneSmith
+<http://somewhere#JaneSmith> rdf:type owl:NamedIndividual ,
+                                      <http://somewhere#Researcher> ;
+                             <http://www.w3.org/2001/vcard-rdf/3.0/FN> "Jane Smith" ;
+                             <http://www.w3.org/2001/vcard-rdf/3.0/Family> "Smith" ;
+                             <http://www.w3.org/2001/vcard-rdf/3.0/Given> "Jane" ;
+                             <http://xmlns.com/foaf/0.1/age> 30 ;
+                             <http://xmlns.com/foaf/0.1/knows> <http://somewhere#RockySmith> ,
+                                                               <http://somewhere#SaraJones> .
+
+
+###  http://somewhere#JimGonzalez
+<http://somewhere#JimGonzalez> rdf:type owl:NamedIndividual ,
+                                        <http://somewhere#Professor> ;
+                               <http://www.w3.org/2001/vcard-rdf/3.0/FN> "Jim Gonzalez" ;
+                               <http://www.w3.org/2001/vcard-rdf/3.0/Family> "Gonzalez" ;
+                               <http://www.w3.org/2001/vcard-rdf/3.0/Given> "Jim" ;
+                               <http://xmlns.com/foaf/0.1/age> 40 .
+
+
+###  http://somewhere#JohnSmith
+<http://somewhere#JohnSmith> rdf:type owl:NamedIndividual ,
+                                      <http://somewhere#Person> ;
+                             <http://www.w3.org/2001/vcard-rdf/3.0/FN> "John Smith" ;
+                             <http://www.w3.org/2001/vcard-rdf/3.0/Family> "Smith" ;
+                             <http://www.w3.org/2001/vcard-rdf/3.0/Given> "John" ;
+                             <http://xmlns.com/foaf/0.1/age> 20 .
+
+
+###  http://somewhere#RockySmith
+<http://somewhere#RockySmith> rdf:type owl:NamedIndividual ,
+                                       <http://somewhere#Animal> ;
+                              <http://www.w3.org/2001/vcard-rdf/3.0/FN> "Rocky Smith" ;
+                              <http://www.w3.org/2001/vcard-rdf/3.0/Family> "Smith" ;
+                              <http://www.w3.org/2001/vcard-rdf/3.0/Given> "Rocky" ;
+                              <http://xmlns.com/foaf/0.1/age> 10 ;
+                              <http://xmlns.com/foaf/0.1/knows> <http://somewhere#Bugs> ,
+                                                                <http://somewhere#JaneSmith> ,
+                                                                <http://somewhere#SaraJones> .
+
+
+###  http://somewhere#SaraJones
+<http://somewhere#SaraJones> rdf:type owl:NamedIndividual ,
+                                      <http://somewhere#Person> ;
+                             <http://www.w3.org/2001/vcard-rdf/3.0/FN> "Sara Jones" ;
+                             <http://www.w3.org/2001/vcard-rdf/3.0/Family> "Jones" ;
+                             <http://www.w3.org/2001/vcard-rdf/3.0/Given> "Sara" ;
+                             <http://xmlns.com/foaf/0.1/age> 22 ;
+                             <http://xmlns.com/foaf/0.1/knows> <http://somewhere#JaneSmith> ,
+                                                               <http://somewhere#RockySmith> .
+
+
+###  http://somewhere#UPM
+<http://somewhere#UPM> rdf:type owl:NamedIndividual ,
+                                <http://somewhere#University> .
+
+
+###  http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Family
+<http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Family> rdf:type owl:NamedIndividual ,
+                                                                        rdfs:Property .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

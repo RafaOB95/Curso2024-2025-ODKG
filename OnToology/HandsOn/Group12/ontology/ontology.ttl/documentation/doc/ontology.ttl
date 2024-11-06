@@ -1,0 +1,291 @@
+@prefix : <http://group12.namespace.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://group12.namespace.com/> .
+
+<http://group12.namespace.com/> rdf:type owl:Ontology ;
+                                 <http://purl.org/dc/elements/1.1/creator> "Group12" ;
+                                 <http://purl.org/dc/elements/1.1/title> "Template Ontology" ;
+                                 owl:versionInfo "0.0.1" ;
+                                 <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#time
+xsd:time rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.owl-ontologies.com/ns#lesividad
+<http://www.owl-ontologies.com/ns#lesividad> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://www.owl-ontologies.com/ns#Lesividad> ,
+                                                         <http://www.owl-ontologies.com/ns#Participante> ;
+                                             rdfs:range <http://www.owl-ontologies.com/ns#Lesividad> .
+
+
+###  http://www.owl-ontologies.com/ns#tieneDistrito
+<http://www.owl-ontologies.com/ns#tieneDistrito> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://www.owl-ontologies.com/ns#Localizacion> ;
+                                                 rdfs:range <http://www.owl-ontologies.com/ns#Distrito> ;
+                                                 rdfs:label "tiene distrito" .
+
+
+###  http://www.owl-ontologies.com/ns#tieneLocalizacion
+<http://www.owl-ontologies.com/ns#tieneLocalizacion> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://www.owl-ontologies.com/ns#Accidente> ;
+                                                     rdfs:range <http://www.owl-ontologies.com/ns#Localizacion> ;
+                                                     rdfs:label "tiene localizacion" .
+
+
+###  http://www.owl-ontologies.com/ns#tieneParticipante
+<http://www.owl-ontologies.com/ns#tieneParticipante> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://www.owl-ontologies.com/ns#Accidente> ;
+                                                     rdfs:range <http://www.owl-ontologies.com/ns#Participante> ;
+                                                     rdfs:label "tiene participante" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.owl-ontologies.com/ns#cod_lesividad
+<http://www.owl-ontologies.com/ns#cod_lesividad> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://www.owl-ontologies.com/ns#Lesividad> ;
+                                                 rdfs:range xsd:integer ;
+                                                 rdfs:label "cod_lesividad" .
+
+
+###  http://www.owl-ontologies.com/ns#code_distrito
+<http://www.owl-ontologies.com/ns#code_distrito> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://www.owl-ontologies.com/ns#Distrito> ;
+                                                 rdfs:range xsd:integer ;
+                                                 rdfs:label "code_distrito" .
+
+
+###  http://www.owl-ontologies.com/ns#coordenada_x_utm
+<http://www.owl-ontologies.com/ns#coordenada_x_utm> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://www.owl-ontologies.com/ns#Localizacion> ;
+                                                    rdfs:range xsd:float ;
+                                                    rdfs:label "coordenada_x_utm" .
+
+
+###  http://www.owl-ontologies.com/ns#coordenada_y_utm
+<http://www.owl-ontologies.com/ns#coordenada_y_utm> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://www.owl-ontologies.com/ns#Localizacion> ;
+                                                    rdfs:range xsd:float ;
+                                                    rdfs:label "coordenada_y_utm" .
+
+
+###  http://www.owl-ontologies.com/ns#distrito
+<http://www.owl-ontologies.com/ns#distrito> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://www.owl-ontologies.com/ns#Distrito> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:label "distrito" .
+
+
+###  http://www.owl-ontologies.com/ns#estado_meteorologico
+<http://www.owl-ontologies.com/ns#estado_meteorologico> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.owl-ontologies.com/ns#Accidente> ;
+                                                        rdfs:range xsd:string ;
+                                                        rdfs:label "estado_meteorologico" .
+
+
+###  http://www.owl-ontologies.com/ns#fecha
+<http://www.owl-ontologies.com/ns#fecha> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <http://www.owl-ontologies.com/ns#Accidente> ;
+                                         rdfs:range xsd:date ;
+                                         rdfs:label "fecha" .
+
+
+###  http://www.owl-ontologies.com/ns#hora
+<http://www.owl-ontologies.com/ns#hora> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://www.owl-ontologies.com/ns#Accidente> ;
+                                        rdfs:range xsd:time ;
+                                        rdfs:label "hora" .
+
+
+###  http://www.owl-ontologies.com/ns#lesividad
+<http://www.owl-ontologies.com/ns#lesividad> rdf:type owl:DatatypeProperty ;
+                                             rdfs:range xsd:string .
+
+
+###  http://www.owl-ontologies.com/ns#localizacion
+<http://www.owl-ontologies.com/ns#localizacion> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://www.owl-ontologies.com/ns#Distrito> ;
+                                                rdfs:range xsd:string ;
+                                                rdfs:label "localizacion" .
+
+
+###  http://www.owl-ontologies.com/ns#num_expediente
+<http://www.owl-ontologies.com/ns#num_expediente> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://www.owl-ontologies.com/ns#Accidente> ;
+                                                  rdfs:range xsd:string ;
+                                                  rdfs:label "num_expediente" .
+
+
+###  http://www.owl-ontologies.com/ns#positiva_alcohol
+<http://www.owl-ontologies.com/ns#positiva_alcohol> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://www.owl-ontologies.com/ns#Participante> ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:label "positiva_alcohol" .
+
+
+###  http://www.owl-ontologies.com/ns#positiva_droga
+<http://www.owl-ontologies.com/ns#positiva_droga> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://www.owl-ontologies.com/ns#Participante> ;
+                                                  rdfs:range xsd:string ;
+                                                  rdfs:label "positiva_droga" .
+
+
+###  http://www.owl-ontologies.com/ns#rango_edad
+<http://www.owl-ontologies.com/ns#rango_edad> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://www.owl-ontologies.com/ns#Participante> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:label "rango_edad" .
+
+
+###  http://www.owl-ontologies.com/ns#sexo
+<http://www.owl-ontologies.com/ns#sexo> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://www.owl-ontologies.com/ns#Participante> ;
+                                        rdfs:range xsd:string ;
+                                        rdfs:label "sexo" .
+
+
+###  http://www.owl-ontologies.com/ns#tipo_accidente
+<http://www.owl-ontologies.com/ns#tipo_accidente> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://www.owl-ontologies.com/ns#Accidente> ;
+                                                  rdfs:range xsd:string ;
+                                                  rdfs:label "tipo_accidente" .
+
+
+###  http://www.owl-ontologies.com/ns#tipo_persona
+<http://www.owl-ontologies.com/ns#tipo_persona> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://www.owl-ontologies.com/ns#Participante> ;
+                                                rdfs:range xsd:string ;
+                                                rdfs:label "tipo_persona" .
+
+
+###  http://www.owl-ontologies.com/ns#tipo_vehiculo
+<http://www.owl-ontologies.com/ns#tipo_vehiculo> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://www.owl-ontologies.com/ns#Participante> ;
+                                                 rdfs:range xsd:string ;
+                                                 rdfs:label "tipo_vehiculo" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.owl-ontologies.com/ns#Accidente
+<http://www.owl-ontologies.com/ns#Accidente> rdf:type owl:Class ;
+                                             rdfs:label "Accidente" .
+
+
+###  http://www.owl-ontologies.com/ns#Alcance
+<http://www.owl-ontologies.com/ns#Alcance> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.owl-ontologies.com/ns#Accidente> ;
+                                           rdfs:label "Alcance" .
+
+
+###  http://www.owl-ontologies.com/ns#AtropelloPersona
+<http://www.owl-ontologies.com/ns#AtropelloPersona> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.owl-ontologies.com/ns#Accidente> ;
+                                                    rdfs:label "Atropello Persona" .
+
+
+###  http://www.owl-ontologies.com/ns#Caida
+<http://www.owl-ontologies.com/ns#Caida> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.owl-ontologies.com/ns#Accidente> ;
+                                         rdfs:label "Caida" .
+
+
+###  http://www.owl-ontologies.com/ns#ChoqueObstaculo
+<http://www.owl-ontologies.com/ns#ChoqueObstaculo> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://www.owl-ontologies.com/ns#Accidente> ;
+                                                   rdfs:label "Choque Obstaculo" .
+
+
+###  http://www.owl-ontologies.com/ns#ColisionDoble
+<http://www.owl-ontologies.com/ns#ColisionDoble> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://www.owl-ontologies.com/ns#Accidente> ;
+                                                 rdfs:label "Colision Doble" .
+
+
+###  http://www.owl-ontologies.com/ns#ColisionMultiple
+<http://www.owl-ontologies.com/ns#ColisionMultiple> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://www.owl-ontologies.com/ns#Accidente> ;
+                                                    rdfs:label "Colision Multiple" .
+
+
+###  http://www.owl-ontologies.com/ns#Distrito
+<http://www.owl-ontologies.com/ns#Distrito> rdf:type owl:Class ;
+                                            rdfs:label "Distrito" .
+
+
+###  http://www.owl-ontologies.com/ns#Lesividad
+<http://www.owl-ontologies.com/ns#Lesividad> rdf:type owl:Class ;
+                                             rdfs:label "Lesividad" .
+
+
+###  http://www.owl-ontologies.com/ns#Localizacion
+<http://www.owl-ontologies.com/ns#Localizacion> rdf:type owl:Class ;
+                                                rdfs:label "Localizacion" .
+
+
+###  http://www.owl-ontologies.com/ns#Otras
+<http://www.owl-ontologies.com/ns#Otras> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.owl-ontologies.com/ns#Accidente> ;
+                                         rdfs:label "Otras" .
+
+
+###  http://www.owl-ontologies.com/ns#Participante
+<http://www.owl-ontologies.com/ns#Participante> rdf:type owl:Class ;
+                                                rdfs:label "Participante" .
+
+
+###  http://www.owl-ontologies.com/ns#Vuelco
+<http://www.owl-ontologies.com/ns#Vuelco> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.owl-ontologies.com/ns#Accidente> ;
+                                          rdfs:label "Vuelco" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.owl-ontologies.com/ns#lesividad> rdfs:label "lesividad" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
