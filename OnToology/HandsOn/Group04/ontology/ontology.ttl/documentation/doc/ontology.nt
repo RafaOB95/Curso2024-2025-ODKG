@@ -1,0 +1,167 @@
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#isPartOf
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInNeighborhood
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInNeighborhood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInNeighborhood> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInNeighborhood> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInNeighborhood> <http://www.w3.org/2000/01/rdf-schema#label> "located in neighborhood" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInStreet
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInStreet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInStreet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInStreet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInStreet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInStreet> <http://www.w3.org/2000/01/rdf-schema#label> "located in street" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#managedBy
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#managedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#managedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#managedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Operator> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#managedBy> <http://www.w3.org/2000/01/rdf-schema#label> "managed by" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#accessibility
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#accessibility> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#accessibility> <http://www.w3.org/2000/01/rdf-schema#label> "accessibility" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsConnectors
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsConnectors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsConnectors> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsConnectors> <http://www.w3.org/2000/01/rdf-schema#label> "ccs connectors" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsKw
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsKw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsKw> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsKw> <http://www.w3.org/2000/01/rdf-schema#label> "ccs kw" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoConnectors
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoConnectors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoConnectors> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoConnectors> <http://www.w3.org/2000/01/rdf-schema#label> "chademo connectors" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoKw
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoKw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoKw> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoKw> <http://www.w3.org/2000/01/rdf-schema#label> "chademo kw" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#dischargeDate
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#dischargeDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#dischargeDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#dischargeDate> <http://www.w3.org/2000/01/rdf-schema#label> "discharge date" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#location
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesConnectors
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesConnectors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesConnectors> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesConnectors> <http://www.w3.org/2000/01/rdf-schema#label> "mennekes connectors" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesKw
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesKw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesKw> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesKw> <http://www.w3.org/2000/01/rdf-schema#label> "mennekes kw" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfEquipments
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfEquipments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfEquipments> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfEquipments> <http://www.w3.org/2000/01/rdf-schema#label> "number of equipments" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfTotalPlaces
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfTotalPlaces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfTotalPlaces> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfTotalPlaces> <http://www.w3.org/2000/01/rdf-schema#label> "number of total places" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#openingHours
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#openingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#openingHours> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#openingHours> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#openingHours> <http://www.w3.org/2000/01/rdf-schema#label> "opening hours" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#postalCode
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#postalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#postalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#postalCode> <http://www.w3.org/2000/01/rdf-schema#label> "postal code" .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#label
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Operator> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#label> <http://www.w3.org/2000/01/rdf-schema#label> "label" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint> <http://www.w3.org/2000/01/rdf-schema#label> "Charge Point" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District> <http://www.w3.org/2000/01/rdf-schema#label> "District" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood> <http://www.w3.org/2000/01/rdf-schema#label> "Neighborhood" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Operator
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Operator> <http://www.w3.org/2000/01/rdf-schema#label> "Operator" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking> <http://www.w3.org/2000/01/rdf-schema#label> "Parking" .
+# 
+# http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street> <http://www.w3.org/2000/01/rdf-schema#label> "Street" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

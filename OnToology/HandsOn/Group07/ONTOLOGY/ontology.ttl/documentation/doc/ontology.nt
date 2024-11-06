@@ -1,0 +1,353 @@
+<http://madrid.eventos.com/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://madrid.eventos.com/> <http://purl.org/dc/elements/1.1/title> "MadridEvents Ontology" .
+<http://madrid.eventos.com/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<http://madrid.eventos.com/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#time
+<http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://madrid.eventos.com/Equipment
+<http://madrid.eventos.com/Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/Equipment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#text> .
+<http://www.w3.org/2001/XMLSchema#text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://madrid.eventos.com/OpeningHours
+<http://madrid.eventos.com/OpeningHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/OpeningHours> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#text> .
+# 
+# http://madrid.eventos.com/accessibilityLevel
+<http://madrid.eventos.com/accessibilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/accessibilityLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<http://madrid.eventos.com/accessibilityLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+<http://www.w3.org/2001/XMLSchema#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://madrid.eventos.com/c
+<http://madrid.eventos.com/c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/c> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<http://madrid.eventos.com/c> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<http://madrid.eventos.com/c> <http://www.w3.org/2000/01/rdf-schema#range> <http://madrid.eventos.com/ContactDetails> .
+<http://madrid.eventos.com/c> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/Place> .
+<http://madrid.eventos.com/c> <http://www.w3.org/2000/01/rdf-schema#label> "c" .
+# 
+# http://madrid.eventos.com/description
+<http://madrid.eventos.com/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#text> .
+# 
+# http://madrid.eventos.com/district
+<http://madrid.eventos.com/district> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/district> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/GeoCoordinates> .
+<http://madrid.eventos.com/district> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# http://madrid.eventos.com/excludedDays
+<http://madrid.eventos.com/excludedDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/excludedDays> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#text> .
+# 
+# http://madrid.eventos.com/longDuration
+<http://madrid.eventos.com/longDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/longDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<http://madrid.eventos.com/longDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Boolean> .
+<http://www.w3.org/2001/XMLSchema#Boolean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://madrid.eventos.com/neighborhood
+<http://madrid.eventos.com/neighborhood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/neighborhood> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/GeoCoordinates> .
+<http://madrid.eventos.com/neighborhood> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# http://madrid.eventos.com/transportation
+<http://madrid.eventos.com/transportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/transportation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://madrid.eventos.com/ContactDetails> .
+<http://madrid.eventos.com/transportation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#text> .
+# 
+# http://madrid.eventos.com/type
+<http://madrid.eventos.com/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/type> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<http://madrid.eventos.com/type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# http://madrid.eventos.com/weekDays
+<http://madrid.eventos.com/weekDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://madrid.eventos.com/weekDays> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# http://www.w3.org/XML/1998/namespaceid
+<http://www.w3.org/XML/1998/namespaceid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/XML/1998/namespaceid> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<http://www.w3.org/XML/1998/namespaceid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# https://schema.org/about
+<https://schema.org/about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/about> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<https://schema.org/about> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#text> .
+# 
+# https://schema.org/address
+<https://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<https://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# https://schema.org/audience
+<https://schema.org/audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<https://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# https://schema.org/geo
+<https://schema.org/geo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<https://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/GeoCoordinates> .
+<https://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#label> "geo" .
+# 
+# https://schema.org/isAccessibleForFree
+<https://schema.org/isAccessibleForFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/isAccessibleForFree> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<https://schema.org/isAccessibleForFree> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Boolean> .
+# 
+# https://schema.org/latitude
+<https://schema.org/latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/GeoCoordinates> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Float> .
+<http://www.w3.org/2001/XMLSchema#Float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/longitude
+<https://schema.org/longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/GeoCoordinates> .
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Float> .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# https://schema.org/postalCode
+<https://schema.org/postalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/GeoCoordinates> .
+<https://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Integer> .
+<http://www.w3.org/2001/XMLSchema#Integer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://schema.org/url
+<https://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<https://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Place> .
+<https://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://madrid.eventos.com/Equipment
+<http://madrid.eventos.com/Equipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://madrid.eventos.com/OpeningHours
+<http://madrid.eventos.com/OpeningHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://madrid.eventos.com/accessibilityLevel
+<http://madrid.eventos.com/accessibilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://madrid.eventos.com/description
+<http://madrid.eventos.com/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://madrid.eventos.com/district
+<http://madrid.eventos.com/district> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://madrid.eventos.com/excludedDays
+<http://madrid.eventos.com/excludedDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://madrid.eventos.com/longDuration
+<http://madrid.eventos.com/longDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://madrid.eventos.com/neighborhood
+<http://madrid.eventos.com/neighborhood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://madrid.eventos.com/transportation
+<http://madrid.eventos.com/transportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://madrid.eventos.com/type
+<http://madrid.eventos.com/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://madrid.eventos.com/weekDays
+<http://madrid.eventos.com/weekDays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.w3.org/XML/1998/namespaceid
+<http://www.w3.org/XML/1998/namespaceid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/about
+<https://schema.org/about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/address
+<https://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/audience
+<https://schema.org/audience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/doorTime
+<https://schema.org/doorTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/doorTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<https://schema.org/doorTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#time> .
+<https://schema.org/doorTime> <http://www.w3.org/2000/01/rdf-schema#label> "door time" .
+# 
+# https://schema.org/email
+<https://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#domain> <http://madrid.eventos.com/ContactDetails> .
+<https://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#label> "email" .
+# 
+# https://schema.org/endDate
+<https://schema.org/endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<https://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#label> "end date" .
+# 
+# https://schema.org/isAccessibleForFree
+<https://schema.org/isAccessibleForFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/latitude
+<https://schema.org/latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/longitude
+<https://schema.org/longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/postalCode
+<https://schema.org/postalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://schema.org/startDate
+<https://schema.org/startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<https://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "start date" .
+# 
+# https://schema.org/telephone
+<https://schema.org/telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://madrid.eventos.com/ContactDetails> .
+<https://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#label> "telephone" .
+# 
+# https://schema.org/url
+<https://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://madrid.eventos.com/ContactDetails
+<http://madrid.eventos.com/ContactDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://madrid.eventos.com/ContactDetails> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Details" .
+# 
+# http://www.w3.org/2001/XMLSchema#Boolean
+# 
+# http://www.w3.org/2001/XMLSchema#Float
+# 
+# http://www.w3.org/2001/XMLSchema#Integer
+# 
+# http://www.w3.org/2001/XMLSchema#String
+# 
+# http://www.w3.org/2001/XMLSchema#text
+# 
+# https://schema.org/Event
+<https://schema.org/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# https://schema.org/GeoCoordinates
+<https://schema.org/GeoCoordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/GeoCoordinates> <http://www.w3.org/2000/01/rdf-schema#label> "Geo Coordinates" .
+# 
+# https://schema.org/Place
+<https://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://madrid.eventos.com/Equipment> <http://www.w3.org/2000/01/rdf-schema#label> "equipment" .
+# 
+<http://madrid.eventos.com/OpeningHours> <http://www.w3.org/2000/01/rdf-schema#label> "opening hours" .
+# 
+<http://madrid.eventos.com/accessibilityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "accessibility level" .
+# 
+<http://madrid.eventos.com/description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
+# 
+<http://madrid.eventos.com/district> <http://www.w3.org/2000/01/rdf-schema#label> "district" .
+# 
+<http://madrid.eventos.com/excludedDays> <http://www.w3.org/2000/01/rdf-schema#label> "excluded days" .
+# 
+<http://madrid.eventos.com/longDuration> <http://www.w3.org/2000/01/rdf-schema#label> "long duration" .
+# 
+<http://madrid.eventos.com/neighborhood> <http://www.w3.org/2000/01/rdf-schema#label> "neighborhood" .
+# 
+<http://madrid.eventos.com/transportation> <http://www.w3.org/2000/01/rdf-schema#label> "transportation" .
+# 
+<http://madrid.eventos.com/type> <http://www.w3.org/2000/01/rdf-schema#label> "type" .
+# 
+<http://madrid.eventos.com/weekDays> <http://www.w3.org/2000/01/rdf-schema#label> "week days" .
+# 
+<http://www.w3.org/XML/1998/namespaceid> <http://www.w3.org/2000/01/rdf-schema#label> "id" .
+# 
+<https://schema.org/about> <http://www.w3.org/2000/01/rdf-schema#label> "about" .
+# 
+<https://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "address" .
+# 
+<https://schema.org/audience> <http://www.w3.org/2000/01/rdf-schema#label> "audience" .
+# 
+<https://schema.org/isAccessibleForFree> <http://www.w3.org/2000/01/rdf-schema#label> "is accessible for free" .
+# 
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#label> "latitude" .
+# 
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#label> "longitude" .
+# 
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+<https://schema.org/postalCode> <http://www.w3.org/2000/01/rdf-schema#label> "postal code" .
+# 
+<https://schema.org/url> <http://www.w3.org/2000/01/rdf-schema#label> "url" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

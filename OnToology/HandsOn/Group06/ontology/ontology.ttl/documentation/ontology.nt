@@ -1,0 +1,202 @@
+<http://MadridAirQuality.org/ontology/AirQualityOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://MadridAirQuality.org/ontology/AirQualityOntology> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology for representing air quality monitoring data including locations, provinces, municipalities, stations, and measurements." .
+<http://MadridAirQuality.org/ontology/AirQualityOntology> <http://www.w3.org/2000/01/rdf-schema#label> "Air Quality Monitoring Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://MadridAirQuality.org/ontology/hasMagnitude
+<http://MadridAirQuality.org/ontology/hasMagnitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://MadridAirQuality.org/ontology/hasMagnitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Measurement> .
+<http://MadridAirQuality.org/ontology/hasMagnitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://MadridAirQuality.org/ontology/Magnitude> .
+<http://MadridAirQuality.org/ontology/hasMagnitude> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a measurement to a magnitude" .
+<http://MadridAirQuality.org/ontology/hasMagnitude> <http://www.w3.org/2000/01/rdf-schema#label> "has mmagnitude" .
+# 
+# http://MadridAirQuality.org/ontology/hasMeasurement
+<http://MadridAirQuality.org/ontology/hasMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://MadridAirQuality.org/ontology/hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Station> .
+<http://MadridAirQuality.org/ontology/hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <http://MadridAirQuality.org/ontology/Measurement> .
+<http://MadridAirQuality.org/ontology/hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates the station to its measurements" .
+<http://MadridAirQuality.org/ontology/hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "has measurement" .
+# 
+# http://MadridAirQuality.org/ontology/hasMunicipality
+<http://MadridAirQuality.org/ontology/hasMunicipality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://MadridAirQuality.org/ontology/hasMunicipality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Province> .
+<http://MadridAirQuality.org/ontology/hasMunicipality> <http://www.w3.org/2000/01/rdf-schema#range> <http://MadridAirQuality.org/ontology/Municipality> .
+<http://MadridAirQuality.org/ontology/hasMunicipality> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Province to its Municipality." .
+<http://MadridAirQuality.org/ontology/hasMunicipality> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates the municipality to the province" .
+<http://MadridAirQuality.org/ontology/hasMunicipality> <http://www.w3.org/2000/01/rdf-schema#label> "has municipality" .
+# 
+# http://MadridAirQuality.org/ontology/hasMunicipalityName
+<http://MadridAirQuality.org/ontology/hasMunicipalityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://MadridAirQuality.org/ontology/hasMunicipalityName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Municipality> .
+<http://MadridAirQuality.org/ontology/hasMunicipalityName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+<http://www.w3.org/2001/XMLSchema#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://MadridAirQuality.org/ontology/hasMunicipalityName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the municipality" .
+<http://MadridAirQuality.org/ontology/hasMunicipalityName> <http://www.w3.org/2000/01/rdf-schema#label> "has muinicipality name" .
+# 
+# http://MadridAirQuality.org/ontology/hasProvince
+<http://MadridAirQuality.org/ontology/hasProvince> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://MadridAirQuality.org/ontology/hasProvince> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Location> .
+<http://MadridAirQuality.org/ontology/hasProvince> <http://www.w3.org/2000/01/rdf-schema#range> <http://MadridAirQuality.org/ontology/Province> .
+<http://MadridAirQuality.org/ontology/hasProvince> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Location to its Province." .
+<http://MadridAirQuality.org/ontology/hasProvince> <http://www.w3.org/2000/01/rdf-schema#label> "has province" .
+# 
+# http://MadridAirQuality.org/ontology/hasProvinceName
+<http://MadridAirQuality.org/ontology/hasProvinceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://MadridAirQuality.org/ontology/hasProvinceName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Province> .
+<http://MadridAirQuality.org/ontology/hasProvinceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+<http://MadridAirQuality.org/ontology/hasProvinceName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the province" .
+<http://MadridAirQuality.org/ontology/hasProvinceName> <http://www.w3.org/2000/01/rdf-schema#label> "has province name" .
+# 
+# http://MadridAirQuality.org/ontology/hasStation
+<http://MadridAirQuality.org/ontology/hasStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://MadridAirQuality.org/ontology/hasStation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Municipality> .
+<http://MadridAirQuality.org/ontology/hasStation> <http://www.w3.org/2000/01/rdf-schema#range> <http://MadridAirQuality.org/ontology/Station> .
+<http://MadridAirQuality.org/ontology/hasStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Municipality to its Stations." .
+<http://MadridAirQuality.org/ontology/hasStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates the the station to the municipality" .
+<http://MadridAirQuality.org/ontology/hasStation> <http://www.w3.org/2000/01/rdf-schema#label> "has station" .
+# 
+# http://MadridAirQuality.org/ontology/hasStationName
+<http://MadridAirQuality.org/ontology/hasStationName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://MadridAirQuality.org/ontology/hasStationName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Station> .
+<http://MadridAirQuality.org/ontology/hasStationName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+<http://MadridAirQuality.org/ontology/hasStationName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the station" .
+<http://MadridAirQuality.org/ontology/hasStationName> <http://www.w3.org/2000/01/rdf-schema#label> "has station name" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://MadridAirQuality.org/ontology/hasMagnitudeCode
+<http://MadridAirQuality.org/ontology/hasMagnitudeCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/hasMagnitudeCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Magnitude> .
+<http://MadridAirQuality.org/ontology/hasMagnitudeCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://MadridAirQuality.org/ontology/hasMagnitudeCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The numerical value of the magnitude." .
+<http://MadridAirQuality.org/ontology/hasMagnitudeCode> <http://www.w3.org/2000/01/rdf-schema#label> "has magnitude code" .
+# 
+# http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit
+<http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Magnitude> .
+<http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "The string value of the magnitude measurement unit." .
+<http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has magnitude measurement unit" .
+# 
+# http://MadridAirQuality.org/ontology/hasMagnitudeName
+<http://MadridAirQuality.org/ontology/hasMagnitudeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/hasMagnitudeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Magnitude> .
+<http://MadridAirQuality.org/ontology/hasMagnitudeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://MadridAirQuality.org/ontology/hasMagnitudeName> <http://www.w3.org/2000/01/rdf-schema#comment> "The string value of the magnitude." .
+<http://MadridAirQuality.org/ontology/hasMagnitudeName> <http://www.w3.org/2000/01/rdf-schema#label> "has magnitude name" .
+# 
+# http://MadridAirQuality.org/ontology/hasMeasurementDay
+<http://MadridAirQuality.org/ontology/hasMeasurementDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/hasMeasurementDay> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Measurement> .
+<http://MadridAirQuality.org/ontology/hasMeasurementDay> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://MadridAirQuality.org/ontology/hasMeasurementDay> <http://www.w3.org/2000/01/rdf-schema#comment> "The day when the measurement was recorded." .
+<http://MadridAirQuality.org/ontology/hasMeasurementDay> <http://www.w3.org/2000/01/rdf-schema#label> "has day" .
+# 
+# http://MadridAirQuality.org/ontology/hasMeasurementMonth
+<http://MadridAirQuality.org/ontology/hasMeasurementMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/hasMeasurementMonth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Measurement> .
+<http://MadridAirQuality.org/ontology/hasMeasurementMonth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://MadridAirQuality.org/ontology/hasMeasurementMonth> <http://www.w3.org/2000/01/rdf-schema#comment> "The month when the measurement was recorded." .
+<http://MadridAirQuality.org/ontology/hasMeasurementMonth> <http://www.w3.org/2000/01/rdf-schema#label> "has month" .
+# 
+# http://MadridAirQuality.org/ontology/hasMeasurementValue
+<http://MadridAirQuality.org/ontology/hasMeasurementValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/hasMeasurementValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Measurement> .
+<http://MadridAirQuality.org/ontology/hasMeasurementValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://MadridAirQuality.org/ontology/hasMeasurementValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The numerical value of the measurement." .
+<http://MadridAirQuality.org/ontology/hasMeasurementValue> <http://www.w3.org/2000/01/rdf-schema#label> "has measurement value" .
+# 
+# http://MadridAirQuality.org/ontology/hasMeasurementYear
+<http://MadridAirQuality.org/ontology/hasMeasurementYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/hasMeasurementYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Measurement> .
+<http://MadridAirQuality.org/ontology/hasMeasurementYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://MadridAirQuality.org/ontology/hasMeasurementYear> <http://www.w3.org/2000/01/rdf-schema#comment> "The year when the measurement was recorded." .
+<http://MadridAirQuality.org/ontology/hasMeasurementYear> <http://www.w3.org/2000/01/rdf-schema#label> "has year" .
+# 
+# http://MadridAirQuality.org/ontology/hasMunicipalityLocationID
+<http://MadridAirQuality.org/ontology/hasMunicipalityLocationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/hasMunicipalityLocationID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Municipality> .
+<http://MadridAirQuality.org/ontology/hasMunicipalityLocationID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://MadridAirQuality.org/ontology/hasMunicipalityLocationID> <http://www.w3.org/2000/01/rdf-schema#comment> "THe numerical value for the municipality" .
+<http://MadridAirQuality.org/ontology/hasMunicipalityLocationID> <http://www.w3.org/2000/01/rdf-schema#label> "has municipality location id" .
+# 
+# http://MadridAirQuality.org/ontology/hasProvinceLocationID
+<http://MadridAirQuality.org/ontology/hasProvinceLocationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/hasProvinceLocationID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Province> .
+<http://MadridAirQuality.org/ontology/hasProvinceLocationID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://MadridAirQuality.org/ontology/hasProvinceLocationID> <http://www.w3.org/2000/01/rdf-schema#comment> "THe numerical value for the province" .
+<http://MadridAirQuality.org/ontology/hasProvinceLocationID> <http://www.w3.org/2000/01/rdf-schema#label> "has punicipality location id" .
+# 
+# http://MadridAirQuality.org/ontology/hasStationLocationID
+<http://MadridAirQuality.org/ontology/hasStationLocationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/hasStationLocationID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Station> .
+<http://MadridAirQuality.org/ontology/hasStationLocationID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://MadridAirQuality.org/ontology/hasStationLocationID> <http://www.w3.org/2000/01/rdf-schema#comment> "The numerical value of the station where the station is located" .
+<http://MadridAirQuality.org/ontology/hasStationLocationID> <http://www.w3.org/2000/01/rdf-schema#label> "has station location ID" .
+# 
+# http://MadridAirQuality.org/ontology/isMeasurementValid
+<http://MadridAirQuality.org/ontology/isMeasurementValid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://MadridAirQuality.org/ontology/isMeasurementValid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://MadridAirQuality.org/ontology/Measurement> .
+<http://MadridAirQuality.org/ontology/isMeasurementValid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://MadridAirQuality.org/ontology/isMeasurementValid> <http://www.w3.org/2000/01/rdf-schema#comment> "Determines if the measurement is valid" .
+<http://MadridAirQuality.org/ontology/isMeasurementValid> <http://www.w3.org/2000/01/rdf-schema#label> "is measurement valid" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://MadridAirQuality.org/ontology/Location
+<http://MadridAirQuality.org/ontology/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://MadridAirQuality.org/ontology/Location> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical location where air quality measurements are taken." .
+<http://MadridAirQuality.org/ontology/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+# 
+# http://MadridAirQuality.org/ontology/Magnitude
+<http://MadridAirQuality.org/ontology/Magnitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://MadridAirQuality.org/ontology/Magnitude> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of measurement related to air quality, such as pollutants or meteorological parameters." .
+<http://MadridAirQuality.org/ontology/Magnitude> <http://www.w3.org/2000/01/rdf-schema#label> "Magnitude" .
+# 
+# http://MadridAirQuality.org/ontology/Measurement
+<http://MadridAirQuality.org/ontology/Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://MadridAirQuality.org/ontology/Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A recorded observation of air quality data at a specific time and location." .
+<http://MadridAirQuality.org/ontology/Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement" .
+# 
+# http://MadridAirQuality.org/ontology/Municipality
+<http://MadridAirQuality.org/ontology/Municipality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://MadridAirQuality.org/ontology/Municipality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://MadridAirQuality.org/ontology/Location> .
+<http://MadridAirQuality.org/ontology/Municipality> <http://www.w3.org/2000/01/rdf-schema#comment> "A municipality where air quality measurements are taken." .
+<http://MadridAirQuality.org/ontology/Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Municipality" .
+# 
+# http://MadridAirQuality.org/ontology/Province
+<http://MadridAirQuality.org/ontology/Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://MadridAirQuality.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://MadridAirQuality.org/ontology/Location> .
+<http://MadridAirQuality.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#comment> "A province where air quality measurements are taken." .
+<http://MadridAirQuality.org/ontology/Province> <http://www.w3.org/2000/01/rdf-schema#label> "Province" .
+# 
+# http://MadridAirQuality.org/ontology/Station
+<http://MadridAirQuality.org/ontology/Station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://MadridAirQuality.org/ontology/Station> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://MadridAirQuality.org/ontology/Location> .
+<http://MadridAirQuality.org/ontology/Station> <http://www.w3.org/2000/01/rdf-schema#comment> "A monitoring station that measures air quality at a specific location." .
+<http://MadridAirQuality.org/ontology/Station> <http://www.w3.org/2000/01/rdf-schema#label> "Station" .
+# 
+# http://www.w3.org/2001/XMLSchema#String
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

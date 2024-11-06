@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "schema:Observation" "schema:Dataset" "schema:ScholarlyArticle" "schema:Place" "schema:State" "schema:City" "schema:Article" ; /*classes style*/
+	"xsd:" -> "https://chowlk.linkeddata.es/" [ label = "mod:createdWith" ];
+	"schema:ScholarlyArticle" -> "xsd:date" [ label = "schema:datePublished" ];
+	"schema:Observation" -> "xsd:string" [ label = "schema:variableMeasured" ];
+	"schema:Dataset" -> "schema:Article" [ label = "schema:hasPart" ];
+	"schema:State" -> "schema:City" [ label = "schema:containedInPlace" ];
+	"schema:Observation" -> "owl:Thing" [ label = "schema:value" ];
+	"schema:Observation" -> "schema:Dataset" [ label = "schema:isPartOf" ];
+	"owl:Thing" -> "schema:Place" [ label = "schema:observationAbout" ];
+	"schema:Place" -> "xsd:double" [ label = "schema:latitude" ];
+	"schema:Dataset" -> "xsd:string" [ label = "schema:name" ];
+	"schema:Observation" -> "xsd:dateTime" [ label = "schema:observationDateTime" ];
+	"schema:Dataset" -> "schema:ScholarlyArticle" [ label = "prov:wasDerivedFrom" ];
+	"schema:Observation" -> "owl:Thing" [ label = "schema:unitText" ];
+	"schema:ScholarlyArticle" -> "xsd:string" [ label = "schema:author" ];
+	"schema:Article" -> "xsd:string" [ label = "schema:about" ];
+
+}

@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://fuelpricespain.org/ontologyGasolinerasOntology#"
+     xml:base="http://fuelpricespain.org/ontologyGasolinerasOntology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://fuelpricespain.org/ontologyGasolinerasOntology">
+        <dc:creator>Grupo de Desarrollo</dc:creator>
+        <dc:description>Ontología para representar gasolineras y sus ubicaciones</dc:description>
+        <dc:title>Ontología de Gasolineras</dc:title>
+        <owl:versionInfo>0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://fuelpricespain.org/ontologytieneUbicacion -->
+
+
+    <owl:ObjectProperty rdf:about="http://fuelpricespain.org/ontologytieneUbicacion">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyGasolinera"/>
+        <rdfs:range rdf:resource="http://fuelpricespain.org/ontologyUbicacion"/>
+        <rdfs:label>tiene ubicación</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://fuelpricespain.org/ontologycodigoPostal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://fuelpricespain.org/ontologycodigoPostal">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyUbicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>código postal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fuelpricespain.org/ontologydireccion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://fuelpricespain.org/ontologydireccion">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyUbicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>dirección</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fuelpricespain.org/ontologyhorario -->
+
+
+    <owl:DatatypeProperty rdf:about="http://fuelpricespain.org/ontologyhorario">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyGasolinera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>horario</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fuelpricespain.org/ontologylatitud -->
+
+
+    <owl:DatatypeProperty rdf:about="http://fuelpricespain.org/ontologylatitud">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyUbicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>latitud</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fuelpricespain.org/ontologylongitud -->
+
+
+    <owl:DatatypeProperty rdf:about="http://fuelpricespain.org/ontologylongitud">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyUbicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>longitud</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fuelpricespain.org/ontologymunicipio -->
+
+
+    <owl:DatatypeProperty rdf:about="http://fuelpricespain.org/ontologymunicipio">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyUbicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>municipio</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fuelpricespain.org/ontologyprecioGasoleoA -->
+
+
+    <owl:DatatypeProperty rdf:about="http://fuelpricespain.org/ontologyprecioGasoleoA">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyGasolinera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>precio gasóleo A</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fuelpricespain.org/ontologyprecioGasolina95E5 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://fuelpricespain.org/ontologyprecioGasolina95E5">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyGasolinera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>precio gasolina 95 E5</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fuelpricespain.org/ontologyprovincia -->
+
+
+    <owl:DatatypeProperty rdf:about="http://fuelpricespain.org/ontologyprovincia">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyUbicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>provincia</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://fuelpricespain.org/ontologyrotulo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://fuelpricespain.org/ontologyrotulo">
+        <rdfs:domain rdf:resource="http://fuelpricespain.org/ontologyGasolinera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>rótulo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://fuelpricespain.org/ontologyGasolinera -->
+
+
+    <owl:Class rdf:about="http://fuelpricespain.org/ontologyGasolinera">
+        <rdfs:label>Gasolinera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://fuelpricespain.org/ontologyUbicacion -->
+
+
+    <owl:Class rdf:about="http://fuelpricespain.org/ontologyUbicacion">
+        <rdfs:label>Ubicación</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

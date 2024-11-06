@@ -1,0 +1,83 @@
+{
+  "@context" : {
+    "Neighborhood" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Neighborhood"
+    },
+    "District" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#District"
+    },
+    "chademoKw" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoKw"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#label"
+    },
+    "isPartOf" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#isPartOf",
+      "@type" : "@id"
+    },
+    "numberOfEquipments" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfEquipments"
+    },
+    "openingHours" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#openingHours"
+    },
+    "chademoConnectors" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#chademoConnectors"
+    },
+    "Street" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Street"
+    },
+    "accessibility" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#accessibility"
+    },
+    "mennekesKw" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesKw"
+    },
+    "postalCode" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#postalCode"
+    },
+    "location" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#location"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "dischargeDate" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#dischargeDate"
+    },
+    "ChargePoint" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ChargePoint"
+    },
+    "mennekesConnectors" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#mennekesConnectors"
+    },
+    "locatedInNeighborhood" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInNeighborhood",
+      "@type" : "@id"
+    },
+    "managedBy" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#managedBy",
+      "@type" : "@id"
+    },
+    "Parking" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Parking"
+    },
+    "Operator" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#Operator"
+    },
+    "ccsKw" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsKw"
+    },
+    "locatedInStreet" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#locatedInStreet",
+      "@type" : "@id"
+    },
+    "numberOfTotalPlaces" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#numberOfTotalPlaces"
+    },
+    "ccsConnectors" : {
+      "@id" : "http://www.chargeAndParkMadrid.org/opendata/handsOn/group04/ontology/Ontology#ccsConnectors"
+    }
+  }
+}

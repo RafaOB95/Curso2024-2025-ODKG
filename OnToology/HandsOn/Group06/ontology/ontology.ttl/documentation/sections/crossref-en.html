@@ -1,0 +1,803 @@
+<h2 id="crossreference" class="list">Cross-reference for Air Quality Monitoring Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Air Quality Monitoring Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/Location" title="http://MadridAirQuality.org/ontology/Location">Location</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/Magnitude" title="http://MadridAirQuality.org/ontology/Magnitude">Magnitude</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/Measurement" title="http://MadridAirQuality.org/ontology/Measurement">Measurement</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/Municipality"
+            title="http://MadridAirQuality.org/ontology/Municipality">Municipality</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/Province" title="http://MadridAirQuality.org/ontology/Province">Province</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/Station" title="http://MadridAirQuality.org/ontology/Station">Station</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/Location">
+      <h3>Location<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/Location</p>
+      <div class="comment">
+         <span class="markdown">A physical location where air quality measurements are taken.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/Municipality"
+               title="http://MadridAirQuality.org/ontology/Municipality">Municipality</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://MadridAirQuality.org/ontology/Province" title="http://MadridAirQuality.org/ontology/Province">Province</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://MadridAirQuality.org/ontology/Station" title="http://MadridAirQuality.org/ontology/Station">Station</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasProvince" title="http://MadridAirQuality.org/ontology/hasProvince">has province</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/Magnitude">
+      <h3>Magnitude<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/Magnitude</p>
+      <div class="comment">
+         <span class="markdown">A type of measurement related to air quality, such as pollutants or meteorological parameters.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasMagnitudeCode"
+               title="http://MadridAirQuality.org/ontology/hasMagnitudeCode">has magnitude code</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit"
+               title="http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit">has magnitude measurement unit</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://MadridAirQuality.org/ontology/hasMagnitudeName"
+               title="http://MadridAirQuality.org/ontology/hasMagnitudeName">has magnitude name</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasMagnitude" title="http://MadridAirQuality.org/ontology/hasMagnitude">has mmagnitude</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/Measurement">
+      <h3>Measurement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/Measurement</p>
+      <div class="comment">
+         <span class="markdown">A recorded observation of air quality data at a specific time and location.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasMeasurementDay"
+               title="http://MadridAirQuality.org/ontology/hasMeasurementDay">has day</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://MadridAirQuality.org/ontology/hasMeasurementValue"
+               title="http://MadridAirQuality.org/ontology/hasMeasurementValue">has measurement value</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://MadridAirQuality.org/ontology/hasMagnitude" title="http://MadridAirQuality.org/ontology/hasMagnitude">has mmagnitude</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://MadridAirQuality.org/ontology/hasMeasurementMonth"
+               title="http://MadridAirQuality.org/ontology/hasMeasurementMonth">has month</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://MadridAirQuality.org/ontology/hasMeasurementYear"
+               title="http://MadridAirQuality.org/ontology/hasMeasurementYear">has year</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://MadridAirQuality.org/ontology/isMeasurementValid"
+               title="http://MadridAirQuality.org/ontology/isMeasurementValid">is measurement valid</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasMeasurement"
+               title="http://MadridAirQuality.org/ontology/hasMeasurement">has measurement</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/Municipality">
+      <h3>Municipality<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/Municipality</p>
+      <div class="comment">
+         <span class="markdown">A municipality where air quality measurements are taken.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/Location" title="http://MadridAirQuality.org/ontology/Location">Location</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasMunicipalityName"
+               title="http://MadridAirQuality.org/ontology/hasMunicipalityName">has muinicipality name</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://MadridAirQuality.org/ontology/hasMunicipalityLocationID"
+               title="http://MadridAirQuality.org/ontology/hasMunicipalityLocationID">has municipality location id</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://MadridAirQuality.org/ontology/hasStation" title="http://MadridAirQuality.org/ontology/hasStation">has station</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasMunicipality"
+               title="http://MadridAirQuality.org/ontology/hasMunicipality">has municipality</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/Province">
+      <h3>Province<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/Province</p>
+      <div class="comment">
+         <span class="markdown">A province where air quality measurements are taken.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/Location" title="http://MadridAirQuality.org/ontology/Location">Location</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasMunicipality"
+               title="http://MadridAirQuality.org/ontology/hasMunicipality">has municipality</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://MadridAirQuality.org/ontology/hasProvinceName"
+               title="http://MadridAirQuality.org/ontology/hasProvinceName">has province name</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://MadridAirQuality.org/ontology/hasProvinceLocationID"
+               title="http://MadridAirQuality.org/ontology/hasProvinceLocationID">has punicipality location id</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasProvince" title="http://MadridAirQuality.org/ontology/hasProvince">has province</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/Station">
+      <h3>Station<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/Station</p>
+      <div class="comment">
+         <span class="markdown">A monitoring station that measures air quality at a specific location.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/Location" title="http://MadridAirQuality.org/ontology/Location">Location</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasMeasurement"
+               title="http://MadridAirQuality.org/ontology/hasMeasurement">has measurement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://MadridAirQuality.org/ontology/hasStationLocationID"
+               title="http://MadridAirQuality.org/ontology/hasStationLocationID">has station location ID</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://MadridAirQuality.org/ontology/hasStationName"
+               title="http://MadridAirQuality.org/ontology/hasStationName">has station name</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://MadridAirQuality.org/ontology/hasStation" title="http://MadridAirQuality.org/ontology/hasStation">has station</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMeasurement"
+            title="http://MadridAirQuality.org/ontology/hasMeasurement">has measurement</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMagnitude" title="http://MadridAirQuality.org/ontology/hasMagnitude">has mmagnitude</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMunicipalityName"
+            title="http://MadridAirQuality.org/ontology/hasMunicipalityName">has muinicipality name</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMunicipality"
+            title="http://MadridAirQuality.org/ontology/hasMunicipality">has municipality</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasProvince" title="http://MadridAirQuality.org/ontology/hasProvince">has province</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasProvinceName"
+            title="http://MadridAirQuality.org/ontology/hasProvinceName">has province name</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasStation" title="http://MadridAirQuality.org/ontology/hasStation">has station</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasStationName"
+            title="http://MadridAirQuality.org/ontology/hasStationName">has station name</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMeasurement">
+      <h3>has measurement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMeasurement</p>
+      <div class="comment">
+         <span class="markdown">Relates the station to its measurements</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Station" title="http://MadridAirQuality.org/ontology/Station">Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Measurement" title="http://MadridAirQuality.org/ontology/Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMagnitude">
+      <h3>has mmagnitude<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMagnitude</p>
+      <div class="comment">
+         <span class="markdown">Relates a measurement to a magnitude</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Measurement" title="http://MadridAirQuality.org/ontology/Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Magnitude" title="http://MadridAirQuality.org/ontology/Magnitude">Magnitude</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMunicipalityName">
+      <h3>has muinicipality name<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMunicipalityName</p>
+      <div class="comment">
+         <span class="markdown">The name of the municipality</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Municipality"
+                  title="http://MadridAirQuality.org/ontology/Municipality">Municipality</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#String"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#String">string</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMunicipality">
+      <h3>has municipality<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMunicipality</p>
+      <div class="comment">
+         <span class="markdown">Relates a Province to its Municipality.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Province" title="http://MadridAirQuality.org/ontology/Province">Province</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Municipality"
+                  title="http://MadridAirQuality.org/ontology/Municipality">Municipality</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasProvince">
+      <h3>has province<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasProvince</p>
+      <div class="comment">
+         <span class="markdown">Relates a Location to its Province.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Location" title="http://MadridAirQuality.org/ontology/Location">Location</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Province" title="http://MadridAirQuality.org/ontology/Province">Province</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasProvinceName">
+      <h3>has province name<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasProvinceName</p>
+      <div class="comment">
+         <span class="markdown">The name of the province</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Province" title="http://MadridAirQuality.org/ontology/Province">Province</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#String"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#String">string</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasStation">
+      <h3>has station<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasStation</p>
+      <div class="comment">
+         <span class="markdown">Relates a Municipality to its Stations.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Municipality"
+                  title="http://MadridAirQuality.org/ontology/Municipality">Municipality</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Station" title="http://MadridAirQuality.org/ontology/Station">Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasStationName">
+      <h3>has station name<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasStationName</p>
+      <div class="comment">
+         <span class="markdown">The name of the station</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Station" title="http://MadridAirQuality.org/ontology/Station">Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#String"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#String">string</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMeasurementDay"
+            title="http://MadridAirQuality.org/ontology/hasMeasurementDay">has day</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMagnitudeCode"
+            title="http://MadridAirQuality.org/ontology/hasMagnitudeCode">has magnitude code</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit"
+            title="http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit">has magnitude measurement unit</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMagnitudeName"
+            title="http://MadridAirQuality.org/ontology/hasMagnitudeName">has magnitude name</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMeasurementValue"
+            title="http://MadridAirQuality.org/ontology/hasMeasurementValue">has measurement value</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMeasurementMonth"
+            title="http://MadridAirQuality.org/ontology/hasMeasurementMonth">has month</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMunicipalityLocationID"
+            title="http://MadridAirQuality.org/ontology/hasMunicipalityLocationID">has municipality location id</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasProvinceLocationID"
+            title="http://MadridAirQuality.org/ontology/hasProvinceLocationID">has punicipality location id</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasStationLocationID"
+            title="http://MadridAirQuality.org/ontology/hasStationLocationID">has station location ID</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/hasMeasurementYear"
+            title="http://MadridAirQuality.org/ontology/hasMeasurementYear">has year</a>
+      </li>
+      <li>
+         <a href="#http://MadridAirQuality.org/ontology/isMeasurementValid"
+            title="http://MadridAirQuality.org/ontology/isMeasurementValid">is measurement valid</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMeasurementDay">
+      <h3>has day<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMeasurementDay</p>
+      <div class="comment">
+         <span class="markdown">The day when the measurement was recorded.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Measurement" title="http://MadridAirQuality.org/ontology/Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMagnitudeCode">
+      <h3>has magnitude code<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMagnitudeCode</p>
+      <div class="comment">
+         <span class="markdown">The numerical value of the magnitude.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Magnitude" title="http://MadridAirQuality.org/ontology/Magnitude">Magnitude</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit">
+      <h3>has magnitude measurement unit<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit</p>
+      <div class="comment">
+         <span class="markdown">The string value of the magnitude measurement unit.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Magnitude" title="http://MadridAirQuality.org/ontology/Magnitude">Magnitude</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMagnitudeName">
+      <h3>has magnitude name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMagnitudeName</p>
+      <div class="comment">
+         <span class="markdown">The string value of the magnitude.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Magnitude" title="http://MadridAirQuality.org/ontology/Magnitude">Magnitude</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMeasurementValue">
+      <h3>has measurement value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMeasurementValue</p>
+      <div class="comment">
+         <span class="markdown">The numerical value of the measurement.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Measurement" title="http://MadridAirQuality.org/ontology/Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#decimal"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMeasurementMonth">
+      <h3>has month<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMeasurementMonth</p>
+      <div class="comment">
+         <span class="markdown">The month when the measurement was recorded.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Measurement" title="http://MadridAirQuality.org/ontology/Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMunicipalityLocationID">
+      <h3>has municipality location id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMunicipalityLocationID</p>
+      <div class="comment">
+         <span class="markdown">THe numerical value for the municipality</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Municipality"
+                  title="http://MadridAirQuality.org/ontology/Municipality">Municipality</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasProvinceLocationID">
+      <h3>has punicipality location id<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasProvinceLocationID</p>
+      <div class="comment">
+         <span class="markdown">THe numerical value for the province</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Province" title="http://MadridAirQuality.org/ontology/Province">Province</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasStationLocationID">
+      <h3>has station location ID<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasStationLocationID</p>
+      <div class="comment">
+         <span class="markdown">The numerical value of the station where the station is located</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Station" title="http://MadridAirQuality.org/ontology/Station">Station</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/hasMeasurementYear">
+      <h3>has year<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/hasMeasurementYear</p>
+      <div class="comment">
+         <span class="markdown">The year when the measurement was recorded.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Measurement" title="http://MadridAirQuality.org/ontology/Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://MadridAirQuality.org/ontology/isMeasurementValid">
+      <h3>is measurement valid<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://MadridAirQuality.org/ontology/isMeasurementValid</p>
+      <div class="comment">
+         <span class="markdown">Determines if the measurement is valid</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://MadridAirQuality.org/ontology/Measurement" title="http://MadridAirQuality.org/ontology/Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

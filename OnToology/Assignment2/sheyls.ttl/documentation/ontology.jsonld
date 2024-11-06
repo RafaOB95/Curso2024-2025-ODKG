@@ -1,0 +1,54 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://example.org#Class01",
+  "http://vocabulary.org/includes" : [ {
+    "@id" : "http://example.org#Computer101"
+  }, {
+    "@id" : "http://example.org#Sensor029"
+  } ]
+}, {
+  "@id" : "http://example.org#Computer101",
+  "http://vocabulary.org/hasOwner" : [ {
+    "@id" : "http://example.org#User10A"
+  } ]
+}, {
+  "@id" : "http://example.org#Measurement8401",
+  "http://vocabulary.org/atTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2010-06-12T12:00:12"
+  } ],
+  "http://vocabulary.org/hasTemperature" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "29"
+  } ]
+}, {
+  "@id" : "http://example.org#Sensor029",
+  "http://vocabulary.org/hasMeasurement" : [ {
+    "@id" : "http://example.org#Measurement8401"
+  } ]
+}, {
+  "@id" : "http://example.org#User10A",
+  "http://vocabulary.org/hasName" : [ {
+    "@value" : "Pedro"
+  } ]
+}, {
+  "@id" : "http://vocabulary.org/atTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocabulary.org/hasMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocabulary.org/hasName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocabulary.org/hasOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocabulary.org/hasTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocabulary.org/includes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

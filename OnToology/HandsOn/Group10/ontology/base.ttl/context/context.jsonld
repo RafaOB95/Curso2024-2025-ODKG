@@ -1,0 +1,46 @@
+{
+  "@context" : {
+    "range" : {
+      "@id" : "https://www.w3.org/2000/01/rdf-schema#range"
+    },
+    "Class" : {
+      "@id" : "https://www.w3.org/2002/07/owl#Class"
+    },
+    "label" : {
+      "@id" : "https://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "subClassOf" : {
+      "@id" : "https://www.w3.org/2000/01/rdf-schema#subClassOf"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "domain" : {
+      "@id" : "https://www.w3.org/2000/01/rdf-schema#domain"
+    },
+    "ObjectProperty" : {
+      "@id" : "https://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    "title" : {
+      "@id" : "https://purl.org/dc/terms/title"
+    },
+    "type" : {
+      "@id" : "https://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+    },
+    "publisher" : {
+      "@id" : "https://purl.org/dc/terms/publisher"
+    },
+    "alternative" : {
+      "@id" : "https://purl.org/dc/terms/alternative"
+    },
+    "DatatypeProperty" : {
+      "@id" : "https://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    "description" : {
+      "@id" : "https://purl.org/dc/terms/description"
+    },
+    "Ontology" : {
+      "@id" : "https://www.w3.org/2002/07/owl#Ontology"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "ns:Alcance" "ns:ChoqueObstaculo" "ns:Vuelco" "ns:AtropelloPersona" "ns:ColisionMultiple" "ns:Caida" "ns:ColisionDoble" "ns:Otras" "ns:Accidente" ; /*classes style*/
+	"ns:ColisionMultiple" -> "ns:Accidente" [ label = "rdfs:subClassOf" ];
+	"ns:Otras" -> "ns:Accidente" [ label = "rdfs:subClassOf" ];
+	"ns:Caida" -> "ns:Accidente" [ label = "rdfs:subClassOf" ];
+	"ns:ChoqueObstaculo" -> "ns:Accidente" [ label = "rdfs:subClassOf" ];
+	"ns:ColisionDoble" -> "ns:Accidente" [ label = "rdfs:subClassOf" ];
+	"ns:Vuelco" -> "ns:Accidente" [ label = "rdfs:subClassOf" ];
+	"ns:AtropelloPersona" -> "ns:Accidente" [ label = "rdfs:subClassOf" ];
+	"ns:Alcance" -> "ns:Accidente" [ label = "rdfs:subClassOf" ];
+
+}

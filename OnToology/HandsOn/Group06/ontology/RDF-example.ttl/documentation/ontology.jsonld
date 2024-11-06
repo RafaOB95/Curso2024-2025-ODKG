@@ -1,0 +1,188 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/magnitude/8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://MadridAirQuality.org/ontology/hasMagnitudeCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "8"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit" : [ {
+    "@value" : "µg/m³"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasMagnitudeName" : [ {
+    "@value" : "Nitrogen Dioxide (NO2)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://MadridAirQuality.org/ontology/Magnitude"
+  } ]
+}, {
+  "@id" : "http://MadridAirQuality.org/measurement/2024-10-18-Station-4-magnitude-8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://MadridAirQuality.org/ontology/hasMagnitude" : [ {
+    "@id" : "http://MadridAirQuality.org/magnitude/8"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasMeasurementDay" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "18"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasMeasurementMonth" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasMeasurementValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "35.7"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasMeasurementYear" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2024"
+  } ],
+  "http://MadridAirQuality.org/ontology/isMeasurementValid" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://MadridAirQuality.org/ontology/recordedFrom" : [ {
+    "@id" : "http://MadridAirQuality.org/station/4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://MadridAirQuality.org/ontology/Measurement"
+  } ]
+}, {
+  "@id" : "http://MadridAirQuality.org/municipality/79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://MadridAirQuality.org/ontology/hasMunicipalityLocationID" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "79"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasMunicipalityName" : [ {
+    "@value" : "Madrid"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasProvince" : [ {
+    "@id" : "http://MadridAirQuality.org/province/28"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://MadridAirQuality.org/ontology/Municipality"
+  } ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/Magnitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/Municipality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/Province",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/Station",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/Street",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMagnitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMagnitudeCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMagnitudeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementDay",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementMonth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMeasurementYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMunicipality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMunicipalityLocationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasMunicipalityName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasProvince",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasProvinceLocationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasProvinceName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasStationLocationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasStreet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasStreetLocationID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/hasStreetName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/isMeasurementValid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/ontology/recordedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://MadridAirQuality.org/province/28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://MadridAirQuality.org/ontology/hasProvinceLocationID" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "28"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasProvinceName" : [ {
+    "@value" : "Comunidad de  Madrid"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://MadridAirQuality.org/ontology/Province"
+  } ]
+}, {
+  "@id" : "http://MadridAirQuality.org/station/4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://MadridAirQuality.org/ontology/hasStationLocationID" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasStreet" : [ {
+    "@id" : "http://MadridAirQuality.org/street/4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://MadridAirQuality.org/ontology/Station"
+  } ]
+}, {
+  "@id" : "http://MadridAirQuality.org/street/4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://MadridAirQuality.org/ontology/hasMunicipality" : [ {
+    "@id" : "http://MadridAirQuality.org/municipality/79"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasStreetLocationID" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://MadridAirQuality.org/ontology/hasStreetName" : [ {
+    "@value" : "Plaza España"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://MadridAirQuality.org/ontology/Street"
+  } ]
+} ]
