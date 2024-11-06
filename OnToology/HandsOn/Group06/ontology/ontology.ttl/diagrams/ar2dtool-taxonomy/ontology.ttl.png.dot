@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+	"mair:Station" -> "mair:Location" [ label = "rdfs:subClassOf" ];
+	"mair:Municipality" -> "mair:Location" [ label = "rdfs:subClassOf" ];
+	"mair:Province" -> "mair:Location" [ label = "rdfs:subClassOf" ];
+
+}

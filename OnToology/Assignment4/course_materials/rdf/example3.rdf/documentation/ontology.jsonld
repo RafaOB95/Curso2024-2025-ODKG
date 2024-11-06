@@ -1,0 +1,81 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://somewhere#JaneSmith",
+  "http://www.w3.org/2001/vcard-rdf/3.0#EMAIL" : [ {
+    "@value" : "jSmith@somewhere.com"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#FN" : [ {
+    "@value" : "Jane Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Family" : [ {
+    "@value" : "Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "Jane"
+  } ],
+  "http://xmlns.com/foaf/0.1/email" : [ {
+    "@value" : "jSmith@somewhere.com"
+  } ]
+}, {
+  "@id" : "http://somewhere#JohnSmith",
+  "http://www.w3.org/2001/vcard-rdf/3.0#FN" : [ {
+    "@value" : "John Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Family" : [ {
+    "@value" : "Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "John"
+  } ],
+  "http://xmlns.com/foaf/0.1/knows" : [ {
+    "@id" : "http://somewhere#JaneSmith"
+  } ]
+}, {
+  "@id" : "http://somewhere#MattJones",
+  "http://www.w3.org/2001/vcard-rdf/3.0#FN" : [ {
+    "@value" : "Matt Jones"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Family" : [ {
+    "@value" : "Jones"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "Matt"
+  } ],
+  "http://xmlns.com/foaf/0.1/knows" : [ {
+    "@id" : "http://somewhere#JaneSmith"
+  } ]
+}, {
+  "@id" : "http://somewhere#SarahJones",
+  "http://www.w3.org/2001/vcard-rdf/3.0#FN" : [ {
+    "@value" : "Sarah Jones"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Family" : [ {
+    "@value" : "Jones"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "Sarah"
+  } ],
+  "http://xmlns.com/foaf/0.1/email" : [ {
+    "@value" : "sJones@somewhere.com"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#EMAIL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#FN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#Given",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/knows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

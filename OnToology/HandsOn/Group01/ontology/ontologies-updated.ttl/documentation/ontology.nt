@@ -1,0 +1,90 @@
+<http://www.bikeradar.es/ontology/ont#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.bikeradar.es/ontology/ont#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.bikeradar.es/ontology/ont#isInBarrio
+<http://www.bikeradar.es/ontology/ont#isInBarrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bikeradar.es/ontology/ont#isInBarrio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bikeradar.es/ontology/ont#BicycleParkingSpot> .
+<http://www.bikeradar.es/ontology/ont#isInBarrio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bikeradar.es/ontology/ont#Barrio> .
+<http://www.bikeradar.es/ontology/ont#isInBarrio> <http://www.w3.org/2000/01/rdf-schema#label> "is in barrio" .
+# 
+# http://www.bikeradar.es/ontology/ont#isInDistrito
+<http://www.bikeradar.es/ontology/ont#isInDistrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bikeradar.es/ontology/ont#isInDistrito> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bikeradar.es/ontology/ont#BicycleParkingSpot> .
+<http://www.bikeradar.es/ontology/ont#isInDistrito> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bikeradar.es/ontology/ont#Distrito> .
+<http://www.bikeradar.es/ontology/ont#isInDistrito> <http://www.w3.org/2000/01/rdf-schema#label> "is in distrito" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.bikeradar.es/ontology/ont#direccion
+<http://www.bikeradar.es/ontology/ont#direccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bikeradar.es/ontology/ont#direccion> <http://www.w3.org/2000/01/rdf-schema#label> "dirección" .
+# 
+# http://www.bikeradar.es/ontology/ont#hasFechaInstalacion
+<http://www.bikeradar.es/ontology/ont#hasFechaInstalacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bikeradar.es/ontology/ont#hasFechaInstalacion> <http://www.w3.org/2000/01/rdf-schema#label> "has fecha instalacion" .
+# 
+# http://www.bikeradar.es/ontology/ont#id
+<http://www.bikeradar.es/ontology/ont#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bikeradar.es/ontology/ont#id> <http://www.w3.org/2000/01/rdf-schema#label> "id" .
+# 
+# http://www.bikeradar.es/ontology/ont#latitud
+<http://www.bikeradar.es/ontology/ont#latitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bikeradar.es/ontology/ont#latitud> <http://www.w3.org/2000/01/rdf-schema#label> "latitud" .
+# 
+# http://www.bikeradar.es/ontology/ont#longitud
+<http://www.bikeradar.es/ontology/ont#longitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bikeradar.es/ontology/ont#longitud> <http://www.w3.org/2000/01/rdf-schema#label> "longitud" .
+# 
+# http://www.bikeradar.es/ontology/ont#modelo
+<http://www.bikeradar.es/ontology/ont#modelo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bikeradar.es/ontology/ont#modelo> <http://www.w3.org/2000/01/rdf-schema#label> "modelo" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.bikeradar.es/ontology/ont#Barrio
+<http://www.bikeradar.es/ontology/ont#Barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bikeradar.es/ontology/ont#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Barrio" .
+# 
+# http://www.bikeradar.es/ontology/ont#BicycleParkingSpot
+<http://www.bikeradar.es/ontology/ont#BicycleParkingSpot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bikeradar.es/ontology/ont#BicycleParkingSpot> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycle Parking Spot" .
+# 
+# http://www.bikeradar.es/ontology/ont#Distrito
+<http://www.bikeradar.es/ontology/ont#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bikeradar.es/ontology/ont#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

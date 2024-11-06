@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"http://MadridAirQuality.org/municipality/79" -> "http://MadridAirQuality.org/province/28" [ label = "mair:hasProvince" ];
+	"http://MadridAirQuality.org/measurement/2024-10-18-Station-4-magnitude-8" -> "http://MadridAirQuality.org/magnitude/8" [ label = "mair:hasMagnitude" ];
+	"http://MadridAirQuality.org/measurement/2024-10-18-Station-4-magnitude-8" -> "http://MadridAirQuality.org/station/4" [ label = "mair:recordedFrom" ];
+	"http://MadridAirQuality.org/street/4" -> "http://MadridAirQuality.org/municipality/79" [ label = "mair:hasMunicipality" ];
+	"http://MadridAirQuality.org/station/4" -> "http://MadridAirQuality.org/street/4" [ label = "mair:hasStreet" ];
+
+}

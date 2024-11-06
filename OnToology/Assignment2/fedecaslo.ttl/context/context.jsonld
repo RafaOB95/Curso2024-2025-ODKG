@@ -1,0 +1,37 @@
+{
+  "@context" : {
+    "includes" : {
+      "@id" : "http://example.org/includes"
+    },
+    "hasName" : {
+      "@id" : "http://example.org/hasName"
+    },
+    "Class" : {
+      "@id" : "http://example.org/Class"
+    },
+    "hasOwner" : {
+      "@id" : "http://example.org/hasOwner"
+    },
+    "Measurement" : {
+      "@id" : "http://example.org/Measurement"
+    },
+    "User" : {
+      "@id" : "http://example.org/User"
+    },
+    "Computer" : {
+      "@id" : "http://example.org/Computer"
+    },
+    "hasMeasurement" : {
+      "@id" : "http://example.org/hasMeasurement"
+    },
+    "hasTemperature" : {
+      "@id" : "http://example.org/hasTemperature"
+    },
+    "atTime" : {
+      "@id" : "http://example.org/atTime"
+    },
+    "Sensor" : {
+      "@id" : "http://example.org/Sensor"
+    }
+  }
+}

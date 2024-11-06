@@ -1,0 +1,46 @@
+{
+  "@context" : {
+    "University" : {
+      "@id" : "http://somewhere#University"
+    },
+    "Professor" : {
+      "@id" : "http://somewhere#Professor"
+    },
+    "age" : {
+      "@id" : "http://xmlns.com/foaf/0.1/age"
+    },
+    "Animal" : {
+      "@id" : "http://somewhere#Animal"
+    },
+    "Person" : {
+      "@id" : "http://somewhere#Person"
+    },
+    "LivingThing" : {
+      "@id" : "http://somewhere#LivingThing"
+    },
+    "Family" : {
+      "@id" : "http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Family",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "knows" : {
+      "@id" : "http://xmlns.com/foaf/0.1/knows"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Property"
+    },
+    "PhDstudent" : {
+      "@id" : "http://somewhere#PhDstudent"
+    },
+    "Given" : {
+      "@id" : "http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Given",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FN" : {
+      "@id" : "http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/FN",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Researcher" : {
+      "@id" : "http://somewhere#Researcher"
+    }
+  }
+}

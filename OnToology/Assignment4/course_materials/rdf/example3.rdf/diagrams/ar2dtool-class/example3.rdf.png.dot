@@ -1,0 +1,7 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"http://somewhere#MattJones" -> "http://somewhere#JaneSmith" [ label = "foaf:knows" ];
+	"http://somewhere#JohnSmith" -> "http://somewhere#JaneSmith" [ label = "foaf:knows" ];
+
+}

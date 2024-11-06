@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dublinbikesharing="http://dublinbikesharing.org/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dublinbikesharing.org/hasAddress -->
+
+
+    <AnnotationProperty rdf:about="http://dublinbikesharing.org/hasAddress"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/hasAvailability -->
+
+
+    <AnnotationProperty rdf:about="http://dublinbikesharing.org/hasAvailability"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/hasID -->
+
+
+    <AnnotationProperty rdf:about="http://dublinbikesharing.org/hasID"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/hasLatitude -->
+
+
+    <AnnotationProperty rdf:about="http://dublinbikesharing.org/hasLatitude"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/hasLocation -->
+
+
+    <AnnotationProperty rdf:about="http://dublinbikesharing.org/hasLocation"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/hasLongitude -->
+
+
+    <AnnotationProperty rdf:about="http://dublinbikesharing.org/hasLongitude"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/lastReported -->
+
+
+    <AnnotationProperty rdf:about="http://dublinbikesharing.org/lastReported"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/numBikeAvailability -->
+
+
+    <AnnotationProperty rdf:about="http://dublinbikesharing.org/numBikeAvailability"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/numCapacity -->
+
+
+    <AnnotationProperty rdf:about="http://dublinbikesharing.org/numCapacity"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/numDockAvailability -->
+
+
+    <AnnotationProperty rdf:about="http://dublinbikesharing.org/numDockAvailability"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dublinbikesharing.org/Availability -->
+
+
+    <Class rdf:about="http://dublinbikesharing.org/Availability"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/BikeStation -->
+
+
+    <Class rdf:about="http://dublinbikesharing.org/BikeStation"/>
+    
+
+
+    <!-- http://dublinbikesharing.org/Location -->
+
+
+    <Class rdf:about="http://dublinbikesharing.org/Location"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dublinbikesharing.org/Station_001 -->
+
+
+    <NamedIndividual rdf:about="http://dublinbikesharing.org/Station_001">
+        <rdf:type rdf:resource="http://dublinbikesharing.org/BikeStation"/>
+        <dublinbikesharing:hasAvailability rdf:resource="http://dublinbikesharing.org/Station_001_Availability"/>
+        <dublinbikesharing:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dublinbikesharing:hasID>
+        <dublinbikesharing:hasLocation rdf:resource="http://dublinbikesharing.org/Station_001_Location"/>
+        <dublinbikesharing:lastReported rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-07T12:00:00</dublinbikesharing:lastReported>
+    </NamedIndividual>
+    
+
+
+    <!-- http://dublinbikesharing.org/Station_001_Availability -->
+
+
+    <NamedIndividual rdf:about="http://dublinbikesharing.org/Station_001_Availability">
+        <rdf:type rdf:resource="http://dublinbikesharing.org/Availability"/>
+        <dublinbikesharing:numBikeAvailability rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</dublinbikesharing:numBikeAvailability>
+        <dublinbikesharing:numCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</dublinbikesharing:numCapacity>
+        <dublinbikesharing:numDockAvailability rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</dublinbikesharing:numDockAvailability>
+    </NamedIndividual>
+    
+
+
+    <!-- http://dublinbikesharing.org/Station_001_Location -->
+
+
+    <NamedIndividual rdf:about="http://dublinbikesharing.org/Station_001_Location">
+        <rdf:type rdf:resource="http://dublinbikesharing.org/Location"/>
+        <dublinbikesharing:hasAddress>O&apos;Connell Street, Dublin</dublinbikesharing:hasAddress>
+        <dublinbikesharing:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53.349805</dublinbikesharing:hasLatitude>
+        <dublinbikesharing:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-6.26031</dublinbikesharing:hasLongitude>
+    </NamedIndividual>
+    
+
+
+    <!-- http://dublinbikesharing.org/Station_002 -->
+
+
+    <NamedIndividual rdf:about="http://dublinbikesharing.org/Station_002">
+        <rdf:type rdf:resource="http://dublinbikesharing.org/BikeStation"/>
+        <dublinbikesharing:hasAvailability rdf:resource="http://dublinbikesharing.org/Station_002_Availability"/>
+        <dublinbikesharing:hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dublinbikesharing:hasID>
+        <dublinbikesharing:hasLocation rdf:resource="http://dublinbikesharing.org/Station_002_Location"/>
+        <dublinbikesharing:lastReported rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-07T12:15:00</dublinbikesharing:lastReported>
+    </NamedIndividual>
+    
+
+
+    <!-- http://dublinbikesharing.org/Station_002_Availability -->
+
+
+    <NamedIndividual rdf:about="http://dublinbikesharing.org/Station_002_Availability">
+        <rdf:type rdf:resource="http://dublinbikesharing.org/Availability"/>
+        <dublinbikesharing:numBikeAvailability rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</dublinbikesharing:numBikeAvailability>
+        <dublinbikesharing:numCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</dublinbikesharing:numCapacity>
+        <dublinbikesharing:numDockAvailability rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</dublinbikesharing:numDockAvailability>
+    </NamedIndividual>
+    
+
+
+    <!-- http://dublinbikesharing.org/Station_002_Location -->
+
+
+    <NamedIndividual rdf:about="http://dublinbikesharing.org/Station_002_Location">
+        <rdf:type rdf:resource="http://dublinbikesharing.org/Location"/>
+        <dublinbikesharing:hasAddress>St. Stephen&apos;s Green, Dublin</dublinbikesharing:hasAddress>
+        <dublinbikesharing:hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53.338199</dublinbikesharing:hasLatitude>
+        <dublinbikesharing:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-6.259256</dublinbikesharing:hasLongitude>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.owl-ontologies.com/ns#"
+     xml:base="http://www.owl-ontologies.com/ns"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/ns#">
+        <terms:creator rdf:resource="https://chowlk.linkeddata.es/"/>
+        <terms:description>Ontology describing bicycle parking spots, integrating geospatial data such as postal code, coordinates, and administrative divisions (e.g., district, neighborhood) in line with the European Open Data Strategy.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-13</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title>Bicycle Parking Spot Ontology</terms:title>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/TRAN"/>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#hasEstado -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#hasEstado">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#BicycleParkingSpot"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Estado"/>
+        <terms:description>Relates a bicycle parking spot to its current status.</terms:description>
+        <rdfs:label>has estado</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#hasTipoVia -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#hasTipoVia">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#BicycleParkingSpot"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Via"/>
+        <terms:description>Indicates the type of road where the bicycle parking spot is located.</terms:description>
+        <rdfs:label>has tipo via</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#isInBarrio -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#isInBarrio">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#BicycleParkingSpot"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Barrio"/>
+        <terms:description>Specifies the neighborhood in which the bicycle parking spot is located.</terms:description>
+        <rdfs:label>is in barrio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#isInDistrito -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#isInDistrito">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#BicycleParkingSpot"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Distrito"/>
+        <terms:description>Specifies the district where the bicycle parking spot is located.</terms:description>
+        <rdfs:label>is in distrito</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#codigoPostal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#codigoPostal">
+        <terms:description>Postal code of the location where the bicycle parking spot is located.</terms:description>
+        <rdfs:label>codigo postal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#coordenadaX -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#coordenadaX">
+        <terms:description>X-coordinate for the bicycle parking spot location, based on a Cartesian coordinate system.</terms:description>
+        <rdfs:label>coordenada x</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#coordenadaY -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#coordenadaY">
+        <terms:description>Y-coordinate for the bicycle parking spot location, based on a Cartesian coordinate system.</terms:description>
+        <rdfs:label>coordenada y</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#estado -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#estado">
+        <terms:description>Indicates the current operational status of the bicycle parking spot.</terms:description>
+        <rdfs:label>estado</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#hasFechaInstalacion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#hasFechaInstalacion">
+        <terms:description>Installation date of the bicycle parking spot.</terms:description>
+        <rdfs:label>has fecha instalacion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#id">
+        <terms:description>Unique identifier for the bicycle parking spot.</terms:description>
+        <rdfs:label>id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#latitud -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#latitud">
+        <terms:description>Latitude coordinate for the bicycle parking spot location.</terms:description>
+        <rdfs:label>latitud</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#longitud -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#longitud">
+        <terms:description>Longitude coordinate for the bicycle parking spot location.</terms:description>
+        <rdfs:label>longitud</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#nombre -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#nombre">
+        <terms:description>Name of the bicycle parking spot.</terms:description>
+        <rdfs:label>nombre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#poblacion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#poblacion">
+        <terms:description>Population or locality where the bicycle parking spot is situated.</terms:description>
+        <rdfs:label>poblacion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#tipo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#tipo">
+        <terms:description>Type of bicycle parking spot.</terms:description>
+        <rdfs:label>tipo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Barrio -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Barrio">
+        <terms:description>Represents a neighborhood.</terms:description>
+        <rdfs:label>Barrio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#BicycleParkingSpot -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#BicycleParkingSpot">
+        <terms:description>Represents a bicycle parking spot in a city.</terms:description>
+        <rdfs:label>Bicycle Parking Spot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Distrito -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Distrito">
+        <terms:description>Represents a district or administrative division in a city.</terms:description>
+        <rdfs:label>Distrito</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Estado -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Estado">
+        <terms:description>Represents the operational status of a bicycle parking spot.</terms:description>
+        <rdfs:label>Estado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Via -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Via">
+        <terms:description>Represents a road or street where the bicycle parking spot is located.</terms:description>
+        <rdfs:label>Via</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
