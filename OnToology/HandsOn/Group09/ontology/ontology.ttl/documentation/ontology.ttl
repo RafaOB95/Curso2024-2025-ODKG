@@ -1,0 +1,147 @@
+@prefix : <http://mAIRdrid.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://mAIRdrid.org/ontology#> .
+
+<http://mAIRdrid.org/ontology#> rdf:type owl:Ontology ;
+                                 owl:versionIRI <https://mAIRdrid.org/1.0.2> ;
+                                 <http://purl.org/dc/elements/1.1/created> "2024-10-06"^^xsd:date ;
+                                 <http://purl.org/dc/elements/1.1/creator> "Carlos de la Cruz Ayala Vargas" ,
+                                                                           "Elias Herrero Lázaro" ,
+                                                                           "Pedro Pedregal Pérez" ,
+                                                                           "Rafael Orihuela Brindis" ;
+                                 <http://purl.org/dc/elements/1.1/description> "Ontology for the development of services about air quality. Born with Madrid in mind, but designed to be usable in any town in Spain and even internationally."@en ;
+                                 <http://purl.org/dc/elements/1.1/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                 <http://purl.org/dc/elements/1.1/title> "mAIRdrid"@en ;
+                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "mAIR" ;
+                                 <http://purl.org/vocab/vann/preferredNamespaceUri> <https://mAIRdrid.org/ontology#> ;
+                                 owl:versionInfo "0.0.1" ;
+                                 <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://mAIRdrid.org/ontology/inPublicSpace
+<http://mAIRdrid.org/ontology/inPublicSpace> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://mAIRdrid.org/ontology/Location> ;
+                                             rdfs:range <http://www.wikidata.org/entity/Q111415237> ;
+                                             rdfs:label "in public space" .
+
+
+###  http://mAIRdrid.org/ontology/relevantToMeasure
+<http://mAIRdrid.org/ontology/relevantToMeasure> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <http://mAIRdrid.org/ontology/AirQualityMetric> ;
+                                                 rdfs:range <http://www.wikidata.org/entity/Q2144359> ;
+                                                 rdfs:label "relevant to measure" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://mAIRdrid.org/ontology/nationalStationID
+<http://mAIRdrid.org/ontology/nationalStationID> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://mAIRdrid.org/ontology/Station> ;
+                                                 rdfs:range xsd:integer ;
+                                                 rdfs:label "national station ID" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://mAIRdrid.org/ontology/AirQualityMetric
+<http://mAIRdrid.org/ontology/AirQualityMetric> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                rdfs:label "Air Quality Metric" .
+
+
+###  http://mAIRdrid.org/ontology/Location
+<http://mAIRdrid.org/ontology/Location> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.w3.org/ns/sosa/FeatureOfInterest> ;
+                                        rdfs:label "Location" .
+
+
+###  http://mAIRdrid.org/ontology/Station
+<http://mAIRdrid.org/ontology/Station> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/ns/ssn/System> ;
+                                       rdfs:label "Station" .
+
+
+###  http://www.w3.org/ns/sosa/FeatureOfInterest
+<http://www.w3.org/ns/sosa/FeatureOfInterest> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/ssn/System
+<http://www.w3.org/ns/ssn/System> rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q111415237
+<http://www.wikidata.org/entity/Q111415237> rdf:type owl:Class .
+
+
+###  http://www.wikidata.org/entity/Q2144359
+<http://www.wikidata.org/entity/Q2144359> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

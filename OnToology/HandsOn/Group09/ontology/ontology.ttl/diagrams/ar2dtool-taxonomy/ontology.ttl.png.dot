@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "ns:AirQualityMetric" "ns:Location" "ns:Station" ; /*classes style*/
+	"ns:Station" -> "ssn:System" [ label = "rdfs:subClassOf" ];
+	"ns:AirQualityMetric" -> "sosa:ObservableProperty" [ label = "rdfs:subClassOf" ];
+	"ns:Location" -> "sosa:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
+
+}

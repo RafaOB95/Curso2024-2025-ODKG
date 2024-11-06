@@ -1,0 +1,74 @@
+{
+  "@context" : {
+    "Estado" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Estado"
+    },
+    "codigoPostal" : {
+      "@id" : "http://www.owl-ontologies.com/ns#codigoPostal"
+    },
+    "poblacion" : {
+      "@id" : "http://www.owl-ontologies.com/ns#poblacion"
+    },
+    "longitud" : {
+      "@id" : "http://www.owl-ontologies.com/ns#longitud"
+    },
+    "nombre" : {
+      "@id" : "http://www.owl-ontologies.com/ns#nombre"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasEstado" : {
+      "@id" : "http://www.owl-ontologies.com/ns#hasEstado",
+      "@type" : "@id"
+    },
+    "id" : {
+      "@id" : "http://www.owl-ontologies.com/ns#id"
+    },
+    "estado" : {
+      "@id" : "http://www.owl-ontologies.com/ns#estado"
+    },
+    "Via" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Via"
+    },
+    "hasTipoVia" : {
+      "@id" : "http://www.owl-ontologies.com/ns#hasTipoVia",
+      "@type" : "@id"
+    },
+    "tipo" : {
+      "@id" : "http://www.owl-ontologies.com/ns#tipo"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "Distrito" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Distrito"
+    },
+    "hasFechaInstalacion" : {
+      "@id" : "http://www.owl-ontologies.com/ns#hasFechaInstalacion"
+    },
+    "latitud" : {
+      "@id" : "http://www.owl-ontologies.com/ns#latitud"
+    },
+    "isInBarrio" : {
+      "@id" : "http://www.owl-ontologies.com/ns#isInBarrio",
+      "@type" : "@id"
+    },
+    "isInDistrito" : {
+      "@id" : "http://www.owl-ontologies.com/ns#isInDistrito",
+      "@type" : "@id"
+    },
+    "BicycleParkingSpot" : {
+      "@id" : "http://www.owl-ontologies.com/ns#BicycleParkingSpot"
+    },
+    "Barrio" : {
+      "@id" : "http://www.owl-ontologies.com/ns#Barrio"
+    },
+    "coordenadaX" : {
+      "@id" : "http://www.owl-ontologies.com/ns#coordenadaX"
+    },
+    "coordenadaY" : {
+      "@id" : "http://www.owl-ontologies.com/ns#coordenadaY"
+    }
+  }
+}

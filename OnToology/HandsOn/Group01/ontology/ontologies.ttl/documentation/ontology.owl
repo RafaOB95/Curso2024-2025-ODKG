@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.owl-ontologies.com/ns#"
+     xml:base="http://www.owl-ontologies.com/ns"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/ns#">
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#hasEstado -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#hasEstado">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#BicycleParkingSpot"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Estado"/>
+        <rdfs:label>has estado</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#hasTipoVia -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#hasTipoVia">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#BicycleParkingSpot"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Via"/>
+        <rdfs:label>has tipo via</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#isInBarrio -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#isInBarrio">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#BicycleParkingSpot"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Barrio"/>
+        <rdfs:label>is in barrio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#isInDistrito -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#isInDistrito">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#BicycleParkingSpot"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Distrito"/>
+        <rdfs:label>is in distrito</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#codigoPostal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#codigoPostal">
+        <rdfs:label>codigo postal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#coordenadaX -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#coordenadaX">
+        <rdfs:label>coordenada x</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#coordenadaY -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#coordenadaY">
+        <rdfs:label>coordenada y</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#estado -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#estado">
+        <rdfs:label>estado</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#hasFechaInstalacion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#hasFechaInstalacion">
+        <rdfs:label>has fecha instalacion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#latitud -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#latitud">
+        <rdfs:label>latitud</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#longitud -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#longitud">
+        <rdfs:label>longitud</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#nombre -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#nombre">
+        <rdfs:label>nombre</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#poblacion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#poblacion">
+        <rdfs:label>poblacion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#tipo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#tipo">
+        <rdfs:label>tipo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Barrio -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Barrio">
+        <rdfs:label>Barrio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#BicycleParkingSpot -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#BicycleParkingSpot">
+        <rdfs:label>Bicycle Parking Spot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Distrito -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Distrito">
+        <rdfs:label>Distrito</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Estado -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Estado">
+        <rdfs:label>Estado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Via -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Via">
+        <rdfs:label>Via</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

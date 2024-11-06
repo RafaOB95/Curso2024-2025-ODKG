@@ -1,0 +1,18 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"base:Bugs" -> "base:RockySmith" [ label = "foaf:knows" ];
+	"base:Bugs" -> "base:SaraJones" [ label = "foaf:knows" ];
+	"base:Bugs" -> "base:JaneSmith" [ label = "foaf:knows" ];
+	"base:SaraJones" -> "base:JaneSmith" [ label = "foaf:knows" ];
+	"base:SaraJones" -> "base:RockySmith" [ label = "foaf:knows" ];
+	"base:RockySmith" -> "base:Bugs" [ label = "foaf:knows" ];
+	"base:RockySmith" -> "base:SaraJones" [ label = "foaf:knows" ];
+	"base:RockySmith" -> "base:JaneSmith" [ label = "foaf:knows" ];
+	"base:JaneSmith" -> "base:SaraJones" [ label = "foaf:knows" ];
+	"base:JaneSmith" -> "base:RockySmith" [ label = "foaf:knows" ];
+	"owl:Thing" -> "xsd:string" [ label = "http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Given" ];
+	"owl:Thing" -> "xsd:string" [ label = "http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/FN" ];
+	"owl:Thing" -> "xsd:string" [ label = "http://somewhere#http://www.w3.org/2001/vcard-rdf/3.0/Family" ];
+
+}
