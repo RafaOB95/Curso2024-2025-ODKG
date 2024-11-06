@@ -1,0 +1,355 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://MadridAirQuality.org/ontology/AirQualityOntology#"
+     xml:base="http://MadridAirQuality.org/ontology/AirQualityOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://MadridAirQuality.org/ontology/AirQualityOntology">
+        <rdfs:comment>An ontology for representing air quality monitoring data including locations, provinces, municipalities, stations, and measurements.</rdfs:comment>
+        <rdfs:label>Air Quality Monitoring Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMagnitude -->
+
+
+    <owl:ObjectProperty rdf:about="http://MadridAirQuality.org/ontology/hasMagnitude">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Measurement"/>
+        <rdfs:range rdf:resource="http://MadridAirQuality.org/ontology/Magnitude"/>
+        <rdfs:comment>Relates a measurement to a magnitude</rdfs:comment>
+        <rdfs:label>has mmagnitude</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="http://MadridAirQuality.org/ontology/hasMeasurement">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Station"/>
+        <rdfs:range rdf:resource="http://MadridAirQuality.org/ontology/Measurement"/>
+        <rdfs:comment>Relates the station to its measurements</rdfs:comment>
+        <rdfs:label>has measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMunicipality -->
+
+
+    <owl:ObjectProperty rdf:about="http://MadridAirQuality.org/ontology/hasMunicipality">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Province"/>
+        <rdfs:range rdf:resource="http://MadridAirQuality.org/ontology/Municipality"/>
+        <rdfs:comment>Relates a Province to its Municipality.</rdfs:comment>
+        <rdfs:comment>Relates the municipality to the province</rdfs:comment>
+        <rdfs:label>has municipality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMunicipalityName -->
+
+
+    <owl:ObjectProperty rdf:about="http://MadridAirQuality.org/ontology/hasMunicipalityName">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Municipality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+        <rdfs:comment>The name of the municipality</rdfs:comment>
+        <rdfs:label>has muinicipality name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasProvince -->
+
+
+    <owl:ObjectProperty rdf:about="http://MadridAirQuality.org/ontology/hasProvince">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Location"/>
+        <rdfs:range rdf:resource="http://MadridAirQuality.org/ontology/Province"/>
+        <rdfs:comment>Relates a Location to its Province.</rdfs:comment>
+        <rdfs:label>has province</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasProvinceName -->
+
+
+    <owl:ObjectProperty rdf:about="http://MadridAirQuality.org/ontology/hasProvinceName">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Province"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+        <rdfs:comment>The name of the province</rdfs:comment>
+        <rdfs:label>has province name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasStation -->
+
+
+    <owl:ObjectProperty rdf:about="http://MadridAirQuality.org/ontology/hasStation">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Municipality"/>
+        <rdfs:range rdf:resource="http://MadridAirQuality.org/ontology/Station"/>
+        <rdfs:comment>Relates a Municipality to its Stations.</rdfs:comment>
+        <rdfs:comment>Relates the the station to the municipality</rdfs:comment>
+        <rdfs:label>has station</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasStationName -->
+
+
+    <owl:ObjectProperty rdf:about="http://MadridAirQuality.org/ontology/hasStationName">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+        <rdfs:comment>The name of the station</rdfs:comment>
+        <rdfs:label>has station name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMagnitudeCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/hasMagnitudeCode">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Magnitude"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The numerical value of the magnitude.</rdfs:comment>
+        <rdfs:label>has magnitude code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Magnitude"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The string value of the magnitude measurement unit.</rdfs:comment>
+        <rdfs:label>has magnitude measurement unit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMagnitudeName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/hasMagnitudeName">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Magnitude"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The string value of the magnitude.</rdfs:comment>
+        <rdfs:label>has magnitude name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMeasurementDay -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/hasMeasurementDay">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The day when the measurement was recorded.</rdfs:comment>
+        <rdfs:label>has day</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMeasurementMonth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/hasMeasurementMonth">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The month when the measurement was recorded.</rdfs:comment>
+        <rdfs:label>has month</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMeasurementValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/hasMeasurementValue">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>The numerical value of the measurement.</rdfs:comment>
+        <rdfs:label>has measurement value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMeasurementYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/hasMeasurementYear">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The year when the measurement was recorded.</rdfs:comment>
+        <rdfs:label>has year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasMunicipalityLocationID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/hasMunicipalityLocationID">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Municipality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>THe numerical value for the municipality</rdfs:comment>
+        <rdfs:label>has municipality location id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasProvinceLocationID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/hasProvinceLocationID">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Province"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>THe numerical value for the province</rdfs:comment>
+        <rdfs:label>has punicipality location id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/hasStationLocationID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/hasStationLocationID">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The numerical value of the station where the station is located</rdfs:comment>
+        <rdfs:label>has station location ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/isMeasurementValid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://MadridAirQuality.org/ontology/isMeasurementValid">
+        <rdfs:domain rdf:resource="http://MadridAirQuality.org/ontology/Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Determines if the measurement is valid</rdfs:comment>
+        <rdfs:label>is measurement valid</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Location -->
+
+
+    <owl:Class rdf:about="http://MadridAirQuality.org/ontology/Location">
+        <rdfs:comment>A physical location where air quality measurements are taken.</rdfs:comment>
+        <rdfs:label>Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Magnitude -->
+
+
+    <owl:Class rdf:about="http://MadridAirQuality.org/ontology/Magnitude">
+        <rdfs:comment>A type of measurement related to air quality, such as pollutants or meteorological parameters.</rdfs:comment>
+        <rdfs:label>Magnitude</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Measurement -->
+
+
+    <owl:Class rdf:about="http://MadridAirQuality.org/ontology/Measurement">
+        <rdfs:comment>A recorded observation of air quality data at a specific time and location.</rdfs:comment>
+        <rdfs:label>Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Municipality -->
+
+
+    <owl:Class rdf:about="http://MadridAirQuality.org/ontology/Municipality">
+        <rdfs:subClassOf rdf:resource="http://MadridAirQuality.org/ontology/Location"/>
+        <rdfs:comment>A municipality where air quality measurements are taken.</rdfs:comment>
+        <rdfs:label>Municipality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Province -->
+
+
+    <owl:Class rdf:about="http://MadridAirQuality.org/ontology/Province">
+        <rdfs:subClassOf rdf:resource="http://MadridAirQuality.org/ontology/Location"/>
+        <rdfs:comment>A province where air quality measurements are taken.</rdfs:comment>
+        <rdfs:label>Province</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://MadridAirQuality.org/ontology/Station -->
+
+
+    <owl:Class rdf:about="http://MadridAirQuality.org/ontology/Station">
+        <rdfs:subClassOf rdf:resource="http://MadridAirQuality.org/ontology/Location"/>
+        <rdfs:comment>A monitoring station that measures air quality at a specific location.</rdfs:comment>
+        <rdfs:label>Station</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#String -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#String"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

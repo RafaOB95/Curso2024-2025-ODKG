@@ -1,0 +1,35 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "schema:Event" "schema:Place" "schema:GeoCoordinates" "ns:ContactDetails" ; /*classes style*/
+	"ns:" -> "https://chowlk.linkeddata.es/" [ label = "mod:createdWith" ];
+	"schema:Event" -> "xsd:dateTime" [ label = "schema:startDate" ];
+	"schema:Event" -> "xsd:dateTime" [ label = "schema:endDate" ];
+	"schema:GeoCoordinates" -> "xsd:Integer" [ label = "schema:postalCode" ];
+	"owl:Thing" -> "xsd:String" [ label = "ns:weekDays" ];
+	"schema:GeoCoordinates" -> "xsd:String" [ label = "ns:district" ];
+	"schema:Event" -> "xsd:String" [ label = "http://www.w3.org/XML/1998/namespaceid" ];
+	"schema:Place" -> "xsd:String" [ label = "ns:accessibilityLevel" ];
+	"schema:Event" -> "xsd:String" [ label = "schema:name" ];
+	"schema:Event" -> "xsd:String" [ label = "schema:url" ];
+	"schema:Event" -> "xsd:Boolean" [ label = "ns:longDuration" ];
+	"owl:Thing" -> "xsd:text" [ label = "ns:OpeningHours" ];
+	"schema:GeoCoordinates" -> "xsd:String" [ label = "ns:neighborhood" ];
+	"ns:ContactDetails" -> "xsd:text" [ label = "ns:transportation" ];
+	"schema:Event" -> "xsd:time" [ label = "schema:doorTime" ];
+	"schema:GeoCoordinates" -> "xsd:Float" [ label = "schema:longitude" ];
+	"schema:Place" -> "xsd:String" [ label = "schema:address" ];
+	"owl:Thing" -> "xsd:text" [ label = "ns:Equipment" ];
+	"ns:ContactDetails" -> "xsd:string" [ label = "schema:email" ];
+	"owl:Thing" -> "xsd:text" [ label = "ns:description" ];
+	"schema:Event" -> "ns:ContactDetails" [ label = "ns:c" ];
+	"schema:Event" -> "xsd:Boolean" [ label = "schema:isAccessibleForFree" ];
+	"schema:GeoCoordinates" -> "xsd:Float" [ label = "schema:latitude" ];
+	"schema:Event" -> "xsd:String" [ label = "schema:audience" ];
+	"owl:Thing" -> "xsd:text" [ label = "ns:excludedDays" ];
+	"schema:Event" -> "xsd:String" [ label = "ns:type" ];
+	"schema:Place" -> "schema:GeoCoordinates" [ label = "schema:geo" ];
+	"ns:ContactDetails" -> "xsd:string" [ label = "schema:telephone" ];
+	"schema:Event" -> "xsd:text" [ label = "schema:about" ];
+
+}

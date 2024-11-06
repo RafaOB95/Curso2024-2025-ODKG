@@ -1,0 +1,22 @@
+{
+  "@context" : {
+    "hasName" : {
+      "@id" : "http://vocabulary.org/hasName"
+    },
+    "atTime" : {
+      "@id" : "http://vocabulary.org/atTime"
+    },
+    "includes" : {
+      "@id" : "http://vocabulary.org/includes"
+    },
+    "hasMeasurement" : {
+      "@id" : "http://vocabulary.org/hasMeasurement"
+    },
+    "hasTemperature" : {
+      "@id" : "http://vocabulary.org/hasTemperature"
+    },
+    "hasOwner" : {
+      "@id" : "http://vocabulary.org/hasOwner"
+    }
+  }
+}

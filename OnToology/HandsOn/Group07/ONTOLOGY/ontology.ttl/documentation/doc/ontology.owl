@@ -1,0 +1,689 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://madrid.eventos.com/"
+     xml:base="http://madrid.eventos.com/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://madrid.eventos.com/">
+        <dc:title>MadridEvents Ontology</dc:title>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://madrid.eventos.com/Equipment -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/Equipment">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/OpeningHours -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/OpeningHours">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/accessibilityLevel -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/accessibilityLevel">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/c -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/c">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://madrid.eventos.com/ContactDetails"/>
+        <rdfs:range rdf:resource="https://schema.org/Place"/>
+        <rdfs:label>c</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/description -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/description">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/district -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/district">
+        <rdfs:domain rdf:resource="https://schema.org/GeoCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/excludedDays -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/excludedDays">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/longDuration -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/longDuration">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Boolean"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/neighborhood -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/neighborhood">
+        <rdfs:domain rdf:resource="https://schema.org/GeoCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/transportation -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/transportation">
+        <rdfs:domain rdf:resource="http://madrid.eventos.com/ContactDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/type -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/type">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://madrid.eventos.com/weekDays -->
+
+
+    <owl:ObjectProperty rdf:about="http://madrid.eventos.com/weekDays">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/XML/1998/namespaceid -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/XML/1998/namespaceid">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/about -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/about">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/address -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/address">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/audience -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/audience">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/geo -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/geo">
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="https://schema.org/GeoCoordinates"/>
+        <rdfs:label>geo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/isAccessibleForFree -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/isAccessibleForFree">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Boolean"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/latitude -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/latitude">
+        <rdfs:domain rdf:resource="https://schema.org/GeoCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Float"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/longitude -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/longitude">
+        <rdfs:domain rdf:resource="https://schema.org/GeoCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Float"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/name -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/name">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/postalCode -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/postalCode">
+        <rdfs:domain rdf:resource="https://schema.org/GeoCoordinates"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Integer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/url -->
+
+
+    <owl:ObjectProperty rdf:about="https://schema.org/url">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:domain rdf:resource="https://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://madrid.eventos.com/Equipment -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/Equipment"/>
+    
+
+
+    <!-- http://madrid.eventos.com/OpeningHours -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/OpeningHours"/>
+    
+
+
+    <!-- http://madrid.eventos.com/accessibilityLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/accessibilityLevel"/>
+    
+
+
+    <!-- http://madrid.eventos.com/description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/description"/>
+    
+
+
+    <!-- http://madrid.eventos.com/district -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/district"/>
+    
+
+
+    <!-- http://madrid.eventos.com/excludedDays -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/excludedDays"/>
+    
+
+
+    <!-- http://madrid.eventos.com/longDuration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/longDuration"/>
+    
+
+
+    <!-- http://madrid.eventos.com/neighborhood -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/neighborhood"/>
+    
+
+
+    <!-- http://madrid.eventos.com/transportation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/transportation"/>
+    
+
+
+    <!-- http://madrid.eventos.com/type -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/type"/>
+    
+
+
+    <!-- http://madrid.eventos.com/weekDays -->
+
+
+    <owl:DatatypeProperty rdf:about="http://madrid.eventos.com/weekDays"/>
+    
+
+
+    <!-- http://www.w3.org/XML/1998/namespaceid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/XML/1998/namespaceid"/>
+    
+
+
+    <!-- https://schema.org/about -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/about"/>
+    
+
+
+    <!-- https://schema.org/address -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/address"/>
+    
+
+
+    <!-- https://schema.org/audience -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/audience"/>
+    
+
+
+    <!-- https://schema.org/doorTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/doorTime">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+        <rdfs:label>door time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/email -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/email">
+        <rdfs:domain rdf:resource="http://madrid.eventos.com/ContactDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>email</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/endDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/endDate">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>end date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/isAccessibleForFree -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/isAccessibleForFree"/>
+    
+
+
+    <!-- https://schema.org/latitude -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/latitude"/>
+    
+
+
+    <!-- https://schema.org/longitude -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/longitude"/>
+    
+
+
+    <!-- https://schema.org/name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/name"/>
+    
+
+
+    <!-- https://schema.org/postalCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/postalCode"/>
+    
+
+
+    <!-- https://schema.org/startDate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/startDate">
+        <rdfs:domain rdf:resource="https://schema.org/Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>start date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/telephone -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/telephone">
+        <rdfs:domain rdf:resource="http://madrid.eventos.com/ContactDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>telephone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/url -->
+
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/url"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://madrid.eventos.com/ContactDetails -->
+
+
+    <owl:Class rdf:about="http://madrid.eventos.com/ContactDetails">
+        <rdfs:label>Contact Details</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Boolean -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#Boolean"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Float -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#Float"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Integer -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#Integer"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#String -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#String"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#text -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#text"/>
+    
+
+
+    <!-- https://schema.org/Event -->
+
+
+    <owl:Class rdf:about="https://schema.org/Event">
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/GeoCoordinates -->
+
+
+    <owl:Class rdf:about="https://schema.org/GeoCoordinates">
+        <rdfs:label>Geo Coordinates</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/Place -->
+
+
+    <owl:Class rdf:about="https://schema.org/Place">
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://madrid.eventos.com/Equipment">
+        <rdfs:label>equipment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://madrid.eventos.com/OpeningHours">
+        <rdfs:label>opening hours</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://madrid.eventos.com/accessibilityLevel">
+        <rdfs:label>accessibility level</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://madrid.eventos.com/description">
+        <rdfs:label>description</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://madrid.eventos.com/district">
+        <rdfs:label>district</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://madrid.eventos.com/excludedDays">
+        <rdfs:label>excluded days</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://madrid.eventos.com/longDuration">
+        <rdfs:label>long duration</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://madrid.eventos.com/neighborhood">
+        <rdfs:label>neighborhood</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://madrid.eventos.com/transportation">
+        <rdfs:label>transportation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://madrid.eventos.com/type">
+        <rdfs:label>type</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://madrid.eventos.com/weekDays">
+        <rdfs:label>week days</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/XML/1998/namespaceid">
+        <rdfs:label>id</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/about">
+        <rdfs:label>about</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/address">
+        <rdfs:label>address</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/audience">
+        <rdfs:label>audience</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/isAccessibleForFree">
+        <rdfs:label>is accessible for free</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/latitude">
+        <rdfs:label>latitude</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/longitude">
+        <rdfs:label>longitude</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/name">
+        <rdfs:label>name</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/postalCode">
+        <rdfs:label>postal code</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://schema.org/url">
+        <rdfs:label>url</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

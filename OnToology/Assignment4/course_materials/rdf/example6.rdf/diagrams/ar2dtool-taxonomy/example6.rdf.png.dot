@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+	"base:Person" -> "base:LivingThing" [ label = "rdfs:subClassOf" ];
+	"base:PhDstudent" -> "base:Researcher" [ label = "rdfs:subClassOf" ];
+	"base:Professor" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:Researcher" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:Animal" -> "base:LivingThing" [ label = "rdfs:subClassOf" ];
+
+}

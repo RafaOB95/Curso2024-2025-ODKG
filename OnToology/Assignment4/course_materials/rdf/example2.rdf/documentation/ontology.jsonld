@@ -1,0 +1,30 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://somewhere/MattJones",
+  "http://www.w3.org/2001/vcard-rdf/3.0#FN" : [ {
+    "@value" : "Matt Jones"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Family" : [ {
+    "@value" : "Jones"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "Matt"
+  } ],
+  "http://xmlns.com/foaf/0.1/knows" : [ {
+    "@id" : "http://somewhere/JaneSmith"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#FN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#Given",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/knows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

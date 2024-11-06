@@ -1,0 +1,71 @@
+<http://www.example.com/videocameras/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.example.com/videocameras/hasLocation
+<http://www.example.com/videocameras/hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.com/videocameras/hasLocation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.example.com/videocameras/hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.com/videocameras/hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the location where the camera is installed." .
+<http://www.example.com/videocameras/hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "hasLocation" .
+# 
+# http://www.example.com/videocameras/hasResolution
+<http://www.example.com/videocameras/hasResolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.com/videocameras/hasResolution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.example.com/videocameras/hasResolution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.com/videocameras/hasResolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the resolution of the camera." .
+<http://www.example.com/videocameras/hasResolution> <http://www.w3.org/2000/01/rdf-schema#label> "hasResolution" .
+# 
+# http://www.example.com/videocameras/hasType
+<http://www.example.com/videocameras/hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.com/videocameras/hasType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.example.com/videocameras/hasType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.com/videocameras/hasType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type of the camera." .
+<http://www.example.com/videocameras/hasType> <http://www.w3.org/2000/01/rdf-schema#label> "hasType" .
+# 
+# http://www.example.com/videocameras/hasYearOfAcquisition
+<http://www.example.com/videocameras/hasYearOfAcquisition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.com/videocameras/hasYearOfAcquisition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.example.com/videocameras/hasYearOfAcquisition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.example.com/videocameras/hasYearOfAcquisition> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the year when the camera was acquired." .
+<http://www.example.com/videocameras/hasYearOfAcquisition> <http://www.w3.org/2000/01/rdf-schema#label> "hasYearOfAcquisition" .
+# 
+# http://www.example.com/videocameras/hasZoom
+<http://www.example.com/videocameras/hasZoom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.example.com/videocameras/hasZoom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.example.com/videocameras/hasZoom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.example.com/videocameras/hasZoom> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the optical zoom capacity of the camera." .
+<http://www.example.com/videocameras/hasZoom> <http://www.w3.org/2000/01/rdf-schema#label> "hasZoom" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.example.com/videocameras/Camera
+<http://www.example.com/videocameras/Camera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.example.com/videocameras/Camera> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing a videocamera" .
+<http://www.example.com/videocameras/Camera> <http://www.w3.org/2000/01/rdf-schema#label> "Camera" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/2002/07/owl#Camera> <http://www.w3.org/2000/01/rdf-schema#comment> "A class representing a camera" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

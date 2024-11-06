@@ -1,0 +1,136 @@
+@prefix : <http://fuelpricespain.org/ontologyGasolinerasOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://fuelpricespain.org/ontologyGasolinerasOntology#> .
+
+<http://fuelpricespain.org/ontologyGasolinerasOntology> rdf:type owl:Ontology ;
+                                                         <http://purl.org/dc/elements/1.1/creator> "Grupo de Desarrollo" ;
+                                                         <http://purl.org/dc/elements/1.1/description> "Ontología para representar gasolineras y sus ubicaciones" ;
+                                                         <http://purl.org/dc/elements/1.1/title> "Ontología de Gasolineras" ;
+                                                         owl:versionInfo "0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://fuelpricespain.org/ontologytieneUbicacion
+<http://fuelpricespain.org/ontologytieneUbicacion> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://fuelpricespain.org/ontologyGasolinera> ;
+                                                   rdfs:range <http://fuelpricespain.org/ontologyUbicacion> ;
+                                                   rdfs:label "tiene ubicación" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://fuelpricespain.org/ontologycodigoPostal
+<http://fuelpricespain.org/ontologycodigoPostal> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <http://fuelpricespain.org/ontologyUbicacion> ;
+                                                 rdfs:range xsd:string ;
+                                                 rdfs:label "código postal" .
+
+
+###  http://fuelpricespain.org/ontologydireccion
+<http://fuelpricespain.org/ontologydireccion> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://fuelpricespain.org/ontologyUbicacion> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:label "dirección" .
+
+
+###  http://fuelpricespain.org/ontologyhorario
+<http://fuelpricespain.org/ontologyhorario> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://fuelpricespain.org/ontologyGasolinera> ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:label "horario" .
+
+
+###  http://fuelpricespain.org/ontologylatitud
+<http://fuelpricespain.org/ontologylatitud> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://fuelpricespain.org/ontologyUbicacion> ;
+                                            rdfs:range xsd:float ;
+                                            rdfs:label "latitud" .
+
+
+###  http://fuelpricespain.org/ontologylongitud
+<http://fuelpricespain.org/ontologylongitud> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <http://fuelpricespain.org/ontologyUbicacion> ;
+                                             rdfs:range xsd:float ;
+                                             rdfs:label "longitud" .
+
+
+###  http://fuelpricespain.org/ontologymunicipio
+<http://fuelpricespain.org/ontologymunicipio> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://fuelpricespain.org/ontologyUbicacion> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:label "municipio" .
+
+
+###  http://fuelpricespain.org/ontologyprecioGasoleoA
+<http://fuelpricespain.org/ontologyprecioGasoleoA> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <http://fuelpricespain.org/ontologyGasolinera> ;
+                                                   rdfs:range xsd:float ;
+                                                   rdfs:label "precio gasóleo A" ,
+                                                              "precio gasóleo A premium" .
+
+
+###  http://fuelpricespain.org/ontologyprecioGasolina95E5
+<http://fuelpricespain.org/ontologyprecioGasolina95E5> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <http://fuelpricespain.org/ontologyGasolinera> ;
+                                                       rdfs:range xsd:float ;
+                                                       rdfs:label "precio gasolina 95 E5" ,
+                                                                  "precio gasolina 98 E5" .
+
+
+###  http://fuelpricespain.org/ontologyprovincia
+<http://fuelpricespain.org/ontologyprovincia> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://fuelpricespain.org/ontologyUbicacion> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:label "provincia" .
+
+
+###  http://fuelpricespain.org/ontologyrotulo
+<http://fuelpricespain.org/ontologyrotulo> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://fuelpricespain.org/ontologyGasolinera> ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:label "ID" ,
+                                                      "Tipo Servicio" ,
+                                                      "Tipo Venta" ,
+                                                      "rem" ,
+                                                      "rótulo" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://fuelpricespain.org/ontologyGasolinera
+<http://fuelpricespain.org/ontologyGasolinera> rdf:type owl:Class ;
+                                               rdfs:label "Gasolinera" .
+
+
+###  http://fuelpricespain.org/ontologyUbicacion
+<http://fuelpricespain.org/ontologyUbicacion> rdf:type owl:Class ;
+                                              rdfs:label "Ubicación" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

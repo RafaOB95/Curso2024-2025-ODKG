@@ -1,0 +1,22 @@
+{
+  "@context" : {
+    "hasOwner" : {
+      "@id" : "http://www.ontogrid.net/StickyNote#hasOwner"
+    },
+    "hasName" : {
+      "@id" : "http://www.ontogrid.net/StickyNote#hasName"
+    },
+    "includes" : {
+      "@id" : "http://www.ontogrid.net/StickyNote#includes"
+    },
+    "hasMeasurement" : {
+      "@id" : "http://www.ontogrid.net/StickyNote#hasMeasurement"
+    },
+    "hasTemperature" : {
+      "@id" : "http://www.ontogrid.net/StickyNote#hasTemperature"
+    },
+    "atTime" : {
+      "@id" : "http://www.ontogrid.net/StickyNote#atTime"
+    }
+  }
+}

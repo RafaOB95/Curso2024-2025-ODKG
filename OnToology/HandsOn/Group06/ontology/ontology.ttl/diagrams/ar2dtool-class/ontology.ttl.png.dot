@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"mair:Measurement" -> "xsd:string" [ label = "mair:hasMeasurementDay" ];
+	"mair:Measurement" -> "xsd:boolean" [ label = "mair:isMeasurementValid" ];
+	"mair:Magnitude" -> "xsd:string" [ label = "mair:hasMagnitudeName" ];
+	"mair:Municipality" -> "mair:Station" [ label = "mair:hasStation" ];
+	"mair:Measurement" -> "xsd:integer" [ label = "mair:hasMeasurementMonth" ];
+	"mair:Magnitude" -> "xsd:integer" [ label = "mair:hasMagnitudeCode" ];
+	"mair:Magnitude" -> "xsd:string" [ label = "mair:hasMagnitudeMeasurementUnit" ];
+	"mair:Measurement" -> "mair:Magnitude" [ label = "mair:hasMagnitude" ];
+	"mair:Station" -> "mair:Measurement" [ label = "mair:hasMeasurement" ];
+	"mair:Measurement" -> "xsd:decimal" [ label = "mair:hasMeasurementValue" ];
+	"mair:Municipality" -> "xsd:integer" [ label = "mair:hasMunicipalityLocationID" ];
+	"mair:Province" -> "xsd:String" [ label = "mair:hasProvinceName" ];
+	"mair:Location" -> "mair:Province" [ label = "mair:hasProvince" ];
+	"mair:Measurement" -> "xsd:integer" [ label = "mair:hasMeasurementYear" ];
+	"mair:Province" -> "mair:Municipality" [ label = "mair:hasMunicipality" ];
+	"mair:Province" -> "xsd:integer" [ label = "mair:hasProvinceLocationID" ];
+	"mair:Station" -> "xsd:integer" [ label = "mair:hasStationLocationID" ];
+	"mair:Municipality" -> "xsd:String" [ label = "mair:hasMunicipalityName" ];
+	"mair:Station" -> "xsd:String" [ label = "mair:hasStationName" ];
+
+}

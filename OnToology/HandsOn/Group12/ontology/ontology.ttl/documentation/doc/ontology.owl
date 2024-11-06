@@ -1,0 +1,505 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://group12.namespace.com/"
+     xml:base="http://group12.namespace.com/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://group12.namespace.com/">
+        <dc:creator>Group12</dc:creator>
+        <dc:title>Template Ontology</dc:title>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#lesividad -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#lesividad">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Lesividad"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Participante"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Lesividad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#tieneDistrito -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#tieneDistrito">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Localizacion"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Distrito"/>
+        <rdfs:label>tiene distrito</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#tieneLocalizacion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#tieneLocalizacion">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Localizacion"/>
+        <rdfs:label>tiene localizacion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#tieneParticipante -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/ns#tieneParticipante">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/ns#Participante"/>
+        <rdfs:label>tiene participante</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#cod_lesividad -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#cod_lesividad">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Lesividad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>cod_lesividad</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#code_distrito -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#code_distrito">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Distrito"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>code_distrito</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#coordenada_x_utm -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#coordenada_x_utm">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Localizacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>coordenada_x_utm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#coordenada_y_utm -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#coordenada_y_utm">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Localizacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label>coordenada_y_utm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#distrito -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#distrito">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Distrito"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>distrito</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#estado_meteorologico -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#estado_meteorologico">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>estado_meteorologico</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#fecha -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#fecha">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>fecha</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#hora -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#hora">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+        <rdfs:label>hora</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#lesividad -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#lesividad">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#localizacion -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#localizacion">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Distrito"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>localizacion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#num_expediente -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#num_expediente">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>num_expediente</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#positiva_alcohol -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#positiva_alcohol">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Participante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>positiva_alcohol</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#positiva_droga -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#positiva_droga">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Participante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>positiva_droga</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#rango_edad -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#rango_edad">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Participante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>rango_edad</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#sexo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#sexo">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Participante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>sexo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#tipo_accidente -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#tipo_accidente">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tipo_accidente</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#tipo_persona -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#tipo_persona">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Participante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tipo_persona</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#tipo_vehiculo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/ns#tipo_vehiculo">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/ns#Participante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>tipo_vehiculo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Accidente -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Accidente">
+        <rdfs:label>Accidente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Alcance -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Alcance">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:label>Alcance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#AtropelloPersona -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#AtropelloPersona">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:label>Atropello Persona</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Caida -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Caida">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:label>Caida</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#ChoqueObstaculo -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#ChoqueObstaculo">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:label>Choque Obstaculo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#ColisionDoble -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#ColisionDoble">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:label>Colision Doble</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#ColisionMultiple -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#ColisionMultiple">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:label>Colision Multiple</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Distrito -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Distrito">
+        <rdfs:label>Distrito</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Lesividad -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Lesividad">
+        <rdfs:label>Lesividad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Localizacion -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Localizacion">
+        <rdfs:label>Localizacion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Otras -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Otras">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:label>Otras</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Participante -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Participante">
+        <rdfs:label>Participante</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/ns#Vuelco -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/ns#Vuelco">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/ns#Accidente"/>
+        <rdfs:label>Vuelco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/ns#lesividad">
+        <rdfs:label>lesividad</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

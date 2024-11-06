@@ -1,0 +1,177 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://MadridAirQuality.org/ontology/hasMagnitude
+<http://MadridAirQuality.org/ontology/hasMagnitude> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasMagnitudeCode
+<http://MadridAirQuality.org/ontology/hasMagnitudeCode> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit
+<http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasMagnitudeName
+<http://MadridAirQuality.org/ontology/hasMagnitudeName> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasMeasurementDay
+<http://MadridAirQuality.org/ontology/hasMeasurementDay> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasMeasurementMonth
+<http://MadridAirQuality.org/ontology/hasMeasurementMonth> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasMeasurementValue
+<http://MadridAirQuality.org/ontology/hasMeasurementValue> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasMeasurementYear
+<http://MadridAirQuality.org/ontology/hasMeasurementYear> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasMunicipality
+<http://MadridAirQuality.org/ontology/hasMunicipality> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasMunicipalityLocationID
+<http://MadridAirQuality.org/ontology/hasMunicipalityLocationID> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasMunicipalityName
+<http://MadridAirQuality.org/ontology/hasMunicipalityName> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasProvince
+<http://MadridAirQuality.org/ontology/hasProvince> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasProvinceLocationID
+<http://MadridAirQuality.org/ontology/hasProvinceLocationID> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasProvinceName
+<http://MadridAirQuality.org/ontology/hasProvinceName> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasStationLocationID
+<http://MadridAirQuality.org/ontology/hasStationLocationID> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasStreet
+<http://MadridAirQuality.org/ontology/hasStreet> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasStreetLocationID
+<http://MadridAirQuality.org/ontology/hasStreetLocationID> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/hasStreetName
+<http://MadridAirQuality.org/ontology/hasStreetName> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/isMeasurementValid
+<http://MadridAirQuality.org/ontology/isMeasurementValid> rdf:type owl:AnnotationProperty .
+
+
+###  http://MadridAirQuality.org/ontology/recordedFrom
+<http://MadridAirQuality.org/ontology/recordedFrom> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://MadridAirQuality.org/ontology/Magnitude
+<http://MadridAirQuality.org/ontology/Magnitude> rdf:type owl:Class .
+
+
+###  http://MadridAirQuality.org/ontology/Measurement
+<http://MadridAirQuality.org/ontology/Measurement> rdf:type owl:Class .
+
+
+###  http://MadridAirQuality.org/ontology/Municipality
+<http://MadridAirQuality.org/ontology/Municipality> rdf:type owl:Class .
+
+
+###  http://MadridAirQuality.org/ontology/Province
+<http://MadridAirQuality.org/ontology/Province> rdf:type owl:Class .
+
+
+###  http://MadridAirQuality.org/ontology/Station
+<http://MadridAirQuality.org/ontology/Station> rdf:type owl:Class .
+
+
+###  http://MadridAirQuality.org/ontology/Street
+<http://MadridAirQuality.org/ontology/Street> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://MadridAirQuality.org/magnitude/8
+<http://MadridAirQuality.org/magnitude/8> rdf:type owl:NamedIndividual ,
+                                                   <http://MadridAirQuality.org/ontology/Magnitude> ;
+                                          <http://MadridAirQuality.org/ontology/hasMagnitudeCode> 8 ;
+                                          <http://MadridAirQuality.org/ontology/hasMagnitudeMeasurementUnit> "µg/m³" ;
+                                          <http://MadridAirQuality.org/ontology/hasMagnitudeName> "Nitrogen Dioxide (NO2)" .
+
+
+###  http://MadridAirQuality.org/measurement/2024-10-18-Station-4-magnitude-8
+<http://MadridAirQuality.org/measurement/2024-10-18-Station-4-magnitude-8> rdf:type owl:NamedIndividual ,
+                                                                                    <http://MadridAirQuality.org/ontology/Measurement> ;
+                                                                           <http://MadridAirQuality.org/ontology/hasMagnitude> <http://MadridAirQuality.org/magnitude/8> ;
+                                                                           <http://MadridAirQuality.org/ontology/hasMeasurementDay> 18 ;
+                                                                           <http://MadridAirQuality.org/ontology/hasMeasurementMonth> 10 ;
+                                                                           <http://MadridAirQuality.org/ontology/hasMeasurementValue> 35.7 ;
+                                                                           <http://MadridAirQuality.org/ontology/hasMeasurementYear> 2024 ;
+                                                                           <http://MadridAirQuality.org/ontology/isMeasurementValid> "true"^^xsd:boolean ;
+                                                                           <http://MadridAirQuality.org/ontology/recordedFrom> <http://MadridAirQuality.org/station/4> .
+
+
+###  http://MadridAirQuality.org/municipality/79
+<http://MadridAirQuality.org/municipality/79> rdf:type owl:NamedIndividual ,
+                                                       <http://MadridAirQuality.org/ontology/Municipality> ;
+                                              <http://MadridAirQuality.org/ontology/hasMunicipalityLocationID> 79 ;
+                                              <http://MadridAirQuality.org/ontology/hasMunicipalityName> "Madrid" ;
+                                              <http://MadridAirQuality.org/ontology/hasProvince> <http://MadridAirQuality.org/province/28> .
+
+
+###  http://MadridAirQuality.org/province/28
+<http://MadridAirQuality.org/province/28> rdf:type owl:NamedIndividual ,
+                                                   <http://MadridAirQuality.org/ontology/Province> ;
+                                          <http://MadridAirQuality.org/ontology/hasProvinceLocationID> 28 ;
+                                          <http://MadridAirQuality.org/ontology/hasProvinceName> "Comunidad de  Madrid" .
+
+
+###  http://MadridAirQuality.org/station/4
+<http://MadridAirQuality.org/station/4> rdf:type owl:NamedIndividual ,
+                                                 <http://MadridAirQuality.org/ontology/Station> ;
+                                        <http://MadridAirQuality.org/ontology/hasStationLocationID> 4 ;
+                                        <http://MadridAirQuality.org/ontology/hasStreet> <http://MadridAirQuality.org/street/4> .
+
+
+###  http://MadridAirQuality.org/street/4
+<http://MadridAirQuality.org/street/4> rdf:type owl:NamedIndividual ,
+                                                <http://MadridAirQuality.org/ontology/Street> ;
+                                       <http://MadridAirQuality.org/ontology/hasMunicipality> <http://MadridAirQuality.org/municipality/79> ;
+                                       <http://MadridAirQuality.org/ontology/hasStreetLocationID> 4 ;
+                                       <http://MadridAirQuality.org/ontology/hasStreetName> "Plaza España" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

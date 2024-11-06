@@ -1,0 +1,209 @@
+@prefix : <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/2001/XMLSchema#> rdf:type owl:Ontology ;
+                                     <http://purl.org/dc/elements/1.1/creator> "Dakota Mellish" ;
+                                     <http://purl.org/dc/elements/1.1/title> "RiversidePollutionStudyOntology" ;
+                                     owl:versionInfo "0.0.1" ;
+                                     <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://schema.org/containedInPlace
+<https://schema.org/containedInPlace> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://schema.org/AdministrativeArea> ,
+                                                  <https://schema.org/City> ,
+                                                  <https://schema.org/Place> ,
+                                                  <https://schema.org/State> ;
+                                      rdfs:range <https://schema.org/AdministrativeArea> ,
+                                                 <https://schema.org/City> ,
+                                                 <https://schema.org/Country> ,
+                                                 <https://schema.org/State> ;
+                                      rdfs:label "contained in place" .
+
+
+###  https://schema.org/hasPart
+<https://schema.org/hasPart> rdf:type owl:ObjectProperty ;
+                             rdfs:domain <https://schema.org/Dataset> ;
+                             rdfs:range <https://schema.org/Article> ;
+                             rdfs:label "has part" .
+
+
+###  https://schema.org/isPartOf
+<https://schema.org/isPartOf> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <https://schema.org/Observation> ;
+                              rdfs:range <https://schema.org/Dataset> ;
+                              rdfs:label "is part of" .
+
+
+###  https://schema.org/observationAbout
+<https://schema.org/observationAbout> rdf:type owl:ObjectProperty ;
+                                      rdfs:range <https://schema.org/Place> ;
+                                      rdfs:label "observation about" .
+
+
+###  https://www.w3.org/TR/prov-o/wasDerivedFrom
+<https://www.w3.org/TR/prov-o/wasDerivedFrom> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://schema.org/Dataset> ;
+                                              rdfs:range <https://schema.org/ScholarlyArticle> ;
+                                              rdfs:label "was derived from" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://schema.org/about
+<https://schema.org/about> rdf:type owl:DatatypeProperty ;
+                           rdfs:domain <https://schema.org/Article> ,
+                                       <https://schema.org/Dataset> ;
+                           rdfs:range xsd:string ;
+                           rdfs:label "about" .
+
+
+###  https://schema.org/author
+<https://schema.org/author> rdf:type owl:DatatypeProperty ;
+                            rdfs:domain <https://schema.org/ScholarlyArticle> ;
+                            rdfs:range xsd:string ;
+                            rdfs:label "author" .
+
+
+###  https://schema.org/datePublished
+<https://schema.org/datePublished> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <https://schema.org/ScholarlyArticle> ;
+                                   rdfs:range xsd:date ;
+                                   rdfs:label "date published" .
+
+
+###  https://schema.org/latitude
+<https://schema.org/latitude> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <https://schema.org/Place> ;
+                              rdfs:range xsd:double ;
+                              rdfs:label "latitude" .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:DatatypeProperty ;
+                          rdfs:domain <https://schema.org/AdministrativeArea> ,
+                                      <https://schema.org/Article> ,
+                                      <https://schema.org/City> ,
+                                      <https://schema.org/Country> ,
+                                      <https://schema.org/Dataset> ,
+                                      <https://schema.org/Place> ,
+                                      <https://schema.org/ScholarlyArticle> ,
+                                      <https://schema.org/State> ;
+                          rdfs:range xsd:string ;
+                          rdfs:label "name" .
+
+
+###  https://schema.org/observationDateTime
+<https://schema.org/observationDateTime> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <https://schema.org/Observation> ;
+                                         rdfs:range xsd:dateTime ;
+                                         rdfs:label "observation date time" .
+
+
+###  https://schema.org/unitText
+<https://schema.org/unitText> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <https://schema.org/Observation> ;
+                              rdfs:label "unit text" .
+
+
+###  https://schema.org/value
+<https://schema.org/value> rdf:type owl:DatatypeProperty ;
+                           rdfs:domain <https://schema.org/Observation> ;
+                           rdfs:label "value" .
+
+
+###  https://schema.org/variableMeasured
+<https://schema.org/variableMeasured> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://schema.org/Observation> ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:label "variable measured" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://schema.org/AdministrativeArea
+<https://schema.org/AdministrativeArea> rdf:type owl:Class ;
+                                        rdfs:label "Administrative Area" .
+
+
+###  https://schema.org/Article
+<https://schema.org/Article> rdf:type owl:Class ;
+                             rdfs:label "Article" .
+
+
+###  https://schema.org/City
+<https://schema.org/City> rdf:type owl:Class ;
+                          rdfs:label "City" .
+
+
+###  https://schema.org/Country
+<https://schema.org/Country> rdf:type owl:Class ;
+                             rdfs:label "Country" .
+
+
+###  https://schema.org/Dataset
+<https://schema.org/Dataset> rdf:type owl:Class ;
+                             rdfs:label "Dataset" .
+
+
+###  https://schema.org/Observation
+<https://schema.org/Observation> rdf:type owl:Class ;
+                                 rdfs:label "Observation" .
+
+
+###  https://schema.org/Place
+<https://schema.org/Place> rdf:type owl:Class ;
+                           rdfs:label "Place" .
+
+
+###  https://schema.org/ScholarlyArticle
+<https://schema.org/ScholarlyArticle> rdf:type owl:Class ;
+                                      rdfs:label "Scholarly Article" .
+
+
+###  https://schema.org/State
+<https://schema.org/State> rdf:type owl:Class ;
+                           rdfs:label "State" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

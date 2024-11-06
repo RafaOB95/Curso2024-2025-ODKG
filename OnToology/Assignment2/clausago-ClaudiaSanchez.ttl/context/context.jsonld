@@ -1,0 +1,22 @@
+{
+  "@context" : {
+    "hasName" : {
+      "@id" : "http://example.org/hasName"
+    },
+    "atTime" : {
+      "@id" : "http://example.org/atTime"
+    },
+    "includes" : {
+      "@id" : "http://example.org/includes"
+    },
+    "hasMeasurement" : {
+      "@id" : "http://example.org/hasMeasurement"
+    },
+    "hasOwner" : {
+      "@id" : "http://example.org/hasOwner"
+    },
+    "hasTemperature" : {
+      "@id" : "http://example.org/hasTemperature"
+    }
+  }
+}

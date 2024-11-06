@@ -1,0 +1,190 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://data.five.org#Harry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://data.five.org#sibling" : [ {
+    "@id" : "http://data.five.org#Thomas"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "Harry"
+  } ]
+}, {
+  "@id" : "http://data.five.org#Jack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://data.five.org#parent" : [ {
+    "@id" : "http://data.five.org#JohnSmith"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#FN" : [ {
+    "@value" : "Jack Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Family" : [ {
+    "@value" : "Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "Jack"
+  } ]
+}, {
+  "@id" : "http://data.five.org#JohnSmith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://data.five.org#sibling" : [ {
+    "@id" : "http://data.five.org#PeterSmith"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#FN" : [ {
+    "@value" : "John Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Family" : [ {
+    "@value" : "Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "John"
+  } ]
+}, {
+  "@id" : "http://data.five.org#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://data.five.org#PeterSmith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#FN" : [ {
+    "@value" : "Peter Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Family" : [ {
+    "@value" : "Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "Peter"
+  } ]
+}, {
+  "@id" : "http://data.five.org#SaraSmith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://data.five.org#sibling" : [ {
+    "@id" : "http://data.five.org#JohnSmith"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#FN" : [ {
+    "@value" : "Sara Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Family" : [ {
+    "@value" : "Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "Sara"
+  } ]
+}, {
+  "@id" : "http://data.five.org#Thomas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://data.five.org#sibling" : [ {
+    "@id" : "http://data.five.org#Harry"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "Thomas"
+  } ]
+}, {
+  "@id" : "http://data.five.org#Tim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://data.five.org#parent" : [ {
+    "@id" : "http://data.five.org#SaraSmith"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#FN" : [ {
+    "@value" : "Tim Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Family" : [ {
+    "@value" : "Smith"
+  } ],
+  "http://www.w3.org/2001/vcard-rdf/3.0#Given" : [ {
+    "@value" : "Tim"
+  } ]
+}, {
+  "@id" : "http://data.five.org#hasUncleOrAunt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Poperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ]
+}, {
+  "@id" : "http://data.five.org#parent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Poperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ]
+}, {
+  "@id" : "http://data.five.org#sibling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Poperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.five.org#Person"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Poperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#FN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0#Given",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0/FN",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0/Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/vcard-rdf/3.0/Given",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]

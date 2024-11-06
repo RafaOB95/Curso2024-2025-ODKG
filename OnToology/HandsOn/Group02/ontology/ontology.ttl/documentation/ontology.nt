@@ -1,0 +1,125 @@
+<http://fuelpricespain.org/ontologyGasolinerasOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://fuelpricespain.org/ontologyGasolinerasOntology> <http://purl.org/dc/elements/1.1/creator> "Grupo de Desarrollo" .
+<http://fuelpricespain.org/ontologyGasolinerasOntology> <http://purl.org/dc/elements/1.1/description> "Ontología para representar gasolineras y sus ubicaciones" .
+<http://fuelpricespain.org/ontologyGasolinerasOntology> <http://purl.org/dc/elements/1.1/title> "Ontología de Gasolineras" .
+<http://fuelpricespain.org/ontologyGasolinerasOntology> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://fuelpricespain.org/ontologytieneUbicacion
+<http://fuelpricespain.org/ontologytieneUbicacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fuelpricespain.org/ontologytieneUbicacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyGasolinera> .
+<http://fuelpricespain.org/ontologytieneUbicacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://fuelpricespain.org/ontologyUbicacion> .
+<http://fuelpricespain.org/ontologytieneUbicacion> <http://www.w3.org/2000/01/rdf-schema#label> "tiene ubicación" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://fuelpricespain.org/ontologycodigoPostal
+<http://fuelpricespain.org/ontologycodigoPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fuelpricespain.org/ontologycodigoPostal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyUbicacion> .
+<http://fuelpricespain.org/ontologycodigoPostal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://fuelpricespain.org/ontologycodigoPostal> <http://www.w3.org/2000/01/rdf-schema#label> "código postal" .
+# 
+# http://fuelpricespain.org/ontologydireccion
+<http://fuelpricespain.org/ontologydireccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fuelpricespain.org/ontologydireccion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyUbicacion> .
+<http://fuelpricespain.org/ontologydireccion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://fuelpricespain.org/ontologydireccion> <http://www.w3.org/2000/01/rdf-schema#label> "dirección" .
+# 
+# http://fuelpricespain.org/ontologyhorario
+<http://fuelpricespain.org/ontologyhorario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fuelpricespain.org/ontologyhorario> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyGasolinera> .
+<http://fuelpricespain.org/ontologyhorario> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://fuelpricespain.org/ontologyhorario> <http://www.w3.org/2000/01/rdf-schema#label> "horario" .
+# 
+# http://fuelpricespain.org/ontologylatitud
+<http://fuelpricespain.org/ontologylatitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fuelpricespain.org/ontologylatitud> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyUbicacion> .
+<http://fuelpricespain.org/ontologylatitud> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://fuelpricespain.org/ontologylatitud> <http://www.w3.org/2000/01/rdf-schema#label> "latitud" .
+# 
+# http://fuelpricespain.org/ontologylongitud
+<http://fuelpricespain.org/ontologylongitud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fuelpricespain.org/ontologylongitud> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyUbicacion> .
+<http://fuelpricespain.org/ontologylongitud> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://fuelpricespain.org/ontologylongitud> <http://www.w3.org/2000/01/rdf-schema#label> "longitud" .
+# 
+# http://fuelpricespain.org/ontologymunicipio
+<http://fuelpricespain.org/ontologymunicipio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fuelpricespain.org/ontologymunicipio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyUbicacion> .
+<http://fuelpricespain.org/ontologymunicipio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://fuelpricespain.org/ontologymunicipio> <http://www.w3.org/2000/01/rdf-schema#label> "municipio" .
+# 
+# http://fuelpricespain.org/ontologyprecioGasoleoA
+<http://fuelpricespain.org/ontologyprecioGasoleoA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fuelpricespain.org/ontologyprecioGasoleoA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyGasolinera> .
+<http://fuelpricespain.org/ontologyprecioGasoleoA> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://fuelpricespain.org/ontologyprecioGasoleoA> <http://www.w3.org/2000/01/rdf-schema#label> "precio gasóleo A" .
+# 
+# http://fuelpricespain.org/ontologyprecioGasolina95E5
+<http://fuelpricespain.org/ontologyprecioGasolina95E5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fuelpricespain.org/ontologyprecioGasolina95E5> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyGasolinera> .
+<http://fuelpricespain.org/ontologyprecioGasolina95E5> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://fuelpricespain.org/ontologyprecioGasolina95E5> <http://www.w3.org/2000/01/rdf-schema#label> "precio gasolina 95 E5" .
+# 
+# http://fuelpricespain.org/ontologyprovincia
+<http://fuelpricespain.org/ontologyprovincia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fuelpricespain.org/ontologyprovincia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyUbicacion> .
+<http://fuelpricespain.org/ontologyprovincia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://fuelpricespain.org/ontologyprovincia> <http://www.w3.org/2000/01/rdf-schema#label> "provincia" .
+# 
+# http://fuelpricespain.org/ontologyrotulo
+<http://fuelpricespain.org/ontologyrotulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fuelpricespain.org/ontologyrotulo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://fuelpricespain.org/ontologyGasolinera> .
+<http://fuelpricespain.org/ontologyrotulo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://fuelpricespain.org/ontologyrotulo> <http://www.w3.org/2000/01/rdf-schema#label> "rótulo" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://fuelpricespain.org/ontologyGasolinera
+<http://fuelpricespain.org/ontologyGasolinera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://fuelpricespain.org/ontologyGasolinera> <http://www.w3.org/2000/01/rdf-schema#label> "Gasolinera" .
+# 
+# http://fuelpricespain.org/ontologyUbicacion
+<http://fuelpricespain.org/ontologyUbicacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://fuelpricespain.org/ontologyUbicacion> <http://www.w3.org/2000/01/rdf-schema#label> "Ubicación" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
